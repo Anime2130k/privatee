@@ -61,21 +61,21 @@ Secktor.cmd({
 *👤My Usercount:* ${total}
 *☘️My Uptime:* ${runtime(process.uptime())}
 *💾My Mem:* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-│ │ Time:- ${time}
-│ │ Date:- ${date}
-│ ╰──────────────◆
-╰───────────────⊷\n
+*⏳Time:- ${time}
+*💧Date:* ${date}
+
+*Here's the list of my commands:*\n
 ` + '```'
                 for (const category in cmds) 
                 {
-                   str += `╭────❏ *${tiny(category)}* ❏\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `╭─────❏ *${tiny(category)}* ❏\n` ;      
+                   str += `💗 *${tiny(category)}* 💗\n` ;
+                   if(text.toLowerCase() == category.toLowerCase()){ str = `🈷️ *${tiny(category)}* 🈷️\n` ;      
                         for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
-                        str += `╰━━━━━━━━━━━━━──⊷\n`  ;
+                        str += `\n`  ;
                         break ;
                    }
                    else { for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
-                         str += `╰━━━━━━━━━━━━━━──⊷\n`  ; 
+                         str += `\n`  ; 
                    }
   
                 }
