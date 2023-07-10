@@ -60,7 +60,7 @@ Secktor.cmd({
 *🎐My Owner:* _${Config.ownername}_
 *👤My Usercount:* ${total}
 *☘️My Uptime:* ${runtime(process.uptime())}
-│ │ Mem:- ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
+*💾My Mem:* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
 │ │ Time:- ${time}
 │ │ Date:- ${date}
 │ ╰──────────────◆
