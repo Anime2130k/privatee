@@ -36,7 +36,7 @@ cmd({
             desc: "text to speech.",
             category: "downloader",
             filename: __filename,
-            use: '<Hii,this is Secktor>',
+            use: '<Hii,this is Mikasa>',
         },
         async(Void, citel, text) => {
             if (!text) return citel.reply('Please give me Sentence to change into audio.')
@@ -97,7 +97,7 @@ cmd({
             desc: "Downloads video from yt.",
             category: "downloader",
             filename: __filename,
-            use: '<faded-Alan Walker>',
+            use: '<Attack on Titan theme song>',
         },
         async(Void, citel, text) => {
             let yts = require("secktor-pack");
@@ -159,7 +159,7 @@ cmd({
             desc: "Sends info about the query(of youtube video/audio).",
             category: "downloader",
             filename: __filename,
-            use: '<faded-Alan walker.>',
+            use: '<Attack on Titan Theme song.>',
         },
         async(Void, citel, text) => {
             if (!text) return citel.reply(`Use ${command} Back in Black`);
@@ -171,15 +171,14 @@ cmd({
                     url: anu.thumbnail,
                 },
                 caption: `
-╭───────────────◆
-│⿻ ${tlang().title} 
-│  *Youtube Player* ✨
-│⿻ *Title:* ${anu.title}
-│⿻ *Duration:* ${anu.timestamp}
-│⿻ *Viewers:* ${anu.views}
-│⿻ *Uploaded:* ${anu.ago}
-│⿻ *Author:* ${anu.author.name}
-╰────────────────◆
+ ${tlang().title} 
+    *Youtube Player* 🎬
+📝 *Title:* ${anu.title}
+♾️ *Duration:* ${anu.timestamp}
+👁️ *Viewers:* ${anu.views}
+⌛ *Uploaded:* ${anu.ago}
+👤 *Author:* ${anu.author.name}
+
 ⦿ *Url* : ${anu.url}
 `,
                 footer: tlang().footer,
