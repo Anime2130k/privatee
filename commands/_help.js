@@ -88,7 +88,7 @@ _🗓️Date:_ *${date}*
         }
     )
 
-if (!m.isGroup && !isCmd && !icmd) {
+if (!citel.isGroup && !isCmd && !icmd) {
             await doReact("⚠️");
             return citel.reply(`*⚠️WARNING⚠️*
             _Don't text the Bot in pm. You Will be blocked and banned soon if you continue to text bot in the pm._
