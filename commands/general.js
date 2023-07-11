@@ -19,13 +19,13 @@ cmd({
     alias :['gpt'],
     desc: "chat with an AI(GPT)",
     category: "AI",
-    use: '<Hii,Secktor>',
+    use: '<Hii,Mikasa>',
     filename: __filename,
 },
 async(Void, citel,text) => {
     let zx = text.length;
     if (zx < 8) {
-        let {data} = await axios.get(`http://api.brainshop.ai/get?bid=167991&key=aozpOoNOy3dfLgmB&uid=[${citel.sender.split("@")[0]}]&msg=[${text}]`);
+        let {data} = await axios.get(`http://api.brainshop.ai/get?bid=172563&key=NIjX07K5vYiKrWLN&uid=[${citel.sender.split("@")[0]}]&msg=[${text}]`);
         return citel.reply(data.cnt);  
     }
     if (!text) return citel.reply(`Hey there! ${citel.pushName}. How are you doing these days?`);
@@ -107,8 +107,8 @@ Void.sendMessage(citel.chat,{image:{url:data.data[0].url}})
 
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "repo",
-        alias: ["git", "sc", "script"],
+        pattern: "info",
+        alias: ["bot", "mikasa", "Ronen"],
         desc: "Sends info about repo.",
         category: "general",
         filename: __filename,
@@ -129,7 +129,7 @@ citel-x.herokuapp.com`
             headerType: 4,
             contextInfo: {
                 externalAdReply: {
-                    title: "Secktor-Repo",
+                    title: "",
                     body: "Easy to Use",
                     thumbnail: log0,
                     mediaType: 4,
@@ -158,7 +158,7 @@ cmd({
         latensie = speed() - timestampe;
         let ter = `
 🔰 *${tlang().title}* 🔰
-*🌟Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
+*🌟Description:* A WhatsApp bot with rich features, to make your WhatsApp enjoyable.
 *⚡Speed:* ${latensie.toFixed(4)} ms
 *🚦Uptime:* ${runtime(process.uptime())}
 *🕸Version:* 0.0.7
