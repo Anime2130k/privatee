@@ -91,7 +91,7 @@ cmd({
         citel.reply(`*Check your Pm ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*Group Name: Ronen-Bots Support*\n*Group Link:* http://surl.li/eumln`,
+            caption: `*🎀Group Name: Ronen-Bots Support*\n_The purpose of this group is to help the users using our bots. You can ask about any issue regarding any of our Bots in this group. If you want our Bots in your gc then you can text the Admin personally or tag them in the group, and don't forget to be respectful to everyone in this group._\n\n*🧧Group Link:* http://surl.li/eumln`,
         });
 
     }
@@ -103,7 +103,7 @@ cmd({
             desc: "Warns user in Group.",
             category: "group",
             filename: __filename,
-            use: '<quote|reply|number>',
+            use: '<quote|reply|number>', 
         },
         async(Void, citel, text,{ isCreator }) => {
              if (!citel.isGroup) return citel.reply('This Command is only for group.')
@@ -168,7 +168,7 @@ cmd({
         if (!isAdmins) return citel.reply(tlang().admin);
 
         let textt = `
-══✪〘   *Tag All*   〙✪══
+   🎀〘   *Tag All*   〙🎀
 
 ➲ *Message :* ${text ? text : "blank"}\n\n
 ➲ *Author:* ${citel.pushName} 🔖
