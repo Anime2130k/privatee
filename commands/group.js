@@ -197,11 +197,11 @@ cmd({
             if (!text) return citel.reply(`Example : ${
         prefix + command
       } Hello dev please fix <command name>`);
-            textt = `*| REPORT |*`;
-            teks1 = `\n\n*User* : @${
-    citel.sender.split("@")[0]
-  }\n*Request* : ${text}`;
-            teks2 = `\n\n*Hii ${citel.pushname},Your report has been forwarded to my Developer*.\n*Please wait.......*`;
+            textt = `*|🔖 REPORT SENT 🔖|*`;
+            teks1 = `\n\n*📌REPORTED BY* : _@${
+    citel.sender.split("@")[0]}_\n*📝REPORT* : _${text}_\n\n*MIKASA💗*\n*POWERED BY: RONEN-BOTS*`;
+            teks2 = `\n\n*Konichiwa!👋 _@${
+    citel.sender.split("@")[0]},_ The report has been sent to my Developer*.\n*⚠️If it is a spam you might get blocked or ban*`;
             for (let i of owner) {
                 Void.sendMessage(i + "@s.whatsapp.net", {
                     text: textt + teks1,
