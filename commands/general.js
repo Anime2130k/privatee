@@ -13,7 +13,7 @@ const { tlang, botpic, cmd, prefix, runtime, Config , sleep } = require('../lib'
 const axios = require('axios')
 const speed = require('performance-now')
 const fetch = require('node-fetch');
-let { fancytext, tiny, runtime, formatp, botpic, prefix, sck1 } = require("../lib");
+let { fancytext, tiny, formatp, sck1 } = require("../lib");
 //---------------------------------------------------------------------------
 cmd({
     pattern: "chat",
