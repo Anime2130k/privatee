@@ -161,14 +161,14 @@ cmd({
             pattern: "fancy",
             desc: "Makes stylish/fancy given text",
             category: "converter",
-            use: '56 Secktor',
+            use: '56 Mikasa',
             react: "✅",
             filename: __filename
         },
         async(Void, citel, text) => {
             if (isNaN(text.split(" ")[0]) || !text) {
                 let text = tiny(
-                    "Fancy text generator\n\nExample: .fancy 32 Secktor\n\n"
+                    "Fancy text generator\n\nExample: .fancy 32 Mikasa\n\n"
                 );
                 listall("Secktor Bot").forEach((txt, num) => {
                     text += `${(num += 1)} ${txt}\n`;
@@ -211,7 +211,7 @@ filename: __filename,
         use: '<reply to any image/video.>'
     },
     async(Void, citel, text) => {
-        if (!citel.quoted) return citel.reply(`*Reply To any Image or video Sir.*`);
+        if (!citel.quoted) return citel.reply(`*Reply To any Image or video.*`);
       //console.log("Quoted Data here : ",citel.quoted);
         let mime = citel.quoted.mtype
         pack = Config.packname
@@ -275,7 +275,7 @@ filename: __filename,
         use: '<reply to any image/video.>'
     },
     async(Void, citel, text) => {
-        if (!citel.quoted) return citel.reply(`*Reply To any Image or video Sir.*`);
+        if (!citel.quoted) return citel.reply(`*Reply To any Image or video.*`);
       //console.log("Quoted Data here : ",citel.quoted);
         let mime = citel.quoted.mtype
         pack = Config.packname
