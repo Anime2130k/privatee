@@ -118,7 +118,7 @@ cmd({
         let cap = `Konichiwa! ${citel.pushName}, I'm *Elaina✨*
 _🧩 Server Uptime:_ *${runtime(process.uptime())}*
 _⚡ Speed :_ *${latensie.toFixed(4)} ms*
-_👤 User Counts :_ **
+_👤 User Counts :_ *${total}*
 _📛 Group counts:_ *undefined*
 _🎀 Status:_ *⬜Active*
 
