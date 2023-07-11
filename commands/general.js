@@ -115,6 +115,7 @@ cmd({
         filename: __filename,
     },
     async(Void, citel) => {
+	    let total = await sck1.countDocuments()
         let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
         let cap = `Konichiwa! ${citel.pushName}, I'm *Elaina✨*
 _🧩 Server Uptime:_ *${runtime(process.uptime())}*
