@@ -123,7 +123,7 @@ for (let i = 0; i < commands.length; i++)
     //---------------------------------------------------------------------------
 Secktor.cmd({
         pattern: "owner",
- alias: "dev","mods","mod",
+ alias: ["dev","mods","mod"],
         desc: "To find owner number",
         category: "general",
         react: "💜",
