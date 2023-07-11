@@ -3,15 +3,15 @@ if (fs.existsSync('config.env')) require('dotenv').config({ path: __dirname+'/co
 
 
 //═══════[Required Variables]════════\\
-global.owner = process.env.OWNER_NUMBER.split("916000530073,15069751205")
+global.owner = process.env.OWNER_NUMBER.split("916000530073, 15069751205")
 global.mongodb = process.env.MONGODB_URI || "mongodb+srv://whatyo435:bc31443f@cluster0.mo4uyuc.mongodb.net/?retryWrites=true&w=majority"
 global.port= process.env.PORT || 5000
 global.email = ''
 global.github = 'https://github.com/Ronen6999'
 global.location = 'INDIA'
 global.gurl = 'https://instagram.com/' // add your username
-global.sudo = process.env.SUDO || '916000530073,15069751205'
-global.devs = '916000530073,15069751205';
+global.sudo = process.env.SUDO || '916000530073, 15069751205'
+global.devs = '916000530073, 15069751205';
 global.website = 'wa.me/15069751205' //wa.me/+91000000000000
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://wallpaperaccess.com/full/1309130.jpg'
 module.exports = {
