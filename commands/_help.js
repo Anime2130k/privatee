@@ -53,16 +53,16 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `╭─《` + fancytext(Config.botname.split(' ')[0], 58) + `》─⊷\n\n`
+                let str = `╔══ ≪` + fancytext(Config.botname.split(' ')[0], 58) + `≫ ══╗\n\n`
                 str +=
-                     `Konichiwa! *${citel.pushName} senpai👋*\n\n I'm Mikasa💗 a WhatsApp Bot Created by *RONEN-BOTS* for your assistance.\n
-                    *🎗️My Prefix:* [ ${prefix} ]
-*🎐My Owner:* _${Config.ownername}_
-*👤My Usercount:* _${total}_
-*☘️My Uptime:* _${runtime(process.uptime())}_
-*💾My Mem:* _${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}_
-*⏳Time:- _${time}_
-*💧Date:* _${date}_
+                     `Konichiwa! *${citel.pushName} senpai👋*\n\n I'm *${Config.botname}* a WhatsApp Bot Created by *RONEN-BOTS* for your assistance.\n
+_🎗️My Prefix:_ *[ ${prefix} ]*
+_🎐My Owner:_ *${Config.ownername}*
+_👤My Usercount:_ *${total}*
+_☘️My Uptime:_ *${runtime(process.uptime())}*
+_💾My Memory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
+_⏳Time:_ *${time}*
+_🗓️Date:_ *${date}*
 
 *Here's the list of my commands:*\n
 `
