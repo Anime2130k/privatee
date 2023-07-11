@@ -53,9 +53,9 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `╭──《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》──⊷\n`
+                let str = `╭─《` + fancytext(Config.botname.split(' ')[0], 58) + `》─⊷\n\n`
                 str +=
-                     `Konichiwa! *${citel.pushName} senpai👋*, I'm Mikasa💗 a WhatsApp Bot Created by *RONEN-BOTS* for your assistance.
+                     `Konichiwa! *${citel.pushName} senpai👋*\n\n I'm Mikasa💗 a WhatsApp Bot Created by *RONEN-BOTS* for your assistance.\n
                     *🎗️My Prefix:* [ ${prefix} ]
 *🎐My Owner:* _${Config.ownername}_
 *👤My Usercount:* _${total}_
