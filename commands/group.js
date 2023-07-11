@@ -880,7 +880,7 @@ cmd({
     use: '<text for broadcast.>',
 },
 async (Void, citel, text) => {
-    if (!isCreator) return citel.reply(tlang().owner);
+    if (isCreator) return citel.reply(tlang().owner);
     let getGroups = await Void.groupFetchAllParticipating();
     let groups = Object.values(getGroups);
     let anu = groups.map((v) => v.jid);
