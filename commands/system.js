@@ -121,7 +121,7 @@ cmd({
     //---------------------------------------------------------------------------
 //---------------------------------------------------------------------------
 cmd({
-    pattern: "trt",
+    pattern: "tr",
     alias :['translate'],
     category: "misc",
     filename: __filename,
@@ -238,6 +238,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "alive",
+            alias : ['hi','mikasa'],
             category: "general",
             filename: __filename,
             desc: "is bot alive??"
