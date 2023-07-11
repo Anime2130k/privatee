@@ -909,7 +909,7 @@ async (Void, citel, text) => {
                 },
             },
         };
-        await Void.sendMessage(i, buttonMessaged, MessageType.buttonsMessage, { quoted: citel });
+        await Void.sendMessage(i, buttonMessaged, { quoted: citel });
     }
     citel.reply(`*Successful Sending Broadcast To ${anu.length} Group(s)*`);
 });
