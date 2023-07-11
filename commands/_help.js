@@ -78,7 +78,7 @@ _🗓️Date:_ *${date}*
                    }
   
                 }
-                str+= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*💗RONEN-BOTS* `
+                str+= `\n\n*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*🎐RONEN-BOTS* `
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
