@@ -194,7 +194,7 @@ cmd({
             use: '<text>',
         },
         async(Void, citel, text) => {
-            if (!text) return reply(`Example : ${
+            if (!text) return citel.reply(`Example : ${
         prefix + command
       } Hello dev please fix <command name>`);
             textt = `*| REPORT |*`;
