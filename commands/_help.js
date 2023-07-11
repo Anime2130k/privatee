@@ -68,13 +68,13 @@ _🗓️Date:_ *${date}*
 `
                 for (const category in cmds) 
                 {
-                   str += `💗 *${tiny(category)}* 💗\n` ;
+                   str += `\n\n💗 *${tiny(category)}* 💗\n` ;
                    if(text.toLowerCase() == category.toLowerCase()){ str = `🈷️ *${tiny(category)}* 🈷️\n` ;      
-                        for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}, ` ; }
+                        for (const plugins of cmds[category]) { str += `${fancytext(plugins,1)}, ` ; }
                         str += ``  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)},b` ; }
+                   else { for (const plugins of cmds[category]) { str += `${fancytext(plugins,1)}, ` ; }
                          str += `,`  ; 
                    }
   
