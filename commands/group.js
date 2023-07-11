@@ -902,7 +902,7 @@ async (Void, citel, text) => {
                     title: 'Broadcast by ' + citel.pushName,
                     body: tlang().title,
                     thumbnailUrl: "https://wallpaperaccess.com/full/4939220.jpg",
-                    mediaType: 2,
+                    mediaType: 1,
                     mediaUrl: '',
                     sourceUrl: gurl,
                     showAdAttribution: true,
