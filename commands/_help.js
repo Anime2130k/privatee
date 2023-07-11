@@ -21,7 +21,7 @@ const Secktor = require('../lib/commands')
     //---------------------------------------------------------------------------
 Secktor.cmd({
             pattern: "help",
-            alias: ["menu"],
+            alias: ["menu","h"],
             desc: "Help list",
             category: "general",
             react: "🌸",
@@ -70,16 +70,16 @@ _🗓️Date:_ *${date}*
                 {
                    str += `💗 *${tiny(category)}* 💗\n` ;
                    if(text.toLowerCase() == category.toLowerCase()){ str = `🈷️ *${tiny(category)}* 🈷️\n` ;      
-                        for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
-                        str += `\n`  ;
+                        for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}, ` ; }
+                        str += ``  ;
                         break ;
                    }
-                   else { for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)}\n` ; }
-                         str += `\n`  ; 
+                   else { for (const plugins of cmds[category]) { str += `│ ${fancytext(plugins,1)},b` ; }
+                         str += `,`  ; 
                    }
   
                 }
-                str+= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*Made with ❤️ in Nodejs* `
+                str+= `*⭐️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*💗RONEN-BOTS* `
                 let buttonMessaged = {
                     image: { url: await botpic() },
                     caption: str
@@ -123,6 +123,7 @@ for (let i = 0; i < commands.length; i++)
     //---------------------------------------------------------------------------
 Secktor.cmd({
         pattern: "owner",
+ alias: "dev","mods","mod",
         desc: "To find owner number",
         category: "general",
         react: "💜",
