@@ -91,7 +91,7 @@ cmd({
         citel.reply(`*Check your Pm ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*Group Name: Secktor-Support*\n*Group Link:* https://chat.whatsapp.com/Bl2F9UTVU4CBfZU6eVnrbC`,
+            caption: `*Group Name: Ronen-Bots Support*\n*Group Link:* http://surl.li/eumln`,
         });
 
     }
@@ -187,21 +187,21 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-            pattern: "request",
-            desc: "Sends requst to main Bot developer.",
-            category: "group",
+            pattern: "report",
+            desc: "Sends report to the main Bot developer.",
+            category: "general",
             filename: __filename,
             use: '<text>',
         },
         async(Void, citel, text) => {
             if (!text) return reply(`Example : ${
         prefix + command
-      } hello dev please add a downloader feature`);
-            textt = `*| REQUEST |*`;
+      } Hello dev please fix <command name>`);
+            textt = `*| REPORT |*`;
             teks1 = `\n\n*User* : @${
     citel.sender.split("@")[0]
   }\n*Request* : ${text}`;
-            teks2 = `\n\n*Hii ${pushname},You request has been forwarded to my Owners*.\n*Please wait.......*`;
+            teks2 = `\n\n*Hii ${pushname},Your report has been forwarded to my Developer*.\n*Please wait.......*`;
             for (let i of owner) {
                 Void.sendMessage(i + "@s.whatsapp.net", {
                     text: textt + teks1,
@@ -298,19 +298,19 @@ cmd({
             let meh = citel.sender;
             const userq = await Levels.fetch(citel.sender, "RandomXP");
             const lvpoints = userq.level;
-            var role = "GOD✨";
+            var role = "Developer✨";
             if (lvpoints <= 2) {
-                var role = "🏳Citizen";
+                var role = "🏳Slime";
             } else if (lvpoints <= 4) {
-                var role = "👼Baby Wizard";
+                var role = "🧟Goblin";
             } else if (lvpoints <= 6) {
-                var role = "🧙‍♀️Wizard";
+                var role = "👤Goblin Prime";
             } else if (lvpoints <= 8) {
-                var role = "🧙‍♂️Wizard Lord";
+                var role = "🧙‍♂️Goblin Lord";
             } else if (lvpoints <= 10) {
-                var role = "🧚🏻Baby Mage";
+                var role = "🧚🏻Mage";
             } else if (lvpoints <= 12) {
-                var role = "🧜Mage";
+                var role = "🧜Mage Prime";
             } else if (lvpoints <= 14) {
                 var role = "🧜‍♂️Master of Mage";
             } else if (lvpoints <= 16) {
@@ -318,35 +318,35 @@ cmd({
             } else if (lvpoints <= 18) {
                 var role = "❄Nobel";
             } else if (lvpoints <= 20) {
-                var role = "⚡Speed of Elite";
+                var role = "⚡Monster";
             } else if (lvpoints <= 22) {
-                var role = "🎭Elite";
+                var role = "🎭Monster Prime";
             } else if (lvpoints <= 24) {
-                var role = "🥇Ace I";
+                var role = "🥇Monster lord";
             } else if (lvpoints <= 26) {
-                var role = "🥈Ace II";
+                var role = "🥈Hero";
             } else if (lvpoints <= 28) {
-                var role = "🥉Ace Master";
+                var role = "🥉Elite Hero";
             } else if (lvpoints <= 30) {
-                var role = "🎖Ace Dominator";
+                var role = "🎖Supreme Hero";
             } else if (lvpoints <= 32) {
-                var role = "🏅Ace Elite";
+                var role = "🏅King of Heroes";
             } else if (lvpoints <= 34) {
-                var role = "🏆Ace Supreme";
+                var role = "🏆God of Heroes";
             } else if (lvpoints <= 36) {
-                var role = "💍Supreme I";
+                var role = "💍Devil";
             } else if (lvpoints <= 38) {
-                var role = "💎Supreme Ii";
+                var role = "💎Supreme Devil";
             } else if (lvpoints <= 40) {
-                var role = "🔮Supreme Master";
+                var role = "🔮Devil Lord";
             } else if (lvpoints <= 42) {
-                var role = "🛡Legend III";
+                var role = "🛡Demon";
             } else if (lvpoints <= 44) {
-                var role = "🏹Legend II";
+                var role = "🎍Supreme Demon";
             } else if (lvpoints <= 46) {
-                var role = "⚔Legend";
+                var role = "⚔Demon King";
             } else if (lvpoints <= 55) {
-                var role = "🐉Immortal";
+                var role = "🐉Demon Lord";
             }
             let ttms = `${userq.xp}` / 8;
             const timenow = moment(moment())
@@ -392,19 +392,19 @@ cmd({
         async(Void, citel, text) => {
             const userq = await Levels.fetch(citel.sender, "RandomXP");
             const lvpoints = userq.level;
-            var role = "GOD✨";
+            var role = "Developer✨";
             if (lvpoints <= 2) {
-                var role = "🏳Citizen";
+                var role = "🏳Slime";
             } else if (lvpoints <= 4) {
-                var role = "👼Baby Wizard";
+                var role = "🧟Goblin";
             } else if (lvpoints <= 6) {
-                var role = "🧙‍♀️Wizard";
+                var role = "👤Goblin Prime";
             } else if (lvpoints <= 8) {
-                var role = "🧙‍♂️Wizard Lord";
+                var role = "🧙‍♂️Goblin Lord";
             } else if (lvpoints <= 10) {
-                var role = "🧚🏻Baby Mage";
+                var role = "🧚🏻Mage";
             } else if (lvpoints <= 12) {
-                var role = "🧜Mage";
+                var role = "🧜Mage Prime";
             } else if (lvpoints <= 14) {
                 var role = "🧜‍♂️Master of Mage";
             } else if (lvpoints <= 16) {
@@ -412,35 +412,35 @@ cmd({
             } else if (lvpoints <= 18) {
                 var role = "❄Nobel";
             } else if (lvpoints <= 20) {
-                var role = "⚡Speed of Elite";
+                var role = "⚡Monster";
             } else if (lvpoints <= 22) {
-                var role = "🎭Elite";
+                var role = "🎭Monster Prime";
             } else if (lvpoints <= 24) {
-                var role = "🥇Ace I";
+                var role = "🥇Monster lord";
             } else if (lvpoints <= 26) {
-                var role = "🥈Ace II";
+                var role = "🥈Hero";
             } else if (lvpoints <= 28) {
-                var role = "🥉Ace Master";
+                var role = "🥉Elite Hero";
             } else if (lvpoints <= 30) {
-                var role = "🎖Ace Dominator";
+                var role = "🎖Supreme Hero";
             } else if (lvpoints <= 32) {
-                var role = "🏅Ace Elite";
+                var role = "🏅King of Heroes";
             } else if (lvpoints <= 34) {
-                var role = "🏆Ace Supreme";
+                var role = "🏆God of Heroes";
             } else if (lvpoints <= 36) {
-                var role = "💍Supreme I";
+                var role = "💍Devil";
             } else if (lvpoints <= 38) {
-                var role = "💎Supreme Ii";
+                var role = "💎Supreme Devil";
             } else if (lvpoints <= 40) {
-                var role = "🔮Supreme Master";
+                var role = "🔮Devil Lord";
             } else if (lvpoints <= 42) {
-                var role = "🛡Legend III";
+                var role = "🛡Demon";
             } else if (lvpoints <= 44) {
-                var role = "🏹Legend II";
+                var role = "🎍Supreme Demon";
             } else if (lvpoints <= 46) {
-                var role = "⚔Legend";
+                var role = "⚔Demon King";
             } else if (lvpoints <= 55) {
-                var role = "🐉Immortal";
+                var role = "🐉Demon Lord";
             }
             let disc = citel.sender.substring(3, 7);
             let textr = '';
@@ -479,56 +479,56 @@ cmd({
 \n\n`
             for (let i = 0; i < fetchlb.length; i++) {
                 const lvpoints = fetchlb[i].level
-                var role = "GOD✨";
+                var role = "Developer✨";
                 if (lvpoints <= 2) {
-                    var role = "🏳Citizen";
-                } else if (lvpoints <= 4) {
-                    var role = "👼Baby Wizard";
-                } else if (lvpoints <= 6) {
-                    var role = "🧙‍♀️Wizard";
-                } else if (lvpoints <= 8) {
-                    var role = "🧙‍♂️Wizard Lord";
-                } else if (lvpoints <= 10) {
-                    var role = "🧚🏻Baby Mage";
-                } else if (lvpoints <= 12) {
-                    var role = "🧜Mage";
-                } else if (lvpoints <= 14) {
-                    var role = "🧜‍♂️Master of Mage";
-                } else if (lvpoints <= 16) {
-                    var role = "🌬Child of Nobel";
-                } else if (lvpoints <= 18) {
-                    var role = "❄Nobel";
-                } else if (lvpoints <= 20) {
-                    var role = "⚡Speed of Elite";
-                } else if (lvpoints <= 22) {
-                    var role = "🎭Elite";
-                } else if (lvpoints <= 24) {
-                    var role = "🥇Ace I";
-                } else if (lvpoints <= 26) {
-                    var role = "🥈Ace II";
-                } else if (lvpoints <= 28) {
-                    var role = "🥉Ace Master";
-                } else if (lvpoints <= 30) {
-                    var role = "🎖Ace Dominator";
-                } else if (lvpoints <= 32) {
-                    var role = "🏅Ace Elite";
-                } else if (lvpoints <= 34) {
-                    var role = "🏆Ace Supreme";
-                } else if (lvpoints <= 36) {
-                    var role = "💍Supreme I";
-                } else if (lvpoints <= 38) {
-                    var role = "💎Supreme Ii";
-                } else if (lvpoints <= 40) {
-                    var role = "🔮Supreme Master";
-                } else if (lvpoints <= 42) {
-                    var role = "🛡Legend III";
-                } else if (lvpoints <= 44) {
-                    var role = "🏹Legend II";
-                } else if (lvpoints <= 46) {
-                    var role = "⚔Legend";
-                } else if (lvpoints <= 55) {
-                    var role = "🐉Immortal";
-                }
+                var role = "🏳Slime";
+            } else if (lvpoints <= 4) {
+                var role = "🧟Goblin";
+            } else if (lvpoints <= 6) {
+                var role = "👤Goblin Prime";
+            } else if (lvpoints <= 8) {
+                var role = "🧙‍♂️Goblin Lord";
+            } else if (lvpoints <= 10) {
+                var role = "🧚🏻Mage";
+            } else if (lvpoints <= 12) {
+                var role = "🧜Mage Prime";
+            } else if (lvpoints <= 14) {
+                var role = "🧜‍♂️Master of Mage";
+            } else if (lvpoints <= 16) {
+                var role = "🌬Child of Nobel";
+            } else if (lvpoints <= 18) {
+                var role = "❄Nobel";
+            } else if (lvpoints <= 20) {
+                var role = "⚡Monster";
+            } else if (lvpoints <= 22) {
+                var role = "🎭Monster Prime";
+            } else if (lvpoints <= 24) {
+                var role = "🥇Monster lord";
+            } else if (lvpoints <= 26) {
+                var role = "🥈Hero";
+            } else if (lvpoints <= 28) {
+                var role = "🥉Elite Hero";
+            } else if (lvpoints <= 30) {
+                var role = "🎖Supreme Hero";
+            } else if (lvpoints <= 32) {
+                var role = "🏅King of Heroes";
+            } else if (lvpoints <= 34) {
+                var role = "🏆God of Heroes";
+            } else if (lvpoints <= 36) {
+                var role = "💍Devil";
+            } else if (lvpoints <= 38) {
+                var role = "💎Supreme Devil";
+            } else if (lvpoints <= 40) {
+                var role = "🔮Devil Lord";
+            } else if (lvpoints <= 42) {
+                var role = "🛡Demon";
+            } else if (lvpoints <= 44) {
+                var role = "🎍Supreme Demon";
+            } else if (lvpoints <= 46) {
+                var role = "⚔Demon King";
+            } else if (lvpoints <= 55) {
+                var role = "🐉Demon Lord";
+            }
                 let data = await sck1.findOne({ id: fetchlb[i].userID })
                 let namew = fetchlb[i].userID
                 let ttms = fetchlb[i].xp / 8
@@ -930,55 +930,53 @@ cmd({ on: "text" }, async(Void, citel) => {
         const lvpoints = sck1.level;
         var role = "GOD";
         if (lvpoints <= 2) {
-            var role = "🏳Citizen";
-        } else if (lvpoints <= 4) {
-            var role = "👼Baby Wizard";
-        } else if (lvpoints <= 6) {
-            var role = "🧙‍♀️Wizard";
-        } else if (lvpoints <= 8) {
-            var role = "🧙‍♂️Wizard Lord";
-        } else if (lvpoints <= 10) {
-            var role = "🧚🏻Baby Mage";
-        } else if (lvpoints <= 12) {
-            var role = "🧜Mage";
-        } else if (lvpoints <= 14) {
-            var role = "🧜‍♂️Master of Mage";
-        } else if (lvpoints <= 16) {
-            var role = "🌬Child of Nobel";
-        } else if (lvpoints <= 18) {
-            var role = "❄Nobel";
-        } else if (lvpoints <= 20) {
-            var role = "⚡Speed of Elite";
-        } else if (lvpoints <= 22) {
-            var role = "🎭Elite";
-        } else if (lvpoints <= 24) {
-            var role = "🥇Ace I";
-        } else if (lvpoints <= 26) {
-            var role = "🥈Ace II";
-        } else if (lvpoints <= 28) {
-            var role = "🥉Ace Master";
-        } else if (lvpoints <= 30) {
-            var role = "🎖Ace Dominator";
-        } else if (lvpoints <= 32) {
-            var role = "🏅Ace Elite";
-        } else if (lvpoints <= 34) {
-            var role = "🏆Ace Supreme";
-        } else if (lvpoints <= 36) {
-            var role = "💍Supreme I";
-        } else if (lvpoints <= 38) {
-            var role = "💎Supreme Ii";
-        } else if (lvpoints <= 40) {
-            var role = "🔮Supreme Master";
-        } else if (lvpoints <= 42) {
-            var role = "🛡Legend III";
-        } else if (lvpoints <= 44) {
-            var role = "🏹Legend II";
-        } else if (lvpoints <= 46) {
-            var role = "⚔Legend";
-        } else if (lvpoints <= 55) {
-            var role = "🐉Immortal";
-        } else {
-            var role = "Kiddo";
+                var role = "🏳Slime";
+            } else if (lvpoints <= 4) {
+                var role = "🧟Goblin";
+            } else if (lvpoints <= 6) {
+                var role = "👤Goblin Prime";
+            } else if (lvpoints <= 8) {
+                var role = "🧙‍♂️Goblin Lord";
+            } else if (lvpoints <= 10) {
+                var role = "🧚🏻Mage";
+            } else if (lvpoints <= 12) {
+                var role = "🧜Mage Prime";
+            } else if (lvpoints <= 14) {
+                var role = "🧜‍♂️Master of Mage";
+            } else if (lvpoints <= 16) {
+                var role = "🌬Child of Nobel";
+            } else if (lvpoints <= 18) {
+                var role = "❄Nobel";
+            } else if (lvpoints <= 20) {
+                var role = "⚡Monster";
+            } else if (lvpoints <= 22) {
+                var role = "🎭Monster Prime";
+            } else if (lvpoints <= 24) {
+                var role = "🥇Monster lord";
+            } else if (lvpoints <= 26) {
+                var role = "🥈Hero";
+            } else if (lvpoints <= 28) {
+                var role = "🥉Elite Hero";
+            } else if (lvpoints <= 30) {
+                var role = "🎖Supreme Hero";
+            } else if (lvpoints <= 32) {
+                var role = "🏅King of Heroes";
+            } else if (lvpoints <= 34) {
+                var role = "🏆God of Heroes";
+            } else if (lvpoints <= 36) {
+                var role = "💍Devil";
+            } else if (lvpoints <= 38) {
+                var role = "💎Supreme Devil";
+            } else if (lvpoints <= 40) {
+                var role = "🔮Devil Lord";
+            } else if (lvpoints <= 42) {
+                var role = "🛡Demon";
+            } else if (lvpoints <= 44) {
+                var role = "🎍Supreme Demon";
+            } else if (lvpoints <= 46) {
+                var role = "⚔Demon King";
+            } else if (lvpoints <= 55) {
+                var role = "🐉Demon Lord";
         }
         if (Config.levelupmessage !== 'false') {
             await Void.sendMessage(citel.chat, {
@@ -986,15 +984,15 @@ cmd({ on: "text" }, async(Void, citel) => {
                     url: await botpic(),
                 },
                 caption: `
-╔════◇
-║ *Wow,Someone just*
-║ *leveled Up huh⭐*
-║ *👤Name*: ${citel.pushName}
-║ *🎐Level*: ${sck1.level}🍭
-║ *🛑Exp*: ${sck1.xp} / ${Levels.xpFor(sck1.level + 1)}
-║ *📍Role*: *${role}*
-║ *Enjoy🥳*
-╚════════════╝
+
+ *Ayo,Someone just*
+ *leveled Up huh⭐*
+ *👤Name*: ${citel.pushName}
+ *🎐Level*: ${sck1.level}🍭
+ *🛑Exp*: ${sck1.xp} / ${Levels.xpFor(sck1.level + 1)}
+ *📍Role*: *${role}*
+ *Congrats 🎊*
+
 `,
             }, {
                 quoted: citel,
