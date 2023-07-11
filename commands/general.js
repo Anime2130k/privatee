@@ -115,13 +115,32 @@ cmd({
     },
     async(Void, citel) => {
         let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
-        let cap = `Hey ${citel.pushName}\n
-*⭐ Total Stars:* ${data.stargazers_count} stars
-*🍽️ Forks:* ${data.forks_count} forks
-*🍁 Repo:* citel-x.herokuapp.com/repo
-*Group:* citel-x.herokuapp.com/support
-*Deploy Your Own:*-
-citel-x.herokuapp.com`
+        let cap = `Konichiwa! ${citel.pushName}, I'm *Elaina✨*
+_🧩 Server Uptime:_ *${runtime(process.uptime())}*
+_⚡ Speed :_ *${latensie.toFixed(4)} ms*
+_👤 User Counts :_ **
+_📛 Group counts:_ *undefined*
+_🎀 Status:_ *⬜Active*
+
+💜 *Our official support group* : http://surl.li/eumln
+🔖 *Website* : Coming soon...
+
+
+*🔰NO. OF BOTS WE OPERATE:* 3️⃣
+
+#1 *Elaina✨*
+_〽️Status:_ *⬜ACTIVE*
+_No:_ *wa.me/918811935376*
+
+#2 *Ladybug🐞*
+_〽️Status:_ *⬜ACTIVE*
+_No:_ *wa.me/917083409908*
+
+#3 *Mikasa💗*
+_〽️Status:_ *⬜ACTIVE*
+_No:_ *wa.me/14404445923*
+
+*⚜️Currently Active in this Group:* _Mikasa💗_`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
