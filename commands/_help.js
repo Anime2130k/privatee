@@ -64,8 +64,7 @@ _💾My Memory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem
 _⏳Time:_ *${time}*
 _🗓️Date:_ *${date}*
 
-*Here's the list of my commands:*\n
-`
+*Here's the list of my commands:*`
                 for (const category in cmds) 
                 {
                    str += `\n\n💗 *${tiny(category)}* 💗\n` ;
@@ -75,7 +74,7 @@ _🗓️Date:_ *${date}*
                         break ;
                    }
                    else { for (const plugins of cmds[category]) { str += `${fancytext(plugins,1)}, ` ; }
-                         str += `,`  ; 
+                         str += ``  ; 
                    }
   
                 }
