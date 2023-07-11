@@ -53,19 +53,19 @@ Secktor.cmd({
                     .locale('id')
                 const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 let total = await sck1.countDocuments()
-                let str = `╭────《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》─────⊷\n`
+                let str = `╭──《 ` + fancytext(Config.ownername.split(' ')[0], 58) + ` 》──⊷\n`
                 str +=
-                    '```' + `Konichiwa! *${citel.pushName} senpai👋*, I'm Mikasa💗 a WhatsApp Bot Created by *RONEN-BOTS* for your assistance.
+                     `Konichiwa! *${citel.pushName} senpai👋*, I'm Mikasa💗 a WhatsApp Bot Created by *RONEN-BOTS* for your assistance.
                     *🎗️My Prefix:* [ ${prefix} ]
 *🎐My Owner:* _${Config.ownername}_
-*👤My Usercount:* ${total}
-*☘️My Uptime:* ${runtime(process.uptime())}
-*💾My Mem:* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}
-*⏳Time:- ${time}
-*💧Date:* ${date}
+*👤My Usercount:* _${total}_
+*☘️My Uptime:* _${runtime(process.uptime())}_
+*💾My Mem:* _${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}_
+*⏳Time:- _${time}_
+*💧Date:* _${date}_
 
 *Here's the list of my commands:*\n
-` + '```'
+`
                 for (const category in cmds) 
                 {
                    str += `💗 *${tiny(category)}* 💗\n` ;
