@@ -87,6 +87,18 @@ _🗓️Date:_ *${date}*
             }
         }
     )
+
+if (!m.isGroup && !isCmd && !icmd) {
+            await doReact("⚠️");
+            return m.reply(`*⚠️WARNING⚠️*
+            _Don't text the Bot in pm. You Will be blocked and banned soon if you continue to text bot in the pm._
+            *㊙️If you want to add this bot in your GC then Ask the Developers for permission*
+            *〽️Developers :*
+• wa.me/15069751205
+• wa.me/916000530073`);
+    }
+   
+   
     //---------------------------------------------------------------------------
 Secktor.cmd({
             pattern: "list",
