@@ -12,6 +12,8 @@
  const { tlang,sck,prefix,cmd } = require('../lib')
  cmd({
      pattern: "amute",
+react: "✨",
+
      desc: "sets auto mute time in group.",
      category: "moderation",
  },
@@ -35,6 +37,7 @@
  //--------------------------------------------------------------------------------
  cmd({
     pattern: "aunmute",
+  react: "✨",
     desc: "sets unmute time in group.",
     category: "moderation",
 },
@@ -58,6 +61,7 @@ async(Void, citel, text,{ isCreator }) => {
  //--------------------------------------------------------------------------------
  cmd({
     pattern: "dunmute",
+  react: "✨",
     desc: "Delete unmute from group.",
     category: "moderation",
 },
@@ -77,6 +81,7 @@ async(Void, citel, text,{ isCreator }) => {
  //--------------------------------------------------------------------------------
  cmd({
     pattern: "dmute",
+  react: "✨",
     desc: "Delete mute from group.",
     category: "moderation",
 },
