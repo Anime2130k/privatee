@@ -17,7 +17,9 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
 
     //---------------------------------------------------------------------------
     cmd({
-        pattern: "photo",
+        pattern: "toimg",
+     alias: ["photo"],
+     react: "🃏",
         desc: "Makes photo of replied sticker.",
         category: "converter",
         use: '<reply to any gif>',
@@ -52,6 +54,7 @@ if (mime =="imageMessage" || mime =="stickerMessage")
 cmd({
          pattern: "vv",
          alias : ['viewonce','retrive'],
+ react: "🎭",
          desc: "Flips given text.",
          category: "misc",
          use: '<query>',
@@ -106,6 +109,7 @@ else return citel.reply("```This is Not A ViewOnce Message```")
 cmd({
             pattern: "quotely",
             desc: "Makes Sticker of quoted text.",
+ react: "🌸",
             alias: ["q"],
             category: "converter",
             use: '<reply to any message.>',
@@ -159,6 +163,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "fancy",
+ react: "♠️",
             desc: "Makes stylish/fancy given text",
             category: "converter",
             use: '56 Mikasa',
@@ -205,6 +210,7 @@ cmd({
     cmd({
         pattern: "circle",
         alias: ["circlestic","circlesticker","cs"],
+     react: "⭕",
         desc: "Makes sticker of replied image/video.",
         category: "sticker",
 filename: __filename,
@@ -237,6 +243,7 @@ filename: __filename,
 cmd({
         pattern: "crop",
         alias: ["cropstic","csticker","cropsticker"],
+ react: "☑️",
         desc: "Makes sticker of replied image/video.",
         category: "sticker",
 filename: __filename,
@@ -269,6 +276,7 @@ filename: __filename,
 cmd({
         pattern: "round",
         alias: ["roundstic","roundsticker"],
+ react: "🔘",
         desc: "Makes sticker of replied image/video.",
         category: "sticker",
 filename: __filename,
@@ -300,6 +308,7 @@ filename: __filename,
 cmd({
     pattern: "toaudio",
     alias:['mp3','tomp3'],
+ react: "🔊",
     desc: "changes type to audio.",
     category: "converter",
     use: '<reply to any Video>',
