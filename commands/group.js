@@ -930,8 +930,8 @@ async (Void, citel, text) => {
         await sleep(1500);
         let txt = `*--❗${tlang().title} Broadcast❗--*\n\n *🍀Author:* ${citel.pushName}\n\n${text}`;
         let buttonMessage = {
-            imageMessage: {
-                url: "https://wallpaperaccess.com/full/4939220.jpg"
+            videoMessage: {
+                url: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4"
             },
             caption: txt,
             footer: citel.pushName,
@@ -942,9 +942,9 @@ async (Void, citel, text) => {
                 externalAdReply: {
                     title: 'Broadcast by ' + citel.pushName,
                     body: tlang().title,
-                    thumbnailUrl: "https://wallpaperaccess.com/full/4939220.jpg",
-                    mediaType: 1,
-                    mediaUrl: 'https://wallpaperaccess.com/full/4939220.jpg',
+                    thumbnailUrl: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4",
+                    mediaType: 2,
+                    mediaUrl: 'https://graph.org/file/9b56e94de9d4f55aa6d50.mp4',
                     sourceUrl: gurl,
                     showAdAttribution: true,
                 },
