@@ -178,12 +178,12 @@ cmd({
         timestampe = speed();
         latensie = speed() - timestampe;
         let ter = `
-🔰 *${tlang().title}* 🔰
+🔰 *${tlang().title}* 🔰\n
 *🌟Description:* A WhatsApp bot with rich features, to make your WhatsApp enjoyable.
 *⚡Speed:* ${latensie.toFixed(4)} ms
 *🚦Uptime:* ${runtime(process.uptime())}
 *🕸Version:* 0.0.7
-*👤Owner:*  ${Config.ownername}
+*👤Owner:*  ${Config.ownername}\n
 *Powered by ${tlang().title}*
 `;
         let buttonMessaged = {
@@ -212,8 +212,8 @@ cmd({
 )
 
 //---------------------------------------------------------------------------
-cmd({
-    pattern: "theme",
+/**cmd({
+    pattern: "",
     desc: "To find all themes",
     category: "general",
     filename: __filename,
