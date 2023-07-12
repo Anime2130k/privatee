@@ -213,7 +213,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "pint".
-alias: ["pinterest"],
+alias :["pinterest"],
 react: "📍",
             desc: "Downloads image from pinterest.",
             category: "downloader",
