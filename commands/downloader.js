@@ -212,9 +212,8 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "pint".
-
-react: "📍",
+            pattern: "pint",
+            react: "📍",
             desc: "Downloads image from pinterest.",
             category: "downloader",
             filename: __filename,
