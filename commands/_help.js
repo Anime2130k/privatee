@@ -80,7 +80,7 @@ _🗓️Date:_ *${date}*
                 }
                 str+= `\n\n\n*⭐️Type:* _<${prefix}report>_ to report the developers about any issue you face in the bot\n\n*⭐Type:* _<${prefix}help cmd name>_ to know more about specific command.\n*Eg:* _${prefix}help attp_\n\n*🎐RONEN-BOTS* `
                 let buttonMessaged = {
-                    image: { url: await botpic() },
+                    video: { url: await botpic() },
                     caption: str
                 };
                 return await Void.sendMessage(citel.chat, buttonMessaged);
