@@ -15,6 +15,7 @@ const util = require('util')
 //---------------------------------------------------------------------------
 cmd({
             pattern: "addnote",
+ react: "📄",
             category: "owner",
             desc: "Adds a note on db.",
             filename: __filename
@@ -31,6 +32,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "qr",
+ react: "☢️",
             category: "owner",
             filename: __filename,
             desc: "Sends CitelsVoid Qr code to scan and get your session id."
@@ -72,6 +74,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "unban",
+ react: "🆗",
             category: "misc",
             filename: __filename,
             desc: "Unbans banned user (from using bot)."
@@ -103,6 +106,7 @@ cmd({
     //---------------------------------------------------------------------------
     cmd({
         pattern: "url",
+     react: "✔️",
         alias : ['createurl'],
         category: "misc",
         filename: __filename,
@@ -122,6 +126,7 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
     pattern: "tr",
+ react: "🆗",
     alias :['translate'],
     category: "misc",
     filename: __filename,
@@ -140,6 +145,7 @@ async(Void, citel, text) => {
     //---------------------------------------------------------------------------
 cmd({
             pattern: "shell",
+ react: "🆗",
             category: "owner",
             filename: __filename,
             desc: "Runs command in Heroku(server) shell."
@@ -158,6 +164,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "eval",
+ react: "🆗",
             category: "owner",
             filename: __filename,
             desc: "Runs js code on node server."
@@ -177,6 +184,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "delnote",
+ react: "📄",
             category: "owner",
             filename: __filename,
             desc: "Deletes note from db."
@@ -192,6 +200,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "delallnotes",
+ react: "🆗",
             category: "owner",
             filename: __filename,
             desc: "Deletes all notes from db."
@@ -207,6 +216,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "ban",
+ react: "🆗",
             category: "owner",
             filename: __filename,
             desc: "Bans user from using bot."
@@ -238,6 +248,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "alive",
+react: "✨", 
             alias : ['hi','mikasa'],
             category: "general",
             filename: __filename,
@@ -250,7 +261,7 @@ cmd({
 _This is  ${tlang().title}._
 ${alivemessage}
 
-*Version:-* _0.0.7_
+*Version:-* _2.0.0
 *Uptime:-* _${runtime(process.uptime())}_
 *Owner:-* _${Config.ownername}_
 *Branch:-* _${Config.BRANCH}_
@@ -276,6 +287,7 @@ _Powered by ${Config.ownername}_
     //---------------------------------------------------------------------------
 cmd({
         pattern: "allnotes",
+ react: "📄",
         category: "owner",
         filename: __filename,
         desc: "Shows list of all notes."
