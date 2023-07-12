@@ -17,6 +17,7 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
 //---------------------------------------------------------------------------
 cmd({
             pattern: "join",
+	react: "💠",
             desc: "joins group by link",
             category: "owner",
             use: '<group link.>',
@@ -37,6 +38,7 @@ cmd({
 cmd({
             pattern: "sticker",
             alias: ["s"],
+	react: "✴️",
             desc: "Makes sticker of replied image/video.",
             category: "group",
             use: '<reply to any image/video.>',
@@ -83,6 +85,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
         pattern: "support",
+	react: "⚜️",
         desc: "Sends official support group link.",
         category: "group",
         filename: __filename,
@@ -100,6 +103,7 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
             pattern: "warn",
+	react: "⚠️",
             desc: "Warns user in Group.",
             category: "group",
             filename: __filename,
@@ -117,6 +121,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "unblock",
+	react: "✔️",
             desc: "Unblocked to the quoted user.",
             category: "owner",
             filename: __filename,
@@ -135,6 +140,7 @@ cmd({
     //---------------------------------------------------------------------------
     cmd({
         pattern: "ujid",
+	    react: "🆔",
         desc: "get jid of all user in a group.",
         category: "owner",
         filename: __filename,
@@ -155,6 +161,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
         pattern: "tagall",
+	react: "🈷️",
         desc: "Tags every person of group.",
         category: "group",
         filename: __filename,
@@ -188,6 +195,7 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
             pattern: "report",
+	react: "🆗",
             desc: "Sends report to the main Bot developer.",
             category: "general",
             filename: __filename,
@@ -222,6 +230,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "retrive",
+	react: "♻️",
             desc: "Copies and Forwords viewonce message.",
             category: "group",
             filename: __filename,
@@ -246,6 +255,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "rwarn",
+	react: "⛔",
             desc: "Deletes all previously given warns of quoted user.",
             category: "group",
             filename: __filename,
@@ -261,6 +271,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "poll",
+	react: "☢️",
             desc: "Makes poll in group.",
             category: "group",
             filename: __filename,
@@ -289,6 +300,7 @@ cmd({
 cmd({
             pattern: "profile",
 	alias: "p",
+	react: "👤",
             desc: "Shows profile of user.",
             category: "group",
             filename: __filename,
@@ -386,6 +398,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "rank",
+	react: "🎗️",
             desc: "Sends rank card of user.",
             category: "group",
             filename: __filename,
@@ -466,6 +479,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "leaderboard",
+	react: "🏆",
             alias: ["deck"],
             desc: "To check leaderboard",
             category: "general",
@@ -541,6 +555,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "promote",
+react: "🏅",
+
             desc: "Provides admin role to replied/quoted user",
             category: "group",
             filename: __filename,
@@ -568,6 +584,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "kick",
+react: "👟",
+
             desc: "Kicks replied/quoted user from group.",
             category: "group",
             filename: __filename,
@@ -595,6 +613,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "memegen",
+react: "🧤",
+
             desc: "Write text on quoted image.",
             category: "group",
             filename: __filename,
@@ -622,6 +642,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "group",
+react: "✔️",
+
             desc: "mute and unmute group.",
             category: "group",
             filename: __filename,
@@ -652,6 +674,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "grouppic",
+react: "✔️",
+
             desc: "Sets a profile pic in Group..",
             category: "group",
             filename: __filename,
@@ -683,6 +707,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "hidetag",
+react: "🆗",
+
             alias: ["htag"],
             desc: "Tags everyperson of group without mentioning their numbers",
             category: "group",
@@ -709,6 +735,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "add",
+react: "✔️",
+
             desc: "Add that person in group",
             fromMe: true,
             category: "group",
@@ -733,6 +761,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "getjids",
+
+react: "🆔",
             desc: "Sends chat id of every groups.",
             category: "group",
             filename: __filename,
@@ -761,6 +791,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
         pattern: "demote",
+react: "🕯️",
+
         desc: "Demotes replied/quoted user from group",
         category: "group",
         filename: __filename,
@@ -789,6 +821,8 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
             pattern: "del",
+react: "🆗",
+
             alias: ["delete"],
             desc: "Deletes message of any user",
             category: "group",
@@ -829,6 +863,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "checkwarn",
+react: "⚠️",
+
             desc: "Check warns",
             category: "group",
             filename: __filename,
@@ -854,6 +890,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "block",
+react: "✔️",
+
             desc: "blocks that person",
             fromMe: true,
             category: "owner",
@@ -873,6 +911,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
     pattern: "broadcast",
+react: "🆗",
+
     alias: ["bc"],
     desc: "Bot makes a broadcast in all groups",
     fromMe: true,
