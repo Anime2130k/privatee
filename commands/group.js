@@ -299,7 +299,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "profile",
-	alias: "p",
+	alias: ["p"],
 	react: "👤",
             desc: "Shows profile of user.",
             category: "group",
