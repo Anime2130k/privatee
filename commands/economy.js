@@ -119,7 +119,7 @@ async (Void, citel, text, { isCreator }) => {
   default:
     await citel.reply('*What are you trying to do📉*.');
 }
-
+}
 
      //---------------------------------------------------------------------------
      cmd({
