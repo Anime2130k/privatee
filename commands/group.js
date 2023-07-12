@@ -929,7 +929,7 @@ async (Void, citel, text) => {
     for (let i of anu) {
         await sleep(1500);
         let txt = `*--❗${tlang().title} Broadcast❗--*\n\n *🍀Author:* ${citel.pushName}\n\n${text}`;
-        let buttonMessaged = {
+        let buttonMessage = {
             imageMessage: {
                 url: ""
             },
@@ -950,7 +950,7 @@ async (Void, citel, text) => {
                 },
             },
         };
-        await Void.sendMessage(i, buttonMessaged, { quoted: citel });
+        await Void.sendMessage(i, buttonMessage, { quoted: citel });
     }
     citel.reply(`*Successful Sending Broadcast To ${anu.length} Group(s)*`);
 });
