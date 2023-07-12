@@ -17,6 +17,7 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
   //---------------------------------------------------------------------------
  cmd({
     pattern: "setwelcome",
+  react: "🆗",
     desc: "sets welcome message in specific group.",
     category: "misc",
 },
@@ -36,6 +37,7 @@ async(Void, citel, text,{ isCreator }) => {
  //---------------------------------------------------------------------------
 cmd({
     pattern: "setgoodbye",
+ react: "🆗",
     desc: "sets goodbye message in specific group.",
     category: "misc",
 },
@@ -54,6 +56,7 @@ async(Void, citel, text,{ isCreator }) => {
  //---------------------------------------------------------------------------
  cmd({
              pattern: "attp",
+  react: "🆗",
              desc: "Makes glowing sticker of text.",
              category: "sticker",
              filename: __filename,
@@ -65,6 +68,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/attp/${text}`)
      )
  cmd({
              pattern: "ttp",
+  react: "🆗",
              desc: "Makes static sticker of text.",
              category: "sticker",
              filename: __filename,
@@ -77,6 +81,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "exec",
+  react: "🆗",
              desc: "Evaluates quoted code with given language.",
              category: "misc",
              filename: __filename,
@@ -106,6 +111,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "readmore",
+  react: "🆗",
              desc: "Adds *readmore* in given text.",
              category: "misc",
              filename: __filename,
@@ -118,6 +124,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "steal",
+  react: "✔️",
              desc: "Makes sticker of replied image/video.",
              category: "sticker",
              filename: __filename,
@@ -153,6 +160,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "uptime",
+  react: "🚦",
              alias: ["runtime"],
              desc: "Tells runtime/uptime of bot.",
              category: "misc",
@@ -166,6 +174,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "wm",
+  react: "❄️",
              desc: "Makes wa.me of quoted or mentioned user.",
              category: "misc",
              filename: __filename,
@@ -179,6 +188,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "pick",
+  react: "💧",
              desc: "Pics random user from Group",
              category: "misc",
              filename: __filename,
@@ -202,6 +212,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "npm",
+  react: "⚡",
              desc: "download mp4 from url.",
              category: "search",
              use: '<package name>',
@@ -218,6 +229,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "fliptext",
+  react: "✔️",
              desc: "Flips given text.",
              category: "misc",
              use: '<query>',
@@ -233,6 +245,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "mp4fromurl",
+ react: "✔️", 
              desc: "download mp4 from url.",
              category: "misc",
              use: '<url>',
@@ -265,6 +278,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
  
  cmd({
              pattern: "emix",
+  react: "✔️",
              desc: "Mixes two emojies.",
              category: "misc",
              use: '<query>',
@@ -287,6 +301,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "chatbot",
+  react: "✔️",
              desc: "activates and deactivates chatbot.\nuse buttons to toggle.",
              category: "misc",
              filename: __filename
@@ -352,6 +367,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "ebinary",
+  react: "✔️",
              desc: "encode binary",
              category: "misc",
              use: '<query>',
@@ -372,6 +388,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      //---------------------------------------------------------------------------
  cmd({
              pattern: "dbinary",
+  react: "✔️",
              desc: "decode binary",
              category: "misc",
              use: '<query>',
@@ -389,6 +406,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      )
 cmd({
   pattern: "bot",
+ react: "🆗",
   desc: "activates and deactivates bot.\nuse buttons to toggle.",
   category: "misc",
   filename: __filename,
@@ -450,7 +468,8 @@ let buttons = [{
      //---------------------------------------------------------------------------
  cmd({
              pattern: "antilink",
-             desc: "activates and deactivates antilink.\nuse buttons to toggle.",
+  
+react: "🆗",             desc: "activates and deactivates antilink.\nuse buttons to toggle.",
              category: "group",
              filename: __filename,
          },
@@ -483,6 +502,7 @@ let buttons = [{
      cmd({
         pattern: 'ss',
         alias :['webss' , 'fullss'],
+      react: "🆗",
         category: "search",
         desc: "Provides screenshot of given url",
         use: '<text>',
