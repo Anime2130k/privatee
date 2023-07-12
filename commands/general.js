@@ -187,7 +187,7 @@ react: "🈂️",
 *🌟Description:* A WhatsApp bot with rich features, to make your WhatsApp enjoyable.
 *⚡Speed:* ${latensie.toFixed(4)} ms
 *🚦Uptime:* ${runtime(process.uptime())}
-*🕸Version:* 0.0.7
+*🕸Version:* 2.0.0
 *👤Owner:*  ${Config.ownername}\n
 *Powered by ${tlang().title}*
 `;
