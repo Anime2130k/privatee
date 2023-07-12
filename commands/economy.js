@@ -89,7 +89,9 @@ async (Void, citel, text, { isCreator }) => {
   if (!citel.isGroup) return citel.reply(tlang().group);
   if (!text) return citel.reply(`💴 *Bank-capacity* 💳\n\n1 | *1000 sp* = 🪙100\n\n2 | *100000 sp* = 🪙1000\n\n3 | *10000000 sp* = 🪙10000000\n\nExample: ${prefix}capacity 1 OR ${prefix}bankupgrade 1000`);
 
-  let user = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+  let user = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant;
+  if (!user) return citel.reply('*Please provide a user ID to update the capacity.*');
+
   const secktor = "secktor";
   let value = text.trim();
   let k = parseInt(value);
@@ -118,6 +120,7 @@ async (Void, citel, text, { isCreator }) => {
       await citel.reply('*What are you trying to do📉*.');
   }
 });
+
 
      //---------------------------------------------------------------------------
      cmd({
