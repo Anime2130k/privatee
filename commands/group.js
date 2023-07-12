@@ -931,7 +931,7 @@ async (Void, citel, text) => {
         let txt = `*--❗${tlang().title} Broadcast❗--*\n\n *🍀Author:* ${citel.pushName}\n\n${text}`;
         let buttonMessage = {
             imageMessage: {
-                url: ""
+                url: "https://wallpaperaccess.com/full/4939220.jpg"
             },
             caption: txt,
             footer: citel.pushName,
@@ -942,9 +942,9 @@ async (Void, citel, text) => {
                 externalAdReply: {
                     title: 'Broadcast by ' + citel.pushName,
                     body: tlang().title,
-                    thumbnailUrl: "",
-                    mediaType: 2,
-                    mediaUrl: '',
+                    thumbnailUrl: "https://wallpaperaccess.com/full/4939220.jpg",
+                    mediaType: 1,
+                    mediaUrl: 'https://wallpaperaccess.com/full/4939220.jpg',
                     sourceUrl: gurl,
                     showAdAttribution: true,
                 },
