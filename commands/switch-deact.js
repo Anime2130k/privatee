@@ -15,6 +15,7 @@
      //---------------------------------------------------------------------------
  cmd({
          pattern: "deact",
+  react: "✨",
          desc: "Switches for varios works.",
          category: "group",
          filename: __filename
