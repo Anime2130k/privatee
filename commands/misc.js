@@ -499,7 +499,7 @@ react: "🆗",             desc: "activates and deactivates antilink.\nuse butto
              await Void.sendButtonText(citel.chat, buttons, `Activate antilink:Deletes Link + kick`, Void.user.name, citel);
          }
      )
-     cmd({
+    /** cmd({
         pattern: 'ss',
         alias :['webss' , 'fullss'],
       react: "🆗",
@@ -518,12 +518,12 @@ return await Void.sendMessage(citel.chat ,{image : media } , {quoted:citel} )
 }
 catch (err) { return citel.reply("```Error While Fetching Snapshot```")}
     }
-)
+)**/
 
 
      //---------------------------------------------------------------------------
- cmd({ on: "body" }, async(Void, citel) => {
-     if (Config.autoreaction === 'true' && citel.text.startsWith(prefix)) {
+ cmd({ on: "body" }, async(Void, citel,{ isCreator }) => {
+     if (isCreator) {
          const emojis = ['❤', '💕', '😻', '🧡', '💛', '💚', '💙', '💜', '🖤', '❣', '💞', '💓', '💗', '💖', '💘', '💝', '💟', '♥', '💌', '🙂', '🤗', '😌', '😉', '🤗', '😊', '🎊', '🎉', '🎁', '🎈', '👋']
          const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
          Void.sendMessage(citel.chat, {
