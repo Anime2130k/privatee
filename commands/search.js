@@ -18,6 +18,7 @@ const fetch = require('node-fetch')
     //---------------------------------------------------------------------------
 cmd({
             pattern: "imdb",
+ react: "🎗️",
             category: "search",
             desc: "Sends image of asked Movie/Series.",
             use: '<text>',
@@ -60,6 +61,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "weather",
+ react: "🌅",
             category: "search",
             desc: "Sends weather info about asked place.",
             use: '<location>',
@@ -96,6 +98,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "horo",
+react: "☯️",
+
             category: "search",
             desc: "Gives horoscope info of user.",
             use: '<sign>\n:Example: horo libra',
@@ -133,6 +137,8 @@ cmd({
     //---------------------------------------------------------------------------
     cmd({
         pattern: "google",
+react: "🔍",
+
         alias :['search','gsearch'],
         category: "search",
         desc: "Sends info of given query from Google Search.",
@@ -157,6 +163,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "image",
+react: "🖼️",
+
             category: "search",
             desc: "Searches Image on Google",
             use: '<text>',
@@ -189,6 +197,8 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "couplepp",
+react: "💕",
+alias: "cpp",
             category: "search",
             desc: "Sends two couples pics.",
             filename: __filename,
@@ -202,7 +212,8 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "iswa",
+        pattern: "stalk",
+react: "🔍",
         category: "search",
         desc: "Searches in given rage about given number.",
         use: '9112345678xx',
