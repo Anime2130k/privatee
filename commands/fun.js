@@ -16,6 +16,7 @@ const { cmd } = require('../lib')
 cmd({
             pattern: "question",
             desc: "Random Question.",
+ react: "⁉️",
             category: "fun",
             filename: __filename,
         },
@@ -27,6 +28,7 @@ cmd({
 cmd({
             pattern: "truth",
             desc: "truth and dare(truth game.).",
+ react: "🤔",
             category: "fun",
             filename: __filename,
         },
@@ -38,6 +40,7 @@ cmd({
 cmd({
             pattern: "dare",
             desc: "truth and dare(dare game.).",
+ react: "😁",
             category: "fun",
             filename: __filename,
         },
@@ -49,6 +52,7 @@ cmd({
 cmd({
         pattern: "fact",
         desc: "Sends fact in chat.",
+ react: "❕",
         category: "fun",
         filename: __filename,
     },
@@ -62,6 +66,7 @@ cmd({
     cmd({
         pattern: "quotes",
         desc: "Sends quotes in chat.",
+     react: "〽️",
         category: "fun",
         filename: __filename,
     },
@@ -78,6 +83,7 @@ return citel.reply(replyf)
     cmd({
         pattern: "define",
         desc: "urban dictionary.",
+     react: "✳️",
         category: "fun",
         filename: __filename,
     },
