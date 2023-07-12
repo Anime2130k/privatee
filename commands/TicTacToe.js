@@ -15,6 +15,7 @@
 cmd(
   {
     pattern: "delttt",
+	  react: "♻️",
     desc: "deletes TicTacToe running session.",
     filename: __filename,
     category: "game",
@@ -44,6 +45,7 @@ cmd(
 cmd(
   {
     pattern: "ttt",
+	  react: "☑️",
     desc: "Play TicTacToe",
     filename: __filename,
     category: "game",
@@ -221,7 +223,7 @@ ${
   }
 );
 
-cmd({ pattern: "ship" , category: "fun" }, async(Void, citel, text) => {
+cmd({ pattern: "ship" ,react: "🤭", category: "fun" }, async(Void, citel, text) => {
     const { tlang } = require('../lib')
    if (!citel.isGroup) return citel.reply(tlang().group);
    const groupMetadata = citel.isGroup ? await Void.groupMetadata(citel.chat).catch((e) => {}) : "";
@@ -251,9 +253,9 @@ cmd({ pattern: "ship" , category: "fun" }, async(Void, citel, text) => {
        shiper = members[Math.floor(Math.random() * members.length)]
        }
        let caption = `\t❣️ *Matchmaking...* ❣️ \n`
-        caption += `\t\t✯────────────────────✯\n`
+        caption += `\t\t✯────────────────────💘\n`
         caption += `@${citel.sender.split('@')[0]}  x  @${shiper.split('@')[0]}\n`
-        caption += `\t\t✯────────────────────✯\n`
+        caption += `\t\t✯────────────────────💘\n`
         caption += await couple(percentage)
         if(citel.sender.split('@')[0]===shiper.split('@')[0]) return citel.reply('```'+'Wait... What!!!,You wanna do matchmaking with yourself'+'```')
         await Void.sendMessage(citel.chat,{text: caption,mentions: [citel.sender,shiper]},{quoted:citel})
