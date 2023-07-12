@@ -8,6 +8,7 @@ var dlsize = 250 // 250mb
 
 cmd({
             pattern: "playlist",
+	react: "🆗",
             desc: "Downloads video from playlist.",
             category: "downloader",
             filename: __filename,
