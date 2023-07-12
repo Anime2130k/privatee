@@ -18,6 +18,7 @@ let { fancytext, tiny, formatp, sck1 } = require("../lib");
 cmd({
     pattern: "chat",
     alias :['gpt'],
+	react: "✔️",
     desc: "chat with an AI(GPT)",
     category: "AI",
     use: '<Hii,Mikasa>',
@@ -70,6 +71,7 @@ async(Void, citel,text) => {
 cmd({
     pattern: "dalle",
     alias : ['dall','dall-e'],
+	react: "✔️",
     desc: "Create Image by AI",
     category: "AI",
     use: '<an astronaut in mud.>',
@@ -110,7 +112,8 @@ Void.sendMessage(citel.chat,{image:{url:data.data[0].url}})
 //---------------------------------------------------------------------------
 cmd({
         pattern: "info",
-        alias: ["bot", "mikasa", "Ronen"],
+        alias: ["bot", "mikasa", "ronen"],
+	react: "㊙️",
         desc: "Sends info about repo.",
         category: "general",
         filename: __filename,
@@ -169,6 +172,8 @@ _No:_ *wa.me/14404445923*
 cmd({
         pattern: "status",
         alias: ["about"],
+react: "🈂️",
+
         desc: "To check bot status",
         category: "general",
         filename: __filename,
