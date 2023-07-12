@@ -217,7 +217,7 @@ react: "🈂️",
 )
 
 //---------------------------------------------------------------------------
-cmd({
+/**cmd({
     pattern: "",
     desc: "To find all themes",
     category: "general",
@@ -231,4 +231,4 @@ str+=`1. SECKTOR\n2. ADAM\n3. AYANOKOJI\n4. EDITH\n5. FRIDAY\n6. GENOS\n7. GIDEO
 return citel.reply(str)
     
 }
-)
+)**/
