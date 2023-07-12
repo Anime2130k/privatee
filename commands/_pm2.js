@@ -13,6 +13,7 @@
 const {cmd,tlang,sleep} = require('../lib')
 cmd({
         pattern: "restart",
+ react: "☑️",
         desc: "To restart bot",
         category: "tools",
         filename: __filename
