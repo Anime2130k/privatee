@@ -15,6 +15,7 @@ const { tlang, Config, prefix,cmd } = require('../lib')
     //---------------------------------------------------------------------------
 cmd({
             pattern: "update",
+ react: "🗿",
             desc: "Shows repo\'s refreshed commits.",
             category: "misc",
             filename: __filename
