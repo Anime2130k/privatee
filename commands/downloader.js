@@ -213,7 +213,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "pint".
-alias: "pinterest",
+alias: ["pinterest"],
 react: "📍",
             desc: "Downloads image from pinterest.",
             category: "downloader",
@@ -358,7 +358,7 @@ react: "📢",
 
 cmd({
             pattern: "ytmp4",
-alias: "tomp4",
+alias: ["tomp4"],
 react: "🎬",
             desc: "Downloads video from youtube.",
             category: "downloader",
@@ -428,7 +428,7 @@ react: "🎬",
     //---------------------------------------------------------------------------
 cmd({
         pattern: "ytmp3",
- alias: "tomp3",
+ alias: ["tomp3"],
  react: "🎧",
         desc: "Downloads audio by yt link.",
         category: "downloader",
@@ -506,7 +506,7 @@ cmd({
   //---------------------------------------------------------------------------
 cmd({
         pattern: "ytdoc",
- alias: "todoc",
+ alias: ["todoc"],
 react: "💼", 
         desc: "Downloads audio by yt link as document.",
         category: "downloader",
