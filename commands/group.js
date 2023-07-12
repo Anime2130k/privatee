@@ -943,7 +943,7 @@ async (Void, citel, text) => {
                     title: 'Broadcast by ' + citel.pushName,
                     body: tlang().title,
                     thumbnailUrl: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4",
-                    mediaType: 2,
+                    mediaType: video,
                     mediaUrl: 'https://graph.org/file/9b56e94de9d4f55aa6d50.mp4',
                     sourceUrl: gurl,
                     showAdAttribution: true,
