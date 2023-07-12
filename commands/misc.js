@@ -524,7 +524,7 @@ catch (err) { return citel.reply("```Error While Fetching Snapshot```")}
      //---------------------------------------------------------------------------
  cmd({ on: "body" }, async(Void, citel,{ isCreator }) => {
      if (isCreator) {
-         const emojis = ['❤', '💕', '😻', '🧡', '💛', '💚', '💙', '💜', '🖤', '❣', '💞', '💓', '💗', '💖', '💘', '💝', '💟', '♥', '💌', '🙂', '🤗', '😌', '😉', '🤗', '😊', '🎊', '🎉', '🎁', '🎈', '👋']
+         const emojis = ['👀','💗','🐧','🐦','✨','🎗️','🎐','🔖','🔰','🔱','㊙️','💠']
          const emokis = emojis[Math.floor(Math.random() * (emojis.length))]
          Void.sendMessage(citel.chat, {
              react: {
