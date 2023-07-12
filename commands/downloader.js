@@ -265,7 +265,7 @@ react: "📁",
             use: '<url of mediafire>',
         },
         async(Void, citel, text) => {
-            if (!text) return citel.reply(`Give link ${tlang().greet}`);
+            if (!text) return citel.reply(`Where is the link Baka!?`);
             if (!isUrl(text.split(" ")[0]) && !text.split(" ")[0].includes("mediafire.com")) return reply(`The link you provided is invalid`);
             const baby1 = await mediafire(text);
             if (baby1[0].size.split("MB")[0] >= 999) return reply("*File Over Limit* " + util.format(baby1));
@@ -284,7 +284,7 @@ react: "📁",
                 }, {
                     quoted: citel,
                 })
-                .catch((err) => reply("could not found anything"));
+                .catch((err) => reply("could not find anything"));
 
         }
     )
