@@ -288,6 +288,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "profile",
+	alias: "p",
             desc: "Shows profile of user.",
             category: "group",
             filename: __filename,
