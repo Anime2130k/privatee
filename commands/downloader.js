@@ -203,7 +203,7 @@ cmd({
             filename: __filename,
             use: '<ringtone name>',
         },
-        async(Void, citel, text) => {
+        async(Void, citel, text, ringtone) => {
             if (!text) return citel.reply(`Example: ${prefix}ringtone back in black`)
             let anu = await ringtone(text)
             let result = anu[Math.floor(Math.random() * anu.length)]
