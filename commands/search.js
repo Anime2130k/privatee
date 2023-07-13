@@ -128,10 +128,11 @@ async (Void, citel, text) => {
     const data = await response.json();
     console.log(data);
     
-    const textw = `🌟 Horoscope of ${text}\n\n` +
-                  `Current Date: ${data.date}\n` +
-                  `Sign: ${data.sign}\n` +
-                  `Horoscope: ${data.horoscope}\n`;
+    const textw = `*🌟 Horoscope of ${text}*\n\n` +
+                  `*📆Current Date:* _${data.date}_\n\n` +
+                  `*🔆Sign:* _${data.sign}_\n\n` +
+                  `*🛐Horoscope:* _${data.horoscope}_\n\n` +
+`*Zodiac No.* _${data.no}_\n`;
     
     const imageUrl = zodiacImages[data.sign] || "";
   
