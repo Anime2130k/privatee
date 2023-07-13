@@ -114,10 +114,10 @@ cmd({
       console.log(data);
       
       let textw = "";
-      textw += `🌟 Horoscope of ${text}\n\n`;
-      textw += `Current Date: ${data.date}.\n`;
-      textw += `Sign: ${text}.\n`;
-      textw += `Horoscope: ${data.horoscope}.\n`;
+      textw += `*🌟 Horoscope of ${text}*\n\n`;
+      textw += `*📆Current Date:* ${data.date}.\n\n`;
+      textw += `*🔆Sign:* ${text}.\n\n`;
+      textw += `*🛐Horoscope:* ${data.horoscope}.\n`;
       
       citel.reply(textw);
     } catch (e) {
