@@ -4,7 +4,6 @@ cmd({
         alias: "igdrjdjdjl",
         desc: "download instagram post.",
         react: "❌",
-        category: "",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
