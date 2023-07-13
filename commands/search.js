@@ -108,7 +108,7 @@ react: "☯️",
         async(Void, citel, text) => {
             if (!text) return citel.reply("Provide me a sign!")
             try {
-                const URL = `https://aztro.sameerkumar.website/?sign=${text}&day=today`;
+                const URL = `https://newastro.vercel.app/${text}/?date=2022-04-20&lang=en`;
                 fetch(URL, {
                         method: 'POST'
                     })
