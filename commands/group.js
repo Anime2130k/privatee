@@ -912,8 +912,6 @@ react: "✔️",
 
   cmd({
     pattern: "broadcast",
-react: "🆗",
-
     alias: ["bc"],
     desc: "Bot makes a broadcast in all groups",
     fromMe: true,
@@ -922,23 +920,38 @@ react: "🆗",
     use: '<text for broadcast.>',
 },
 async (Void, citel, text) => {
-    if (isCreator) return citel.reply(tlang().owner);
+    if (!isCreator) return citel.reply(tlang().owner);
     let getGroups = await Void.groupFetchAllParticipating();
-    let groups = Object.values(getGroups);
-    let anu = groups.map((v) => v.jid);
-    citel.reply(`Send Broadcast To ${anu.length} Group Chat, Finish Time ${anu.length * 1.5} second`);
+    let groups = Object.entries(getGroups).slice(0).map((entry) => entry[1]);
+    let anu = groups.map((v) => v.id);
+    citel.reply(`Send Broadcast To ${anu.length} Group Chat, Finish Time ${
+        anu.length * 1.5
+    } second`);
     for (let i of anu) {
         await sleep(1500);
         let txt = `--❗${tlang().title} Broadcast❗--\n\n 🍀Author: ${citel.pushName}\n\n${text}`;
-        let buttonMessage = {
-            VideoMessage: {
-                url: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4"
+        let buttonMessaged = {
+            video: {
+                url: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4",
             },
             caption: txt,
             footer: citel.pushName,
             headerType: 1,
+            contextInfo: {
+                forwardingScore: 999,
+                isForwarded: false,
+                externalAdReply: {
+                    title: 'Broadcast by ' + citel.pushName,
+                    body: tlang().title,
+                    thumbnail: '',
+                    mediaUrl: '',
+                    mediaType: 3,
+                    sourceUrl: gurl,
+                    showAdAttribution: true,
+                },
+            },
         };
-        await Void.sendMessage(i, buttonMessage, { quoted: citel });
+        await Void.sendMessage(i, buttonMessaged, { quoted: citel });
     }
     citel.reply(`Successful Sending Broadcast To ${anu.length} Group(s)`);
 });
