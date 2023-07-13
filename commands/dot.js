@@ -3,7 +3,7 @@ cmd({
         pattern: "insta",
         alias: "igdl",
         desc: "download instagram post.",
-        react: "❌",
+        react: "🛐",
         category: "downloader",
         filename: __filename
     },
