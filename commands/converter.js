@@ -106,7 +106,7 @@ else if(citel.quoted.message.videoMessage )
 else return citel.reply("```This is Not A ViewOnce Message```")
 
 })    //---------------------------------------------------------------------------
-cmd({
+/**cmd({
             pattern: "quotely",
             desc: "Makes Sticker of quoted text.",
  react: "🌸",
@@ -159,7 +159,7 @@ cmd({
             return citel.reply(img,{packname:'Secktor',author:'Quotely'},"sticker")
 
         }
-    )
+    )**/
     //---------------------------------------------------------------------------
 cmd({
             pattern: "fancy",
