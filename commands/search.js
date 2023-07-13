@@ -108,7 +108,7 @@ react: "☯️",
         async(Void, citel, text) => {
             if (!text) return citel.reply("Provide me a sign!")
             try {
-                const URL = `https://newastro.vercel.app/${text}/?date=2022-04-20&lang=en`;
+                const URL = `https://newastro.vercel.app/${text}/?date=2023-06-13&lang=en`;
                 fetch(URL, {
                         method: 'POST'
                     })
@@ -118,14 +118,9 @@ react: "☯️",
                         console.log(date);
                         let textw = "";
                         textw += `*🌟 Horoscope of  ${text}*\n\n`;
-                        textw += `*Current Date:* ${json.current_date}.\n`;
+                        textw += `*Current Date:* ${json.date}.\n`;
                         textw += `*Sign:* ${text}.\n`;
-                        textw += `*Lucky Time:* ${json.lucky_time}.\n`;
-                        textw += `*Compatibility:* ${json.compatibility}.\n`;
-                        textw += `*Lucky Number:* ${json.lucky_number}.\n`;
-                        textw += `*Lucky Color:* ${json.color}.\n`;
-                        textw += `*Today Mood:* ${json.mood}.\n`;
-                        textw += `*Overall:* ${json.description}.\n`;
+                        textw += `*Horoscope:* ${json.horoscope}.\n`;
                         citel.reply(textw)
                     });
 
