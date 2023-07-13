@@ -130,12 +130,12 @@ cmd({
       
       const textw = `🌟 Horoscope of ${text}\n\n` +
                     `Current Date: ${data.date}\n` +
-                    `Sign: ${text}\n` +
+                    `Sign: ${data.sign}\n` +
                     `Horoscope: ${data.horoscope}\n`;
       
-      const imageUrl = zodiacImages[text] || "";
+      const imageUrl = zodiacImages[data.sign] || "";
   
-      citel.replyWithImage({ url: imageUrl, text: textw });
+      citel.reply({ url: imageUrl, text: textw });
     } catch (e) {
       console.log(e);
     }
