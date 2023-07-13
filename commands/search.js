@@ -132,7 +132,7 @@ async (Void, citel, text) => {
                   `*📆Current Date:* _${data.date}_\n\n` +
                   `*🔆Sign:* _${data.sign}_\n\n` +
                   `*🛐Horoscope:* _${data.horoscope}_\n\n` +
-`*Zodiac No.* _${data.no}_\n`;
+`*🆔Zodiac No.* _${data.id}_\n`;
     
     const imageUrl = zodiacImages[data.sign] || "";
   
