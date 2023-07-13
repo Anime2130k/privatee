@@ -113,7 +113,7 @@ react: "☯️",
                         method: 'POST'
                     })
                     .then(response => response.json())
-                 then(data => JSON.parse(data))
+                 .then(data => JSON.parse(data))
                     .then(json => {
                         const date = json.current_date;
                         console.log(date);
