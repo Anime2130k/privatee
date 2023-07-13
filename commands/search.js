@@ -97,32 +97,33 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-  pattern: "horo",
-  react: "☯️",
-  category: "search",
-  desc: "Gives horoscope info of user.",
-  use: '<sign>\n:Example: horo libra',
-  filename: __filename,
-},
-async (Void, citel, text) => {
-  if (!text) return citel.reply("Provide me a sign!");
-  try {
-    const URL = `https://newastro.vercel.app/${text}/?date=2023-06-13&lang=en`;
-    const response = await fetch(URL);
-    const data = await response.json();
-    console.log(data);
-    
-    let textw = "";
-    textw += `🌟 Horoscope of ${text}\n\n`;
-    textw += `Current Date: ${data.date}.\n`;
-    textw += `Sign: ${text}.\n`;
-    textw += `Horoscope: ${data.horoscope}.\n`;
-    
-    citel.reply(textw);
-  } catch (e) {
-    console.log(e);
-  }
-});
+    pattern: "horo",
+    react: "☯️",
+    category: "search",
+    desc: "Gives horoscope info of user.",
+    use: '<sign>\n:Example: horo libra',
+    filename: __filename,
+  },
+  async (Void, citel, text) => {
+    const date_now = moment.tz('Asia/Kolkata').format('YYYY-MM-DD');
+    if (!text) return citel.reply("Provide me a sign!");
+    try {
+      const URL = `https://newastro.vercel.app/${text}/?date=${date_now}&lang=en`;
+      const response = await fetch(URL);
+      const data = await response.json();
+      console.log(data);
+      
+      let textw = "";
+      textw += `🌟 Horoscope of ${text}\n\n`;
+      textw += `Current Date: ${data.date}.\n`;
+      textw += `Sign: ${text}.\n`;
+      textw += `Horoscope: ${data.horoscope}.\n`;
+      
+      citel.reply(textw);
+    } catch (e) {
+      console.log(e);
+    }
+  });
     //---------------------------------------------------------------------------
     cmd({
         pattern: "google",
