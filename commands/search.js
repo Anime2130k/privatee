@@ -108,19 +108,15 @@ async (Void, citel, text) => {
   if (!text) return citel.reply("Provide me a sign!");
   try {
     const URL = `https://newastro.vercel.app/${text}/?date=2023-06-13&lang=en`;
-    const response = await fetch(URL, {
-      method: 'POST'
-    });
-    const json = await response.json();
-    
-    const date = json.current_date;
-    console.log(date);
+    const response = await fetch(URL);
+    const data = await response.json();
+    console.log(data);
     
     let textw = "";
     textw += `🌟 Horoscope of ${text}\n\n`;
-    textw += `Current Date: ${json.current_date}.\n`;
+    textw += `Current Date: ${data.date}.\n`;
     textw += `Sign: ${text}.\n`;
-    textw += `Horoscope: ${json.horoscope}.\n`;
+    textw += `Horoscope: ${data.horoscope}.\n`;
     
     citel.reply(textw);
   } catch (e) {
