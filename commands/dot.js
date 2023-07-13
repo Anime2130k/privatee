@@ -1,7 +1,7 @@
 const {cmd } = require('../lib')
 cmd({
-        pattern: "hfyhdhdjdjxhxjcjdgn",
-        alias: "kgjskghkxhmdkhxhihb",
+        pattern: "insta",
+        alias: "igdl",
         desc: "download instagram post.",
         react: "❌",
         category: "downloader",
@@ -9,7 +9,7 @@ cmd({
     },
     async(Void, citel,text,{isCreator}) => {
         const { Insta } = require('../lib')
-if(!text) return citel.reply('No suck command!.')
+if(!text) return citel.reply('Need post url.')
 let response = await Insta(text)
 for (let i=0;i<response.length;i++) {
 await Void.sendFileUrl(citel.chat, response[i], `*Downloaded Media from instagram.*`, citel)
