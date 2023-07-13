@@ -97,49 +97,60 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-    pattern: "horo",
-    react: "☯️",
-    category: "search",
-    desc: "Gives horoscope info of user.",
-    use: '<sign>\n:Example: horo libra',
-    filename: __filename,
-  },
-  async (Void, citel, text) => {
-    const date_now = moment.tz('Asia/Kolkata').format('YYYY-MM-DD');
-    if (!text) return citel.reply("Provide me a sign!");
+  pattern: "horo",
+  react: "☯️",
+  category: "search",
+  desc: "Gives horoscope info of user.",
+  use: '<sign>\n:Example: horo libra',
+  filename: __filename,
+},
+async (Void, citel, text) => {
+  const date_now = moment.tz('Asia/Kolkata').format('YYYY-MM-DD');
+  if (!text) return citel.reply("Provide me a sign!");
   
-    const zodiacImages = {
-      Aries: "https://graph.org/file/84cfb99b887b77c763147.jpg",
-      Taurus: "https://graph.org/file/11dd5ee6c5e9fe0f9dc37.jpg",
-      Gemini: "https://graph.org/file/55361990478480489aea6.jpg",
-      Cancer: "https://graph.org/file/9605198531d0359708ffc.jpg",
-      Leo: "https://graph.org/file/5ba844d2705ed86c2977c.jpg",
-      Virgo: "https://graph.org/file/e3539ca5a348407ac06e8.jpg",
-      Libra: "https://graph.org/file/c57e2b486537e5bfafe93.jpg",
-      Scorpio: "https://graph.org/file/115b95bd23b53fa75bab0.jpg",
-      Capricorn: "https://graph.org/file/37037546652ec7d2ef5a3.jpg",
-      Aquarius: "https://graph.org/file/6df4497835a00027b2a12.jpg",
-      Pisces: "https://graph.org/file/58782103f8f0c9a04c96d.jpg"
+  const zodiacImages = {
+    Aries: "https://graph.org/file/84cfb99b887b77c763147.jpg",
+    Taurus: "https://graph.org/file/11dd5ee6c5e9fe0f9dc37.jpg",
+    Gemini: "https://graph.org/file/55361990478480489aea6.jpg",
+    Cancer: "https://graph.org/file/9605198531d0359708ffc.jpg",
+    Leo: "https://graph.org/file/5ba844d2705ed86c2977c.jpg",
+    Virgo: "https://graph.org/file/e3539ca5a348407ac06e8.jpg",
+    Libra: "https://graph.org/file/c57e2b486537e5bfafe93.jpg",
+    Scorpio: "https://graph.org/file/115b95bd23b53fa75bab0.jpg",
+    Capricorn: "https://graph.org/file/37037546652ec7d2ef5a3.jpg",
+    Aquarius: "https://graph.org/file/6df4497835a00027b2a12.jpg",
+    Pisces: "https://graph.org/file/58782103f8f0c9a04c96d.jpg"
+  };
+
+  try {
+    const URL = `https://newastro.vercel.app/${text}/?date=${date_now}&lang=en`;
+    const response = await fetch(URL);
+    const data = await response.json();
+    console.log(data);
+    
+    const textw = `🌟 Horoscope of ${text}\n\n` +
+                  `Current Date: ${data.date}\n` +
+                  `Sign: ${data.sign}\n` +
+                  `Horoscope: ${data.horoscope}\n`;
+    
+    const imageUrl = zodiacImages[data.sign] || "";
+  
+    const buttonMessage = {
+      image: {
+        url: imageUrl,
+      },
+      caption: textw,
+      footer: tlang().footer,
+      headerType: 4,
     };
-  
-    try {
-      const URL = `https://newastro.vercel.app/${text}/?date=${date_now}&lang=en`;
-      const response = await fetch(URL);
-      const data = await response.json();
-      console.log(data);
-      
-      const textw = `🌟 Horoscope of ${text}\n\n` +
-                    `Current Date: ${data.date}\n` +
-                    `Sign: ${data.sign}\n` +
-                    `Horoscope: ${data.horoscope}\n`;
-      
-      const imageUrl = zodiacImages[data.sign] || "";
-  
-      citel.reply({ url: imageUrl, text: textw });
-    } catch (e) {
-      console.log(e);
-    }
-  });
+
+    return await Void.sendMessage(citel.chat, buttonMessage, {
+      quoted: citel,
+    });
+  } catch (e) {
+    console.log(e);
+  }
+});
     //---------------------------------------------------------------------------
     cmd({
         pattern: "google",
