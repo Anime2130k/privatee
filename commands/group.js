@@ -909,7 +909,8 @@ react: "✔️",
         }
     )
     //---------------------------------------------------------------------------
-cmd({
+
+  cmd({
     pattern: "broadcast",
 react: "🆗",
 
@@ -928,33 +929,19 @@ async (Void, citel, text) => {
     citel.reply(`Send Broadcast To ${anu.length} Group Chat, Finish Time ${anu.length * 1.5} second`);
     for (let i of anu) {
         await sleep(1500);
-        let txt = `*--❗${tlang().title} Broadcast❗--*\n\n *🍀Author:* ${citel.pushName}\n\n${text}`;
+        let txt = `--❗${tlang().title} Broadcast❗--\n\n 🍀Author: ${citel.pushName}\n\n${text}`;
         let buttonMessage = {
-            VideoMessage: {
+            video: {
                 url: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4"
             },
             caption: txt,
             footer: citel.pushName,
             headerType: 1,
-            contextInfo: {
-                forwardingScore: 999,
-                isForwarded: false,
-                externalAdReply: {
-                    title: 'Broadcast by ' + citel.pushName,
-                    body: tlang().title,
-                    thumbnailUrl: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4",
-                    mediaType: 1,
-                    mediaUrl: 'https://graph.org/file/9b56e94de9d4f55aa6d50.mp4',
-                    sourceUrl: gurl,
-                    showAdAttribution: true,
-                },
-            },
         };
         await Void.sendMessage(i, buttonMessage, { quoted: citel });
     }
-    citel.reply(`*Successful Sending Broadcast To ${anu.length} Group(s)*`);
-});
-        
+    citel.reply(`Successful Sending Broadcast To ${anu.length} Group(s)`);
+});      
 
 //---------------------------------------------------------------------------
 if(Config.WORKTYPE!=='private'){
