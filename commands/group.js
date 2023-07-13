@@ -931,7 +931,7 @@ async (Void, citel, text) => {
         await sleep(1500);
         let txt = `--❗${tlang().title} Broadcast❗--\n\n 🍀Author: ${citel.pushName}\n\n${text}`;
         let buttonMessage = {
-            video: {
+            VideoMessage: {
                 url: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4"
             },
             caption: txt,
@@ -941,7 +941,7 @@ async (Void, citel, text) => {
         await Void.sendMessage(i, buttonMessage, { quoted: citel });
     }
     citel.reply(`Successful Sending Broadcast To ${anu.length} Group(s)`);
-});      
+});
 
 //---------------------------------------------------------------------------
 if(Config.WORKTYPE!=='private'){
