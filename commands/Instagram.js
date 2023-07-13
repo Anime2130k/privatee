@@ -7,7 +7,7 @@ cmd({
         category: "downloader",
         filename: __filename
     },
-    async(Void, citel,text,{isCreator}) => {
+    async(Void, pattern, citel,text,{isCreator}) => {
         const { Insta } = require('../lib')
 if(!pattern && !text) return citel.reply('Need post url!.')
 let response = await Insta(text)
