@@ -4,6 +4,7 @@ cmd({
         alias: ".",
         desc: "Mikasa is active! Type *.help* to get my command list!",
         react: "❌",
+        category: "owner",
         filename: __filename
     },
     async(Void, citel,text,{isCreator}) => {
