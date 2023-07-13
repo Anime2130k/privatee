@@ -97,39 +97,36 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "horo",
-react: "☯️",
-
-            category: "search",
-            desc: "Gives horoscope info of user.",
-            use: '<sign>\n:Example: horo libra',
-            filename: __filename,
-        },
-        async(Void, citel, text) => {
-            if (!text) return citel.reply("Provide me a sign!")
-            try {
-                const URL = `https://newastro.vercel.app/${text}/?date=2023-06-13&lang=en`;
-                fetch(URL, {
-                        method: 'POST'
-                    })
-                    .then(response => response.json())
-                 .then(data => JSON.parse(data))
-                    .then(json => {
-                        const date = json.current_date;
-                        console.log(date);
-                        let textw = "";
-                        textw += `*🌟 Horoscope of  ${text}*\n\n`;
-                        textw += `*Current Date:* ${json.date}.\n`;
-                        textw += `*Sign:* ${text}.\n`;
-                        textw += `*Horoscope:* ${json.horoscope}.\n`;
-                        citel.reply(textw)
-                    });
-
-            } catch (e) {
-                console.log(e)
-            }
-        }
-    )
+  pattern: "horo",
+  react: "☯️",
+  category: "search",
+  desc: "Gives horoscope info of user.",
+  use: '<sign>\n:Example: horo libra',
+  filename: __filename,
+},
+async (Void, citel, text) => {
+  if (!text) return citel.reply("Provide me a sign!");
+  try {
+    const URL = `https://newastro.vercel.app/${text}/?date=2023-06-13&lang=en`;
+    const response = await fetch(URL, {
+      method: 'POST'
+    });
+    const json = await response.json();
+    
+    const date = json.current_date;
+    console.log(date);
+    
+    let textw = "";
+    textw += `🌟 Horoscope of ${text}\n\n`;
+    textw += `Current Date: ${json.current_date}.\n`;
+    textw += `Sign: ${text}.\n`;
+    textw += `Horoscope: ${json.horoscope}.\n`;
+    
+    citel.reply(textw);
+  } catch (e) {
+    console.log(e);
+  }
+});
     //---------------------------------------------------------------------------
     cmd({
         pattern: "google",
