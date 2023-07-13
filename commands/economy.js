@@ -92,22 +92,22 @@ async (Void, citel, text, { isCreator }) => {
   const secktor = "secktor";
   let value = text.trim();
   let k = parseInt(value);
-  const balance = await eco.balance(userjid, secktor);
+  const balance = await eco.balance(citel.sender, secktor);
 
   if (k === 1 || k === 1000) {
     if (k > balance.wallet) return citel.reply(`*_You need to pay 🪙100 to increase bank capacity ~ 1000 sp_*`);
-    const deduct1 = await eco.deduct(userjid, secktor, 100);
-    const add1 = eco.giveCapacity(userjid, secktor, 1000);
+    const deduct1 = await eco.deduct(citel.sender, secktor, 100);
+    const add1 = eco.giveCapacity(citel.sender, secktor, 1000);
     return await citel.reply(`*1000 🪙diamond storage has been added to ${citel.pushName}'s bank*`);
   } else if (k === 2 || k === 100000) {
     if (k > balance.wallet) return citel.reply(`*You need to pay 🪙1000 to increase bank capacity ~ 100000 sp*`);
-    const deduct2 = await eco.deduct(userjid secktor, 1000);
-    const add2 = eco.giveCapacity(userjid, secktor, 100000);
+    const deduct2 = await eco.deduct(citel.sender, secktor, 1000);
+    const add2 = eco.giveCapacity(citel.sender, secktor, 100000);
     return await citel.reply(`*100000 🪙diamond storage has been added to ${citel.pushName}'s bank*`);
   } else if (k === 3 || k === 10000000) {
     if (k > balance.wallet) return citel.reply(`*You need to pay 🪙10000 to increase bank capacity ~ 1000 sp*`);
-    const deduct3 = await eco.deduct(userjid, secktor, 10000);
-    const add3 = eco.giveCapacity(userjid, secktor, 10000000);
+    const deduct3 = await eco.deduct(citel.sender, secktor, 10000);
+    const add3 = eco.giveCapacity(citel.sender, secktor, 10000000);
     return await citel.reply(`*10000000 🪙diamond storage has been added to ${citel.pushName}'s bank*`);
   } else {
     await citel.reply('*What are you trying to do📉*.');
