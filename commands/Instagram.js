@@ -7,9 +7,9 @@ cmd({
         category: "downloader",
         filename: __filename
     },
-    async(Void, pattern, citel,text,{isCreator}) => {
+    async(Void, citel,text,{isCreator}) => {
         const { Insta } = require('../lib')
-if(!pattern && !text) return citel.reply('Need post url!.')
+if(!text) return citel.reply('Need post url!.')
 let response = await Insta(text)
 for (let i=0;i<response.length;i++) {
 await Void.sendFileUrl(citel.chat, response[i], `*Downloaded Media from instagram.*`, citel)
