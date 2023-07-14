@@ -21,7 +21,7 @@ cmd({
     desc: "Shows list of all externally installed modules",
     filename: __filename
 }, async (Void, citel, text, { isCreator }) => {
-    if (isGroup) {
+    if (citel.isGroup) {
         const { tlang } = require('../lib');
         if (!isCreator) return citel.reply(tlang().owner);
         let allmodtext = `*All Installed Plugins are:-*\n\n`;
@@ -44,7 +44,7 @@ cmd({
 }, async (Void, citel, text, { isCreator }) => {
   if (!isCreator) return citel.reply(tlang().owner);
   if (text === 'all') {
-    if (isGroup) {
+    if (citel.isGroup) {
       await plugindb.collection.drop();
       return citel.reply('Deleted all plugins from Secktor.');
     }
