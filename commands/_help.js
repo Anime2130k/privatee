@@ -29,7 +29,7 @@ Secktor.cmd({
     filename: __filename
 },
 async (Void, citel, text) => {
-    if (citel.isGroup && !isCreator) {
+    if (citel.isGroup) {
         const { commands } = require('../lib');
         if (text.split(" ")[0]) {
             let arr = [];
@@ -138,7 +138,7 @@ Secktor.cmd({
     react: "💜",
     filename: __filename
 }, async (Void, citel) => {
-    if (citel.isGroup && isCreator) {
+    if (citel.isGroup) {
         const Config = require('../config');
         const vcard = 'BEGIN:VCARD\n' +
             'VERSION:3.0\n' +
@@ -178,7 +178,7 @@ Secktor.cmd({
   filename: __filename
 },
 async (citel, text) => {
-  if (citel.isGroup && isCreator) {
+  if (citel.isGroup) {
     const { commands } = require('../lib');
     let arr = [];
     const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
