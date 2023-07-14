@@ -131,22 +131,21 @@ for (let i = 0; i < commands.length; i++)
     )**/
     //---------------------------------------------------------------------------
 Secktor.cmd({
-        pattern: "owner",
- alias: ["dev","mods","mod"],
-        desc: "To find owner number",
-        category: "general",
-        react: "💜",
-        filename: __filename
-    },
-    async(Void, citel) => {
-     if (citel.isGroup) {
-        const Config = require('../config')
+    pattern: "owner",
+    alias: ["dev", "mods", "mod"],
+    desc: "To find owner number",
+    category: "general",
+    react: "💜",
+    filename: __filename
+}, async (Void, citel) => {
+    if (citel.isGroup) {
+        const Config = require('../config');
         const vcard = 'BEGIN:VCARD\n' +
             'VERSION:3.0\n' +
             'FN:' + Config.ownername + '\n' +
             'ORG:;\n' +
             'TEL;type=CELL;type=VOICE;waid=' + owner[0] + ':+' + owner[0] + '\n' +
-            'END:VCARD'
+            'END:VCARD';
         let buttonMessaged = {
             contacts: { displayName: Config.ownername, contacts: [{ vcard }] },
             contextInfo: {
@@ -163,14 +162,13 @@ Secktor.cmd({
             },
         };
         return await Void.sendMessage(citel.chat, buttonMessaged, {
-            quoted: citel,
-        } else {
+            quoted: citel
+        });
+    } else {
         // Reply with a warning for PMs
         return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
     }
 });
-
-    }
 
 
 Secktor.cmd({
