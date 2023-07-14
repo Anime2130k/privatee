@@ -12,29 +12,30 @@ const axios = require('axios');
 const fs = require('fs-extra')
 const { plugins,plugindb, remove, isUrl,cmd } = require('../lib')
 //---------------------------------------------------------------------------
-cmd({
-        pattern: "plugins",
-        alias :['plist'],
- react: "🗿",
-        category: "owner",
-        desc: "Shows list of all externally installed modules",
-        filename: __filename
-    },
-    async(Void, citel, text, { isCreator }) => {
-    if (isGroup) {
-        const { tlang } = require('../lib')
-        if (!isCreator) return citel.reply(tlang().owner)
-        let allmodtext = `*All Installed Plugins are:-*\n\n`
-        allmodtext += await plugins()
-        return citel.reply(allmodtext)
+const fs = require('fs-extra');
+const { plugins, plugindb, remove, isUrl, cmd } = require('../lib');
+//---------------------------------------------------------------------------
 
-    }
-)
-} else {
+cmd({
+    pattern: "plugins",
+    alias: ['plist'],
+    react: "🗿",
+    category: "owner",
+    desc: "Shows list of all externally installed modules",
+    filename: __filename
+}, async (Void, citel, text, { isCreator }) => {
+    if (isGroup) {
+        const { tlang } = require('../lib');
+        if (!isCreator) return citel.reply(tlang().owner);
+        let allmodtext = `*All Installed Plugins are:-*\n\n`;
+        allmodtext += await plugins();
+        return citel.reply(allmodtext);
+    } else {
         // Reply with a warning for PMs
         return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
     }
 });
+
 //---------------------------------------------------------------------------
 cmd({
         pattern: "remove",
