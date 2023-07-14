@@ -35,29 +35,30 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-    pattern: "remove",
-    alias: ['uninstall'],
-    react: "🗿",
-    category: "owner",
-    desc: "removes external plugins.",
-    filename: __filename
+  pattern: "remove",
+  alias: ['uninstall'],
+  react: "🗿",
+  category: "owner",
+  desc: "removes external plugins.",
+  filename: __filename
 }, async (Void, citel, text, { isCreator }) => {
-    if (!isCreator) return citel.reply(tlang().owner);
-    if (text === 'all') {
-        if (isGroup) {
-            await plugindb.collection.drop();
-            return citel.reply('Deleted all plugins from Secktor.');
-        }
+  if (!isCreator) return citel.reply(tlang().owner);
+  if (text === 'all') {
+    if (isGroup) {
+      await plugindb.collection.drop();
+      return citel.reply('Deleted all plugins from Secktor.');
     }
-    let kill = await remove(text.split(" ")[0]);
-    delete require.cache[require.resolve(__dirname + "/" + text + ".js")];
-    fs.unlinkSync(__dirname + "/" + text + ".js");
-    return citel.reply(kill);
+  }
+  let kill = await remove(text.split(" ")[0]);
+  delete require.cache[require.resolve(__dirname + "/" + text + ".js")];
+  fs.unlinkSync(__dirname + "/" + text + ".js");
+  return citel.reply(kill);
 });
+// Reply with a warning for PMs
 else {
-    // Reply with a warning for PMs
-    return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
+  return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
 }
+
 //---------------------------------------------------------------------------
 cmd({
         pattern: "install",
