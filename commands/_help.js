@@ -19,77 +19,83 @@ const readmore = long.repeat(4001)
 const Secktor = require('../lib/commands')
 
     //---------------------------------------------------------------------------
+
 Secktor.cmd({
-            pattern: "help",
-            alias: ["menu","h"],
-            desc: "Help list",
-            category: "general",
-            react: "⛩️",
-            filename: __filename
-        },
-        async(Void, citel, text) => {
-            const { commands } = require('../lib');
-            if (text.split(" ")[0]) {
-                let arr = [];
-                const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
-                if (!cmd) return await citel.reply("*❌No Such commands.*");
-                else arr.push(`*🍁Command:* ${cmd.pattern}`);
-                if (cmd.category) arr.push(`*🧩Category:* ${cmd.category}`);
-                if (cmd.alias) arr.push(`*🧩Alias:* ${cmd.alias}`);
-                if (cmd.desc) arr.push(`*🧩Description:* ${cmd.desc}`);
-                if (cmd.use) arr.push(`*〽️Usage:*\n \`\`\`${prefix}${cmd.pattern} ${cmd.use}\`\`\``);
-                return await citel.reply(arr.join('\n'));
-            } else {
-                const cmds = {}
-                commands.map(async(command, index) => {
-                    if (command.dontAddCommandList === false && command.pattern !== undefined) {
-                        if (!cmds[command.category]) cmds[command.category] = []
-                        cmds[command.category].push(command.pattern)
-                    }
-                })
-                const time = moment(moment())
-                    .format('HH:mm:ss')
-                moment.tz.setDefault('Asia/KOLKATA')
-                    .locale('id')
-                const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
-                let total = await sck1.countDocuments()
-                let str = `╔══ ≪` + fancytext(Config.botname.split(' ')[0], 58) + `≫ ══╗\n\n`
-                str +=
-                     `Konichiwa! *${citel.pushName} senpai👋*\n\n I'm *${Config.botname}* a WhatsApp Bot Created by *RONEN-BOTS* for your assistance.\n
-_🎗️My Prefix:_ *[ ${prefix} ]*
-_🎐My Owner:_ *${Config.ownername}*
-_👤My Usercount:_ *${total}*
-_☘️My Uptime:_ *${runtime(process.uptime())}*
-_💾My Memory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
-_⏳Time:_ *${time}*
-_🗓️Date:_ *${date}*
+    pattern: "help",
+    alias: ["menu","h"],
+    desc: "Help list",
+    category: "general",
+    react: "⛩️",
+    filename: __filename
+},
+async (Void, citel, text) => {
+    if (citel.isGroup) {
+        const { commands } = require('../lib');
+        if (text.split(" ")[0]) {
+            let arr = [];
+            const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
+            if (!cmd) return await citel.reply("*❌ No such command.*");
+            else arr.push(`*🍁 Command:* ${cmd.pattern}`);
+            if (cmd.category) arr.push(`*🧩 Category:* ${cmd.category}`);
+            if (cmd.alias) arr.push(`*🧩 Alias:* ${cmd.alias}`);
+            if (cmd.desc) arr.push(`*🧩 Description:* ${cmd.desc}`);
+            if (cmd.use) arr.push(`*〽️ Usage:*\n \`\`\`${prefix}${cmd.pattern} ${cmd.use}\`\`\``);
+            return await citel.reply(arr.join('\n'));
+        } else {
+            const cmds = {}
+            commands.map(async(command, index) => {
+                if (command.dontAddCommandList === false && command.pattern !== undefined) {
+                    if (!cmds[command.category]) cmds[command.category] = []
+                    cmds[command.category].push(command.pattern)
+                }
+            })
+            const time = moment(moment())
+                .format('HH:mm:ss')
+            moment.tz.setDefault('Asia/KOLKATA')
+                .locale('id')
+            const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
+            let total = await sck1.countDocuments()
+            let str = `╔══ ≪` + fancytext(Config.botname.split(' ')[0], 58) + `≫ ══╗\n\n`
+            str +=
+                `Konichiwa! *${citel.pushName} senpai👋*\n\n I'm *${Config.botname}* a WhatsApp Bot Created by *RONEN-BOTS* for your assistance.\n
+_🎗️ My Prefix:_ *[ ${prefix} ]*
+_🎐 My Owner:_ *${Config.ownername}*
+_👤 My Usercount:_ *${total}*
+_☘️ My Uptime:_ *${runtime(process.uptime())}*
+_💾 My Memory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
+_⏳ Time:_ *${time}*
+_🗓️ Date:_ *${date}*
 
 *Here's the list of my commands:*`
-                for (const category in cmds) 
-                {
-                   str += `\n\n💗 *${tiny(category)}* 💗\n` ;
-                   if(text.toLowerCase() == category.toLowerCase()){ str = `🈷️ *${tiny(category)}* 🈷️\n` ;      
-                        for (const plugins of cmds[category]) { str += `${fancytext(plugins,1)}, ` ; }
-                        str += ``  ;
-                        break ;
-                   }
-                   else { for (const plugins of cmds[category]) { str += `${fancytext(plugins,1)}, ` ; }
-                         str += ``  ; 
-                   }
-  
+            for (const category in cmds) {
+                str += `\n\n💗 *${tiny(category)}* 💗\n`;
+                if (text.toLowerCase() == category.toLowerCase()) {
+                    str = `🈷️ *${tiny(category)}* 🈷️\n`;
+                    for (const plugins of cmds[category]) {
+                        str += `${fancytext(plugins,1)}, `;
+                    }
+                    str += ``;
+                    break;
+                } else {
+                    for (const plugins of cmds[category]) {
+                        str += `${fancytext(plugins,1)}, `;
+                    }
+                    str += ``;
                 }
-                str+= `\n\n\n*⭐️Type:* _<${prefix}report>_ to report the developers about any issue you face in the bot\n\n*⭐Type:* _<${prefix}help cmd name>_ to know more about specific command.\n*Eg:* _${prefix}help attp_\n\n*🎐RONEN-BOTS* `
-                let buttonMessaged = {
-                    video: { url: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4" },
-                    caption: str
-                };
-                return await Void.sendMessage(citel.chat, buttonMessaged);
+
             }
+            str += `\n\n\n*⭐️ Type:* _<${prefix}report>_ to report the developers about any issue you face in the bot\n\n*⭐ Type:* _<${prefix}help cmd name>_ to know more about a specific command.\n*Eg:* _${prefix}help attp_\n\n*🎐 RONEN-BOTS* `;
+            let buttonMessaged = {
+                video: { url: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4" },
+                caption: str
+            };
+            return await Void.sendMessage(citel.chat, buttonMessaged);
         }
-    )
-
-
-   
+    } else {
+        // Reply with a warning for PMs
+        return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
+    }
+});
    
     //---------------------------------------------------------------------------
 /**Secktor.cmd({
@@ -133,6 +139,7 @@ Secktor.cmd({
         filename: __filename
     },
     async(Void, citel) => {
+     if (citel.isGroup) {
         const Config = require('../config')
         const vcard = 'BEGIN:VCARD\n' +
             'VERSION:3.0\n' +
@@ -157,10 +164,14 @@ Secktor.cmd({
         };
         return await Void.sendMessage(citel.chat, buttonMessaged, {
             quoted: citel,
-        });
+        } else {
+        // Reply with a warning for PMs
+        return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
+    }
+});
 
     }
-)
+
 
 Secktor.cmd({
     pattern: "file",
