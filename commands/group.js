@@ -638,7 +638,7 @@ async (Void, citel, text) => {
     });
     await fs.unlinkSync(mee)
 }
-	    }
+	    })
     //---------------------------------------------------------------------------
 cmd({
             pattern: "group",
