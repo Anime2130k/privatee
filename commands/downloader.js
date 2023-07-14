@@ -17,13 +17,6 @@ const fs = require('fs-extra')
 var videotime = 60000 // 1000 min
 var dlsize = 1000 // 1000mb
 
-// Check if the message is from a group
-if (!isGroup) {
-  cmd({ pattern: "(.*)", fromMe: true, dontAddCommandList: true }, (async (Void, event) => {
-    await Void.reply("This bot only accepts commands in groups.");
-  }));
-  return;
-}
 
 //---------------------------------------------------------------------------
 // Rest of the code...
