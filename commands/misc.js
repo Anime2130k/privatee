@@ -14,6 +14,7 @@
 const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
  const fs = require('fs')
  const axios = require('axios')
+const textArray = text.split(" ");
   //---------------------------------------------------------------------------
  cmd({
     pattern: "setwelcome",
