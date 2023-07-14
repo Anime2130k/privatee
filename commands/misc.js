@@ -14,7 +14,7 @@
 const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
  const fs = require('fs')
  const axios = require('axios')
-const textArray = text.split(" ");
+/**const textArray = text.split(" ");**/
   //---------------------------------------------------------------------------
  cmd({
     pattern: "setwelcome",
@@ -80,7 +80,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
          }
      )**/
      //---------------------------------------------------------------------------
- cmd({
+/** cmd({
              pattern: "exec",
   react: "🆗",
              desc: "Evaluates quoted code with given language.",
@@ -108,7 +108,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
                  console.log(error);
              }
          }
-     )
+     )**/
      //---------------------------------------------------------------------------
  cmd({
              pattern: "readmore",
