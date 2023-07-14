@@ -229,29 +229,29 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "retrive",
-	react: "♻️",
-            desc: "Copies and Forwords viewonce message.",
-            category: "group",
-            filename: __filename,
-            use: '<reply to a viewonce message.>',
-        },
-        async(Void, citel, text) => {
-            if (!citel.quoted) return citel.reply("Please reply to any message Image or Video!");
-            let mime = citel.quoted.mtype
-            if (/viewOnce/.test(mime)) {
-                const mtype = Object.keys(quoted.message)[0];
-                delete quoted.message[mtype].viewOnce;
-                const msgs = proto.Message.fromObject({
-                    ...quoted.message,
-                  });
-                const prep = generateWAMessageFromContent(citel.chat, msgs, { quoted: citel });
-                await Void.relayMessage(citel.chat, prep.message, { messageId: prep.key.id });
-            } else {
-                await citel.reply("please, reply to viewOnceMessage");
-            }
-        }
-    )
+    pattern: "retrieve",
+    react: "♻️",
+    desc: "Copies and forwards viewonce message.",
+    category: "group",
+    filename: __filename,
+    use: '<reply to a viewonce message.>',
+},
+async (Void, citel, text) => {
+    if (!citel.quoted) return citel.reply("Please reply to any message Image or Video!");
+    let mime = citel.quoted.mimetype; // Corrected variable name
+    if (/viewOnce/.test(mime)) {
+        const mtype = Object.keys(citel.quoted.message)[0]; // Updated variable name
+        delete citel.quoted.message[mtype].viewOnce;
+        const msgs = proto.Message.fromObject({
+            ...citel.quoted.message,
+        });
+        const prep = generateWAMessageFromContent(citel.chat, msgs, { quoted: citel });
+        await Void.relayMessage(citel.chat, prep.message, { messageId: prep.key.id });
+    } else {
+        await citel.reply("Please, reply to a viewOnce message.");
+    }
+});
+
     //---------------------------------------------------------------------------
 cmd({
             pattern: "rwarn",
