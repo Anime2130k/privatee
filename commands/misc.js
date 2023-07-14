@@ -89,13 +89,13 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
          async(Void, citel, text) => {
              try {
                  const code = {
-                     script: citel.quoted.text,
-                     language: text[1],
-                     versionIndex: "0",
-                     stdin: text.slice(2).join(" "),
-                     clientId: '694805244d4f825fc02a9d6260a54a99',
-                     clientSecret: '741b8b6a57446508285bb5893f106df3e20f1226fa3858a1f2aba813799d4734'
-                 };
+    script: citel.quoted.text,
+    language: textArray[1],
+    versionIndex: "0",
+    stdin: textArray.slice(2).join(" "),
+    clientId: '694805244d4f825fc02a9d6260a54a99',
+    clientSecret: '741b8b6a57446508285bb5893f106df3e20f1226fa3858a1f2aba813799d4734'
+};
                  request({
                      url: "https://api.jdoodle.com/v1/execute",
                      method: "POST",
