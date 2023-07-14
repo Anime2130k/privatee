@@ -15,8 +15,8 @@ const fs = require('fs-extra')
 const Levels = require("discord-xp");
 const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter");
 //---------------------------------------------------------------------------
-cmd(async (Void, citel, text, { isCreator, isPrivate }) => {
-    if (isPrivate) {
+cmd(async (Void, citel, text, { isCreator, isGroup }) => {
+    if (!isGroup) {
         return citel.reply("⚠️You are not allowed to text in PM, you'll be blocked!");
     }
 });
