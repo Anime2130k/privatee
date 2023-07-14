@@ -54,7 +54,7 @@ async(Void, citel, text,{ isCreator }) => {
 }
 )
  //---------------------------------------------------------------------------
- cmd({
+ /**cmd({
              pattern: "attp",
   react: "🆗",
              desc: "Makes glowing sticker of text.",
@@ -77,7 +77,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/attp/${text}`)
 let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
  return citel.reply(a,{packname:'Secktor',author:'TTP'},"sticker") 
          }
-     )
+     )**/
      //---------------------------------------------------------------------------
  cmd({
              pattern: "exec",
