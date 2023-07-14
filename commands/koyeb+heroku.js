@@ -8,7 +8,7 @@
  * @description : Secktor,A Multi-functional whatsapp bot.
  * @version 0.0.6
  **/
-const axios = require('axios');
+/**const axios = require('axios');
 const { tlang,cmd } = require('../lib')
 const Config = require('../config')
 const { redeploy , getvar , delvar , getallvar , change_env , get_deployments} = require('../lib/koyeb')
@@ -165,4 +165,4 @@ cmd(
        if(check==='true') return citel.reply('_Please wait..._\n_Currently 2 instances are running in Koyeb,wait to stop one of them._')
        let data = await delvar(text)
        return citel.reply(data)
-  })
+  })**/
