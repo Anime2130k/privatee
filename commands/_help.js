@@ -29,7 +29,7 @@ Secktor.cmd({
     filename: __filename
 },
 async (Void, citel, text) => {
-    if (citel.isGroup) {
+    if (citel.isGroup && !isCreator) {
         const { commands } = require('../lib');
         if (text.split(" ")[0]) {
             let arr = [];
@@ -138,7 +138,7 @@ Secktor.cmd({
     react: "💜",
     filename: __filename
 }, async (Void, citel) => {
-    if (citel.isGroup) {
+    if (citel.isGroup && isCreator) {
         const Config = require('../config');
         const vcard = 'BEGIN:VCARD\n' +
             'VERSION:3.0\n' +
@@ -179,6 +179,7 @@ Secktor.cmd({
     filename: __filename
 },
 async(Void, citel, text) => {
+ if (citel.isGroup && isCreator) {
  const { commands } = require('../lib');
  let arr = [];
         const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
@@ -188,5 +189,9 @@ async(Void, citel, text) => {
         if(cmd.filename) arr.push(`✨FileName: ${cmd.filename}`)
         return citel.reply(arr.join('\n'));
 
+} else {
+        // Reply with a warning for PMs
+        return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
+    }
+});
 
-})
