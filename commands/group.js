@@ -612,12 +612,12 @@ react: "👟",
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "memegen",
-react: "🧤",
-desc: "Write text on quoted image.",
-category: "group",
-filename: __filename,
-use: '<text>',
+    pattern: "memegen",
+    react: "🧤",
+    desc: "Write text on quoted image.",
+    category: "group",
+    filename: __filename,
+    use: '<text>',
 },
 async (Void, citel, text) => {
     let mime = citel.quoted ? citel.quoted.mtype : ''
@@ -637,8 +637,8 @@ async (Void, citel, text) => {
         quoted: citel,
     });
     await fs.unlinkSync(mee)
-}
-	    })
+});
+
     //---------------------------------------------------------------------------
 cmd({
             pattern: "group",
