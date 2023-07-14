@@ -277,7 +277,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
      )
      //---------------------------------------------------------------------------
  
- cmd({
+/** cmd({
              pattern: "emix",
   react: "✔️",
              desc: "Mixes two emojies.",
@@ -298,7 +298,7 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
                  await fs.unlinkSync(encmedia);
              }
          }
-     )
+     )**/
      //---------------------------------------------------------------------------
  cmd({
              pattern: "chatbot",
