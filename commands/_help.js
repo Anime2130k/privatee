@@ -170,28 +170,26 @@ Secktor.cmd({
     }
 });
 
-
 Secktor.cmd({
-    pattern: "file",
-    desc: "to get extact name where that command is in repo.\nSo user can edit that.",
-    category: "general",
-    react: "✨",
-    filename: __filename
+  pattern: "file",
+  desc: "to get exact name where that command is in repo.\nSo user can edit that.",
+  category: "general",
+  react: "✨",
+  filename: __filename
 },
-async(Void, citel, text) => {
- if (citel.isGroup && isCreator) {
- const { commands } = require('../lib');
- let arr = [];
-        const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
-        if (!cmd) return await citel.reply("*❌No Such commands.*");
-        else arr.push(`*🍁Command:* ${cmd.pattern}`);
-        if (cmd.category) arr.push(`*🧩Type:* ${cmd.category}`);
-        if(cmd.filename) arr.push(`✨FileName: ${cmd.filename}`)
-        return citel.reply(arr.join('\n'));
-
-} else {
-        // Reply with a warning for PMs
-        return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
-    }
+async (citel, text) => {
+  if (citel.isGroup && isCreator) {
+    const { commands } = require('../lib');
+    let arr = [];
+    const cmd = commands.find((cmd) => cmd.pattern === (text.split(" ")[0].toLowerCase()))
+    if (!cmd) return await citel.reply("*❌ No Such commands.*");
+    else arr.push(`*🍁 Command:* ${cmd.pattern}`);
+    if (cmd.category) arr.push(`*🧩 Type:* ${cmd.category}`);
+    if (cmd.filename) arr.push(`✨ FileName: ${cmd.filename}`);
+    return citel.reply(arr.join('\n'));
+  } else {
+    // Reply with a warning for PMs
+    return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
+  }
 });
 
