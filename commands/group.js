@@ -237,7 +237,7 @@ cmd({
             use: '<reply to a viewonce message.>',
         },
         async(Void, citel, text) => {
-            if (!citel.quoted) return reply("Please reply to any message Image or Video!");
+            if (!citel.quoted) return citel.reply("Please reply to any message Image or Video!");
             let mime = citel.quoted.mtype
             if (/viewOnce/.test(mime)) {
                 const mtype = Object.keys(quoted.message)[0];
