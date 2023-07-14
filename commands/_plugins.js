@@ -12,9 +12,6 @@ const axios = require('axios');
 const fs = require('fs-extra')
 const { plugins,plugindb, remove, isUrl,cmd } = require('../lib')
 //---------------------------------------------------------------------------
-const fs = require('fs-extra');
-const { plugins, plugindb, remove, isUrl, cmd } = require('../lib');
-//---------------------------------------------------------------------------
 
 cmd({
     pattern: "plugins",
@@ -38,31 +35,29 @@ cmd({
 
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "remove",
-        alias :['uninstall'],
- react: "🗿",
-        category: "owner",
-        desc: "removes external plugins.",
-        filename: __filename
-    },
-    async(Void, citel, text,{ isCreator}) => {
-        if (!isCreator) return citel.reply(tlang().owner)
-        if(text==='all')
+    pattern: "remove",
+    alias: ['uninstall'],
+    react: "🗿",
+    category: "owner",
+    desc: "removes external plugins.",
+    filename: __filename
+}, async (Void, citel, text, { isCreator }) => {
+    if (!isCreator) return citel.reply(tlang().owner);
+    if (text === 'all') {
         if (isGroup) {
-         await plugindb.collection.drop()
-         return citel.reply('Deleted all plugins from Secktor.')
+            await plugindb.collection.drop();
+            return citel.reply('Deleted all plugins from Secktor.');
         }
-        let kill = await remove(text.split(" ")[0])
-        delete require.cache[require.resolve(__dirname+"/" + text + ".js")];
-        fs.unlinkSync(__dirname + "/" + text+ ".js");
-        return citel.reply(kill)
     }
-)
-} else {
-        // Reply with a warning for PMs
-        return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
-    }
+    let kill = await remove(text.split(" ")[0]);
+    delete require.cache[require.resolve(__dirname + "/" + text + ".js")];
+    fs.unlinkSync(__dirname + "/" + text + ".js");
+    return citel.reply(kill);
 });
+else {
+    // Reply with a warning for PMs
+    return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
+}
 //---------------------------------------------------------------------------
 cmd({
         pattern: "install",
