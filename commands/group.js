@@ -1009,7 +1009,7 @@ react: "✔️",
             filename: __filename,
             use: '<quote/reply user.>',
         },
-        async(Void, citel, text) => {
+        async(Void, citel, text,{ isCreator }) => {
             if (!citel.quoted) return citel.reply("Please reply to user");
             if (!isCreator) citel.reply(tlang().owner);
             let users = citel.mentionedJid[0] ? citel.mentionedJid[0] : citel.quoted ? citel.quoted.sender : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
@@ -1030,7 +1030,7 @@ react: "✔️",
     filename: __filename,
     use: '<text for broadcast.>',
 },
-async (Void, citel, text) => {
+async(Void, citel, text,{ isCreator }) => {
     if (!isCreator) return citel.reply(tlang().owner);
     let getGroups = await Void.groupFetchAllParticipating();
     let groups = Object.entries(getGroups).slice(0).map((entry) => entry[1]);
