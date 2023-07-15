@@ -30,7 +30,21 @@
          react: "💷"
      },
      async(Void, citel, text,{ isCreator }) => {
-	     if (!citel.isGroup && !isCreator) return citel.reply('Please use this command in a group chat.');
+	     if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -58,7 +72,21 @@
          react: "💷"
      },
      async(Void, citel, text,{ isCreator }) => {
-	     if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	   if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -85,7 +113,21 @@ cmd({
   react: "💷"
 },
 async (Void, citel, text, { isCreator }) => {
-	if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
   let zerogroup = (await sck.findOne({ id: citel.chat })) || (await new sck({ id: citel.chat }).save());
   let mongoschemas = zerogroup.economy || false;
   if (!mongoschemas) return citel.reply("*🚦Economy* is not active in the current group.");
@@ -128,7 +170,22 @@ async (Void, citel, text, { isCreator }) => {
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	    if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
+	  
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -154,7 +211,21 @@ return await citel.reply(`⛩️ Sender: ${citel.pushName}\n🍀Successfully �
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	    if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
 	let h = await eco.lb('secktor',10);
 	let str = `*Top ${h.length} users with more money in wallet.*\n`
 	const { sck1 } = require('../lib');
@@ -167,7 +238,7 @@ return await citel.reply(`⛩️ Sender: ${citel.pushName}\n🍀Successfully �
             } else {
                 tname = Void.getName(h[i].userID)
             }
-str+= `*${i+1}*\n╭─────────────◆\n│ *Name:-* _${tname}_\n│ *User:-* _@${h[i].userID.split('@')[0]}_\n│ *Wallet:-* _${h[i].wallet}_\n│ *Bank Amount:-* _${h[i].bank}_\n│ *Bank Capacity:-* _${h[i].bankCapacity}_\n╰─────────────◆\n\n`  	 
+str+= `*${i+1}*\n╭─────────────🏁\n│ *Name:-* _${tname}_\n│ *User:-* _@${h[i].userID.split('@')[0]}_\n│ *Wallet:-* _${h[i].wallet}_\n│ *Bank Amount:-* _${h[i].bank}_\n│ *Bank Capacity:-* _${h[i].bankCapacity}_\n╰─────────────🏁\n\n`  	 
 	 arr.push(h[i].userID)
 	 }
 	     citel.reply(str,{mentions:arr})
@@ -182,7 +253,21 @@ cmd({
     react: "💷"
 },
 async(Void, citel, text,{ isCreator }) => {
-	if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
     let zerogroup = (await sck.findOne({
         id: citel.chat,
     })) || (await new sck({
@@ -224,7 +309,21 @@ return await citel.reply( `*📠 Transaction successful of ${value[0]} 💰*`)
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	  if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');  
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -248,7 +347,21 @@ return await citel.reply(`*👛 ${citel.pushName}'s Purse:*\n\n_🪙${balance.wa
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
         if(!isCreator) return
 
          const secktor = "secktor"
@@ -269,7 +382,21 @@ return await citel.reply(`*👛 ${citel.pushName}'s Purse:*\n\n_🪙${balance.wa
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	    if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -291,7 +418,21 @@ return await citel.reply(`🍀User: ${citel.pushName}\n\n_🪙${balance.bank}/${
         filename: __filename,
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	    if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -351,7 +492,21 @@ default:
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	    if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -380,7 +535,21 @@ default:
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	 if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -456,7 +625,21 @@ return await citel.reply( `*📈 You won 🪙${twice}*`)
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -572,7 +755,21 @@ cmd({
     react: "💷"
 },
 async(Void, citel, text,{ isCreator }) => {
-	if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+	if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+');
     let zerogroup = (await sck.findOne({
         id: citel.chat,
     })) || (await new sck({
