@@ -58,7 +58,20 @@ async (Void, citel, text) => {
       return citel.reply("```Uhh Please, reply to a non-animated sticker.```");
     }
   } else {
-    return citel.reply("*⚠️This command can only be used in group chats.*");
+    return citel.reply(`⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
   }
 });
 
@@ -94,7 +107,20 @@ async (Void, citel, text) => {
       console.log("error", e);
     }
   } else {
-    return citel.reply("*⚠️This command can only be used in group chats.*");
+    return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
   }
 
   if (!citel.quoted) return citel.reply("```Uh Please Reply A ViewOnce Message```");
@@ -139,7 +165,20 @@ async (Void, citel, text) => {
     let fancytextt = await fancytext(`${text.slice(2)}`, text.split(" ")[0]);
     citel.reply(fancytextt);
   } else {
-    return citel.reply("*⚠️This command can only be used in group chats.*");
+    return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
   }
 });
 
@@ -165,7 +204,20 @@ async (Void, citel, text) => {
       console.log(e);
     }
   } else {
-    return citel.reply("*⚠️This command can only be used in group chats.*");
+    return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
   }
 });
 
@@ -203,7 +255,20 @@ async (Void, citel, text) => {
       return citel.reply("*Uhh,Please reply to any image*");
     }
   } else {
-    return citel.reply("*⚠️This command can only be used in group chats.*");
+    return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
   }
 });
 
@@ -241,7 +306,20 @@ async (Void, citel, text) => {
       return citel.reply("*Uhh,Please reply to any image*");
     }
   } else {
-    return citel.reply("*⚠️This command can only be used in group chats.*");
+    return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
   }
 });
 
@@ -279,7 +357,20 @@ async (Void, citel, text) => {
       return citel.reply("*Uhh,Please reply to any image*");
     }
   } else {
-    return citel.reply("*⚠️This command can only be used in group chats.*");
+    return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
   }
 });
 
@@ -317,6 +408,19 @@ async (Void, citel, text) => {
       return citel.reply("```Uhh Please, Reply To A video Message```");
     }
   } else {
-    return citel.reply("*⚠️This command can only be used in group chats.*");
+    return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
   }
 });
