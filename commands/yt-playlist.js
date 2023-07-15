@@ -14,8 +14,22 @@ cmd({
             filename: __filename,
             use: '<yt playlist url>',
         },
-        async(Void, citel, text) => {
+        async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
             const getRandom = (ext) => {
                 return `${Math.floor(Math.random() * 10000)}${ext}`;
             };
