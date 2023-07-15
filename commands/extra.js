@@ -21,8 +21,8 @@ cmd({
         category: "extra",
         filename: __filename,
     },
-    async(Void, citel) => {
-     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+    async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
