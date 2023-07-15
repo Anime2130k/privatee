@@ -24,7 +24,22 @@ cmd({
     use: '<Hii,Mikasa>',
     filename: __filename,
 },
-async(Void, citel,text) => {
+async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     let zx = text.length;
     if (zx < 8) {
         let {data} = await axios.get(`http://api.brainshop.ai/get?bid=172563&key=[${citel.sender.split("@")[0]}]&msg=[${text}]`);
@@ -77,8 +92,22 @@ cmd({
     use: '<an astronaut in mud.>',
     filename: __filename,
 },
-async(Void, citel,text,{isCreator}) => 
-{
+async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
 //if (!isCreator) return citel.reply(tlang().owner)
 if (Config.OPENAI_API_KEY=='') return citel.reply('You Dont Have OPENAI_API_KEY \nPlease Create OPEN API KEY from Given Link \nhttps://platform.openai.com/account/api-keys');
 if (!text) return citel.reply(`*Give Me A Query To Get Dall-E Reponce ?*`); 
@@ -118,7 +147,22 @@ cmd({
         category: "general",
         filename: __filename,
     },
-    async(Void, citel) => {
+    async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
 	    let total = await sck1.countDocuments()
         let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
         let cap = `Konichiwa! ${citel.pushName}, I'm *Mikasa💗*
@@ -178,7 +222,22 @@ react: "🈂️",
         category: "general",
         filename: __filename,
     },
-    async(Void, citel) => {
+    async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
         const uptime = process.uptime();
         timestampe = speed();
         latensie = speed() - timestampe;
