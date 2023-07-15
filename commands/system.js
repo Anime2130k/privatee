@@ -279,7 +279,7 @@ cmd({
 cmd({
             pattern: "alive",
 react: "✨", 
-            alias : ['hi','mikasa'],
+            alias : ['hi'],
             category: "general",
             filename: __filename,
             desc: "is bot alive??"
