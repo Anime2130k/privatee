@@ -284,7 +284,7 @@ react: "✨",
             filename: __filename,
             desc: "is bot alive??"
         },
-        async(Void, citel, text, isAdmin,{isCreator }) => {
+        async(Void, citel, text, isAdmin,{isCreator}) => {
 	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
