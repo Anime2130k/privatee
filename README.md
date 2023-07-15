@@ -1,6 +1,7 @@
-  <p align="center">  
-  <a href="(https://github.com/X-sensei/Mikasaa)">
-    <img alt="Ronen-Bots" height="300" src="(https://wallpaperaccess.com/full/343557.jpg)">
+  <p align="center">
+<a href="https://github.com/X-sensei/Mikasaa">
+    <img src="https://i.ibb.co/2gdVrky/20230210-160408.jpg">
+  </a>
     <h1 align="center">Elaina MD Whatsapp bot</h1>
   </a>
 </p>
