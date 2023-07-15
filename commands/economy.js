@@ -30,7 +30,7 @@
          react: "💷"
      },
      async(Void, citel, text,{ isCreator }) => {
-	     if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -44,7 +44,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -72,7 +72,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
          react: "💷"
      },
      async(Void, citel, text,{ isCreator }) => {
-	   if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	   if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -86,7 +86,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -113,7 +113,7 @@ cmd({
   react: "💷"
 },
 async (Void, citel, text, { isCreator }) => {
-	if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -127,7 +127,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
   let zerogroup = (await sck.findOne({ id: citel.chat })) || (await new sck({ id: citel.chat }).save());
   let mongoschemas = zerogroup.economy || false;
   if (!mongoschemas) return citel.reply("*🚦Economy* is not active in the current group.");
@@ -170,7 +170,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -184,7 +184,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
 	  
         let zerogroup = (await sck.findOne({
             id: citel.chat,
@@ -211,7 +211,7 @@ return await citel.reply(`⛩️ Sender: ${citel.pushName}\n🍀Successfully �
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -225,7 +225,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
 	let h = await eco.lb('secktor',10);
 	let str = `*Top ${h.length} users with more money in wallet.*\n`
 	const { sck1 } = require('../lib');
@@ -253,7 +253,7 @@ cmd({
     react: "💷"
 },
 async(Void, citel, text,{ isCreator }) => {
-	if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -267,7 +267,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
     let zerogroup = (await sck.findOne({
         id: citel.chat,
     })) || (await new sck({
@@ -309,7 +309,7 @@ return await citel.reply( `*📠 Transaction successful of ${value[0]} 💰*`)
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	  if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	  if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -323,7 +323,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');  
+`);  
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -347,7 +347,7 @@ return await citel.reply(`*👛 ${citel.pushName}'s Purse:*\n\n_🪙${balance.wa
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -361,7 +361,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
         if(!isCreator) return
 
          const secktor = "secktor"
@@ -382,7 +382,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -396,7 +396,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -418,7 +418,7 @@ return await citel.reply(`🍀User: ${citel.pushName}\n\n_🪙${balance.bank}/${
         filename: __filename,
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -432,7 +432,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -492,7 +492,7 @@ default:
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -506,7 +506,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -535,7 +535,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	 if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	 if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -549,7 +549,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -625,7 +625,7 @@ return await citel.reply( `*📈 You won 🪙${twice}*`)
         react: "💷"
     },
     async(Void, citel, text,{ isCreator }) => {
-	if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -639,7 +639,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -755,7 +755,7 @@ cmd({
     react: "💷"
 },
 async(Void, citel, text,{ isCreator }) => {
-	if (!citel.isGroup && !isCreator) return citel.reply('*⚠️WARNING⚠️*
+	if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -769,7 +769,7 @@ _Don't text the Bot in pm._
 *💗Have a nice day💗*
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-');
+`);
     let zerogroup = (await sck.findOne({
         id: citel.chat,
     })) || (await new sck({
