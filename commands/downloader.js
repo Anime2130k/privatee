@@ -39,7 +39,21 @@ cmd(
     use: '<Hii, this is Mikasa>',
   },
   async (Void, citel, text) => {
-    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     if (!text) return citel.reply('Please give me Sentence to change into audio.');
     let texttts = text;
     const ttsurl = googleTTS.getAudioUrl(texttts, {
@@ -71,7 +85,21 @@ cmd(
     use: '<yt search text>',
   },
   async (Void, citel, text) => {
-    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     let yts = require("secktor-pack");
     if (!text) return citel.reply(`Example : ${prefix}yts ${tlang().title} WhatsApp Bot`);
     let search = await yts(text);
@@ -103,7 +131,21 @@ cmd(
     use: '<Attack on Titan theme song>',
   },
   async (Void, citel, text) => {
-    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     let yts = require("secktor-pack");
     let ytdl = require("ytdl-core");
     let fs = require("fs");
@@ -176,7 +218,21 @@ cmd(
     use: '<Attack on Titan Theme song.>',
   },
   async (Void, citel, text) => {
-    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     if (!text) return citel.reply(`Use ${command} Back in Black`);
     let yts = require("secktor-pack");
     let search = await yts(text);
@@ -216,7 +272,21 @@ cmd(
     use: '<text|image name>',
   },
   async (Void, citel, text) => {
-    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     if (!text) {
       return reply("What picture are you looking for?") && Void.sendMessage(citel.chat, {
         react: {
@@ -267,7 +337,21 @@ cmd(
     use: '<url of Mediafire>',
   },
   async (Void, citel, text) => {
-    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     if (!text) return citel.reply(`Where is the link, Baka!?`);
     if (!isUrl(text.split(" ")[0]) && !text.split(" ")[0].includes("mediafire.com")) return reply(`The link you provided is invalid`);
 
@@ -308,7 +392,21 @@ cmd(
     use: '<text>',
   },
   async (Void, citel, text) => {
-    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     let yts = require("secktor-pack");
     let ytdl = require("ytdl-core");
     let fs = require("fs");
@@ -378,7 +476,21 @@ cmd(
     use: '<yt video url>',
   },
   async (Void, citel, text) => {
-    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     const getRandom = (ext) => {
       return `${Math.floor(Math.random() * 10000)}${ext}`;
     };
@@ -452,7 +564,21 @@ cmd(
     use: '<yt video url>',
   },
   async (Void, citel, text) => {
-    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
 
     const getRandom = (ext) => {
       return `${Math.floor(Math.random() * 10000)}${ext}`;
@@ -543,7 +669,21 @@ cmd(
     use: '<ytdoc video url>',
   },
   async (Void, citel, text) => {
-    if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
+   if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`); 
 
     const getRandom = (ext) => {
       return `${Math.floor(Math.random() * 10000)}${ext}`;
