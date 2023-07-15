@@ -20,7 +20,22 @@ cmd({
             category: "fun",
             filename: __filename,
         },
-        async(Void, citel, text) => {
+        async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
             return await citel.reply(`${random_question()}`);
         }
     )
@@ -32,7 +47,22 @@ cmd({
             category: "fun",
             filename: __filename,
         },
-        async(Void, citel, text) => {
+        async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
             return await citel.reply(`${truth()}`);
         }
     )
@@ -44,7 +74,22 @@ cmd({
             category: "fun",
             filename: __filename,
         },
-        async(Void, citel, text) => {
+        async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
             return await citel.reply(`${dare()}`);
         }
     )
@@ -56,7 +101,22 @@ cmd({
         category: "fun",
         filename: __filename,
     },
-    async(Void, citel, text) => {
+  async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
         const { data } = await axios.get(`https://nekos.life/api/v2/fact`)
         return citel.reply(`*Fact:* ${data.fact}\n\n*Powered by Mikasa💗*`)   
     }
@@ -70,7 +130,22 @@ cmd({
         category: "fun",
         filename: __filename,
     },
-    async(Void, citel, text) => {
+    async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
         var quoo = await axios.get(`https://favqs.com/api/qotd`)
        const replyf = `
 *🎗️Content:* ${quoo.data.quote.body}
@@ -87,7 +162,22 @@ return citel.reply(replyf)
         category: "fun",
         filename: __filename,
     },
-    async(Void, citel, text) => {
+    async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
         try{
             let { data } = await axios.get(`http://api.urbandictionary.com/v0/define?term=${text}`)
             var textt = `🔰Word: ${text}
