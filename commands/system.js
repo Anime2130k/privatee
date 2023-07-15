@@ -112,7 +112,22 @@ cmd({
         filename: __filename,
         desc: "image to url."
     },
-    async(Void, citel, text) => {
+    async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
         if (!citel.quoted) return await citel.reply(`*Reply To Any Image/Video To Get Url*`)
         let mime = citel.quoted.mtype
         if(mime !='videoMessage' && mime !='imageMessage' ) return await citel.reply("Uhh Please, Reply To An Image/Video")
@@ -132,7 +147,22 @@ cmd({
     filename: __filename,
     desc: "Translate\'s given text in desird language."
 },
-async(Void, citel, text) => {
+async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     if(!text && !citel.quoted) return await citel.reply(`*Please Give Me Text. Example: _${prefix}trt en Who are you_*`);
     const translatte = require("translatte");
     let lang = text ? text.split(" ")[0].toLowerCase() : 'en';
@@ -254,7 +284,22 @@ react: "✨",
             filename: __filename,
             desc: "is bot alive??"
         },
-        async(Void, citel, text, isAdmins) => {
+        async(Void, citel, text, isAdmin,{isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
             let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Ronen-Bots.*`
             const alivtxt = `
 *Hello, ${citel.pushName},*
