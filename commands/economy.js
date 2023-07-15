@@ -588,7 +588,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
         citel.reply(`Please provide direction(left,right,up,down).\nEg:- ${prefix}gamble 200 left`)
     }
    let media = await getBuffer(hjkl)
-   citel.reply(media,{packname:'Secktor',author:'Economy'},"sticker")
+   citel.reply(media,{packname:'Mikasa',author:'Economy'},"sticker")
      const f = ["up", "right", "left", "down", "up", "left", "down", "right", "up", "down", "right", "left"]
      const r = f[Math.floor(Math.random () * f.length)]
      if (!text) return citel.reply(
@@ -606,9 +606,9 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 return await citel.reply( `*📈 You won 🪙${twice}*`)
         }
         else{
-           let deduct = await eco.deduct(user, secktor, texts[0]);
+           let give = await eco.give(user, secktor, twice);
     //citel.react('🤮')
-    return await citel.reply(`*📉 You lost 🪙${texts[0]}*`)
+    return await citel.reply(`*📉 You lost 🪙${twice}*`)
          }
     }
 )
