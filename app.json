@@ -21,6 +21,7 @@
     "HEROKU_API_KEY": {
     "description": "Put HEROKU API KEY",
      "required" :true
+	    "value" : "51493452-b04a-4c16-aed3-00280fe5c903"
     },
   "HEROKU_APP_NAME": {
     "description": "Put HEROKU APP NAME same as above.",
