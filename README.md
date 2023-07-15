@@ -46,7 +46,7 @@ mongodb+srv://sam:sam@cluster0.u1smxsv.mongodb.net/?retryWrites=true&w=majority
 ```
 3.  ***Click [FORK](https://github.com/X-sensei/mikasaa/fork)***
 ## Heroku Deployment Method
-4.  ***Deploy on [Heroku]([https://citel-x.herokuapp.com/heroku](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FX-sensei%2Fmikasaa))***
+4.  ***Deploy on [Heroku](https://dashboard.heroku.com/new?template=https%3A%2F%2Fgithub.com%2FX-sensei%2Fmikasaa)***
 ## Koyeb Deployment Method
 5. ***[Deploy on Koyeb](https://citel-x.herokuapp.com/koyeb) and get API KEY from [here.](https://app.koyeb.com/settings/api)*** .
 
