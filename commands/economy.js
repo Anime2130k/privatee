@@ -30,6 +30,7 @@
          react: "💷"
      },
      async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
@@ -57,6 +58,7 @@
          react: "💷"
      },
      async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup) return citel.reply('Please use this command in a group chat.');
         let zerogroup = (await sck.findOne({
             id: citel.chat,
         })) || (await new sck({
