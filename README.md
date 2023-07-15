@@ -1,6 +1,6 @@
   <p align="center">
 <a href="https://github.com/X-sensei/Mikasaa">
-    <img src="[https://wallpaperaccess.com/full/4938942.jpg]">
+    <img src="[https://graph.org/file/c5fdb51133b7a7d568954.jpg]">
   </a>
     <h1 align="center">Mikasa Whatsapp bot</h1>
   </a>
