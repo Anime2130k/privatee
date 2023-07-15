@@ -9,7 +9,7 @@
  * @version 0.0.6
  **/
 
-const { addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime, prefix, Config ,sleep} = require('../lib')
+const {isCreator, addnote,cmd, sck1, delnote, allnotes, delallnote, tlang, botpic, runtime, prefix, Config ,sleep} = require('../lib')
 const { TelegraPh } = require('../lib/scraper')   
 const util = require('util')
 //---------------------------------------------------------------------------
@@ -284,7 +284,7 @@ cmd({
     filename: __filename,
     desc: "is bot alive??"
 },
-async (Void, citel, text, isAdmin, { isCreator }) => {
+async (Void, citel, text, { isCreator }) => {
     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
