@@ -72,7 +72,8 @@ cmd({
                     } else {
                         if (checkgroup.events == "true") return citel.reply("*Events* are already enabled")
                         await sck.updateOne({ id: citel.chat }, { events: "true" })
-                        return citel.reply("Successfully Enabled *Events*")
+                        citel.reply("Successfully Enabled *Events*")
+                        return
                     }
                 }
                 break
@@ -80,13 +81,14 @@ cmd({
                 {
                     let checkgroup = sck.findOne({ id: citel.chat })
                     if (!checkgroup) {
-                        await new sck({ id: citel.chat, cardgame: "active" })
+                        await new sck({ id: citel.chat, cardgame: "true" })
                             .save()
                         return citel.reply("Successfully Enabled *Card Game*")
                     } else {
-                        if (checkgroup.cardgame == "active") return citel.reply("*Card Game* was already enabled")
-                        await sck.updateOne({ id: citel.chat }, { cardgame: "active" })
-                        return citel.reply("Successfully Enabled *Card Game.*")
+                        if (checkgroup.cardgame == "true") return citel.reply("*Card Game* was already enabled")
+                        await sck.updateOne({ id: citel.chat }, { cardgame: "true" })
+                        citel.reply("Successfully Enabled *Card Game.*")
+                        return
                     }
                 }
                 break
