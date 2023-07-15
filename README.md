@@ -1,6 +1,6 @@
   <p align="center">  
   <a href="(https://wallpaperaccess.com/full/343557.jpg)">
-    <img alt="secktor docs" height="300" src="(https://wallpaperaccess.com/full/343557.jpg)">
+    <img alt="Ronen-Bots" height="300" src="(https://wallpaperaccess.com/full/343557.jpg)">
     <h1 align="center">Secktor MD Whatsapp bot</h1>
   </a>
 </p>
