@@ -1,8 +1,8 @@
   <p align="center">
 <a href="https://github.com/X-sensei/Mikasaa">
-    <img src="https://i.ibb.co/2gdVrky/20230210-160408.jpg">
+    <img src="(https://wallpaperaccess.com/full/4939220.jpg)">
   </a>
-    <h1 align="center">Elaina MD Whatsapp bot</h1>
+    <h1 align="center">Mikasa Whatsapp bot</h1>
   </a>
 </p>
    
