@@ -22,6 +22,21 @@ cmd({
         filename: __filename,
     },
     async(Void, citel) => {
+     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
         if(!citel.quoted) return citel.reply('Please quote any text to get link.')
         let data = await pastebin.createPaste(citel.quoted.text, "Mikasa-Pastebin")
         citel.reply('_Here is your link._\n'+data)
