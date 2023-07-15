@@ -606,7 +606,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 return await citel.reply( `*📈 You won 🪙${twice}*`)
         }
         else{
-           let deduct = await eco.deduct(user, secktor, texts);
+           let deduct = await eco.deduct(user, secktor, texts[0]);
     //citel.react('🤮')
     return await citel.reply(`*📉 You lost 🪙${texts[0]}*`)
          }
