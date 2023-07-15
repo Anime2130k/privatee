@@ -93,7 +93,20 @@ _🗓️ Date:_ *${date}*
         }
     } else {
         // Reply with a warning for PMs
-        return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
+        return await citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
     }
 });
    
@@ -166,7 +179,20 @@ Secktor.cmd({
         });
     } else {
         // Reply with a warning for PMs
-        return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
+        return await citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
     }
 });
 
@@ -189,7 +215,20 @@ async (citel, text) => {
     return citel.reply(arr.join('\n'));
   } else {
     // Reply with a warning for PMs
-    return await citel.reply("*⚠️ This bot does not accept commands in personal messages. Please use it in a group chat.*");
+    return await citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
   }
 });
 
