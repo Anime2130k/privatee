@@ -117,7 +117,22 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
              category: "misc",
              filename: __filename,
          },
-         async(Void, citel, text) => {
+         async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
             return await citel.reply(text.replace(/\+/g, (String.fromCharCode(8206)).repeat(4001)))
  
          }
@@ -130,7 +145,22 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
              category: "sticker",
              filename: __filename,
          },
-         async(Void, citel, text) => {
+         async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
              if (!citel.quoted) return citel.reply(`*Mention any Image or video Sir.*`);
              let mime = citel.quoted.mtype
              var pack;
@@ -167,7 +197,22 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
              category: "misc",
              filename: __filename,
          },
-         async(Void, citel, text) => {
+         async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
              const upt = runtime(process.uptime())
              return citel.reply(`Uptime of ${tlang().title}: ${upt}`)
          }
@@ -180,7 +225,22 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
              category: "misc",
              filename: __filename,
          },
-         async(Void, citel, text) => {
+         async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
              let users = citel.mentionedJid ? citel.mentionedJid[0].split('@')[0] : citel.quoted ? citel.quoted.sender.split('@')[0] : text.replace('@')[0]
             return citel.reply(`https://wa.me/${users}`)
  
@@ -194,7 +254,22 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
              category: "misc",
              filename: __filename,
          },
-         async(Void, citel, match) => {
+         async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
              if (!match) return citel.reply("*Which type of User you want?*");
              const groupMetadata = citel.isGroup ? await Void.groupMetadata(citel.chat)
                  .catch((e) => {}) : "";
@@ -219,7 +294,22 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
              use: '<package name>',
              filename: __filename,
          },
-         async(Void, citel, text) => {
+         async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
              if (!text) return citel.reply('Please give me package name.📦')
              axios.get(`https://api.npms.io/v2/search?q=${text}`).then(({ data }) => {
                  let txt = data.results.map(({ package: pkg }) => `*${pkg.name}* (v${pkg.version})\n_${pkg.links.npm}_\n_${pkg.description}_`).join('\n\n')
@@ -236,7 +326,22 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
              use: '<query>',
              filename: __filename,
          },
-         async(Void, citel, text) => {
+         async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
              if (!text) return citel.reply(`Example : ${prefix}fliptext Back in black`)
              flipe = text.split('').reverse().join('')
              citel.reply(`\`\`\`「  Text Flipper Tool  」\`\`\`\n*IGiven text :*\n${text}\n*Fliped text :*\n${flipe}`)
@@ -252,7 +357,22 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
              use: '<url>',
              filename: __filename,
          },
-         async(Void, citel, text) => {
+         async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
              if (!text) return citel.reply(`Where's the link ?`);
              Void.sendMessage(citel.chat, {
                  video: {
@@ -375,6 +495,21 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
              filename: __filename,
          },
          async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
              try {
                  if (!text) return citel.reply(`Send text to be encoded.`);
  
@@ -396,6 +531,21 @@ let a = await getBuffer(`https://citel-x.herokuapp.com/ttp/${text}`)
              filename: __filename,
          },
          async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
              try {
                  if (!text) return citel.reply(`Send text to be decoded.`);
                  let eb = await dBinary(text);
@@ -414,7 +564,7 @@ cmd({
 },
 async(Void, citel, text,{isCreator}) => {
   if (!citel.isGroup) return citel.reply(tlang().group);
-  if(!isCreator) return //citel.reply(tlang().owner)
+  if(!isCreator) return citel.reply(`Only my dev can use this command`)
 switch (text.split(" ")[0]) {
  case 'on':{
          let checkgroup = await sck.findOne({ id: citel.chat })
