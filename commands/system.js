@@ -277,19 +277,19 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "alive",
-react: "✨", 
-            alias : ['hi'],
-            category: "general",
-            filename: __filename,
-            desc: "is bot alive??"
-        },
-        async(Void, citel, text, isAdmin,{isCreator}) => {
-	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+    pattern: "alive",
+    react: "✨",
+    alias: ['hi'],
+    category: "general",
+    filename: __filename,
+    desc: "is bot alive??"
+},
+async (Void, citel, text, isAdmin, { isCreator }) => {
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
-*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+*㊙️If you want to add this bot in your GC (GroupChat) then ask the Developer*
 
 *〽️Developer:*
 • wa.me/916000530073
@@ -300,13 +300,13 @@ _Don't text the Bot in pm._
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
-            let alivemessage = Config.ALIVE_MESSAGE || `*A bot developed by Ronen-Bots.*`
-            const alivtxt = `
+    let alivemessage = Config.ALIVE_MESSAGE || "*A bot developed by Ronen-Bots.*";
+    const alivtxt = `
 *Hello, ${citel.pushName},*
-_This is  ${tlang().title}._
+_This is ${tlang().title}._
 ${alivemessage}
 
-*Version:-* _2.0.0
+*Version:-* _2.0.0_
 *Uptime:-* _${runtime(process.uptime())}_
 *Owner:-* _${Config.ownername}_
 *Branch:-* _${Config.BRANCH}_
@@ -315,20 +315,19 @@ _Type ${prefix}menu for my command list._
 
 _Powered by ${Config.ownername}_
 `;
-            let aliveMessage = {
-                image: {
-                    url: await botpic(),
-                },
-                caption: alivtxt,
-                footer: tlang().footer,
-                headerType: 4,
-            };
-             return Void.sendMessage(citel.chat, aliveMessage, {
-                quoted: citel,
-            });
+    let aliveMessage = {
+        image: {
+            url: await botpic(),
+        },
+        caption: alivtxt,
+        footer: tlang().footer,
+        headerType: 4,
+    };
+    return Void.sendMessage(citel.chat, aliveMessage, {
+        quoted: citel,
+    });
+});
 
-        }
-    )
     //---------------------------------------------------------------------------
 cmd({
         pattern: "allnotes",
