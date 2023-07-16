@@ -174,7 +174,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
     console.log(data);
     
     const textw = `*🌟 Horoscope of ${text}*\n\n` +
-                  `*📆Current Date:* _${data.date}_\n\n` +
+                  `*📆Current Date:* _${date_now}_\n\n` +
                   `*🔆Sign:* _${data.sign}_\n\n` +
                   `*🛐Horoscope:* _${data.horoscope}_\n\n` +
 `*🆔Zodiac No.* _${data.id}_\n`;
