@@ -826,13 +826,13 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
     if(ttt[0]===ttt[1] && ttt[0]===ttt[2]) lol = true
     if(t[0]===ttt[1] && t[0]===ttt[2]) lol = true
     if(lol){
-        const deduff = Math.floor(Math.random() * 5000)
+        const deduff = Math.floor(Math.random() * 2000)
         const give2 = await eco.give(citel.sender, "secktor", deduff*2);
         let st = `🎰 Slot Machine Result\n     ${i}\n\n     ${j}\n\n     ${k}\n\nWow Jackpot🎊.`
         let str = st.replace(/1/g, `🔴`).replace(/2/g, `🔵`).replace(/3/g, `🟣`).replace(/4/g, `🟢`).replace(/5/g, `🟡`).replace(/6/g, `⚪️`).replace(/7/g, `⚫️`).replace(/:/g, `  `)
     return await citel.reply(str+`You got ${deduff*2} in your wallet.`)
     } else {
-    const deduff = Math.floor(Math.random() * 2000)
+    const deduff = Math.floor(Math.random() * 1000)
     const deduct1 = await eco.deduct(citel.sender, "secktor", deduff);
     let st = `\n🎰 Slot Machine Result\n     ${i}\n\n      ${j}\n\n      ${k}\n\nNot Jacpot📉 but lost `
             let str = st.replace(/1/g, `🔴`).replace(/2/g, `🔵`).replace(/3/g, `🟣`).replace(/4/g, `🟢`).replace(/5/g, `🟡`).replace(/6/g, `⚪️`).replace(/7/g, `⚫️`).replace(/:/g, `    `)
