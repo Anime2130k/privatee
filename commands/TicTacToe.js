@@ -203,7 +203,7 @@ ${arr.slice(3, 6).join("  ")}
 ${arr.slice(6).join("  ")}
 ${
   isWin
-    ? `@${winner.split("@")[0]} Won ! and got 2000💎 in wallet🤑`
+    ? `@${winner.split("@")[0]} Won! Congratulations 🎊`
     : isTie
     ? `Game Tied,well done to both of you players.`
     : `Current Turn ${["❌", "⭕"][1 * room.game._currentTurn]} @${
