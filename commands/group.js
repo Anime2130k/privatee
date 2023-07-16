@@ -429,7 +429,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 		    } else if (lvpoints <= 100) {
                 var role = "⚠️God of Multiverse";
             }
-            let ttms = `${userq.xp}` / 8;
+            let ttms = `${userq.xp}` / 99999;
             const timenow = moment(moment())
                 .format('HH:mm:ss')
             moment.tz.setDefault('Asia/Kolakata')
@@ -544,7 +544,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             let disc = citel.sender.substring(3, 7);
             let textr = '';
             textr += `*Hii ${tlang().greet} ,🌟 ${citel.pushName}∆${disc}'s* Exp\n\n`;
-            let ttms = `${userq.xp}` / 8;
+            let ttms = `${userq.xp}` / 99999;
             textr += `*🌟Role*: ${role}\n*🟢Exp*: ${userq.xp} / ${Levels.xpFor(
     userq.level + 1
   )}\n*🏡Level*: ${userq.level}\n*Total Messages:*- ${ttms}`;
@@ -648,7 +648,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             }
                 let data = await sck1.findOne({ id: fetchlb[i].userID })
                 let namew = fetchlb[i].userID
-                let ttms = fetchlb[i].xp / 8
+                let ttms = fetchlb[i].xp / 99999
                 leadtext += `*${i + 1}👤Name*: ${data.name}\n*🎐Level*: ${fetchlb[i].level}\n*⚜️Points*: ${fetchlb[i].xp}\n*📍Role*: ${role}\n*🔖Total messages*: ${ttms}\n\n`;
             }
             return citel.reply(leadtext)
