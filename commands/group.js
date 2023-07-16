@@ -377,7 +377,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             let meh = citel.sender;
             const userq = await Levels.fetch(citel.sender, "RandomXP");
             const lvpoints = userq.level;
-            var role = "Developer✨";
+            var role = "New Born✨";
             if (lvpoints <= 2) {
                 var role = "🏳Slime";
             } else if (lvpoints <= 4) {
@@ -393,9 +393,9 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             } else if (lvpoints <= 14) {
                 var role = "🧜‍♂️Master of Mage";
             } else if (lvpoints <= 16) {
-                var role = "🌬Child of Nobel";
+                var role = "🌬Nobel";
             } else if (lvpoints <= 18) {
-                var role = "❄Nobel";
+                var role = "❄Nobel Lord";
             } else if (lvpoints <= 20) {
                 var role = "⚡Monster";
             } else if (lvpoints <= 22) {
@@ -426,6 +426,8 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
                 var role = "⚔Demon King";
             } else if (lvpoints <= 55) {
                 var role = "🐉Demon Lord";
+		    } else if (lvpoints <= 100) {
+                var role = "⚠️God of Multiverse";
             }
             let ttms = `${userq.xp}` / 8;
             const timenow = moment(moment())
@@ -487,7 +489,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
             const userq = await Levels.fetch(citel.sender, "RandomXP");
             const lvpoints = userq.level;
-            var role = "Developer✨";
+            var role = "New Born✨";
             if (lvpoints <= 2) {
                 var role = "🏳Slime";
             } else if (lvpoints <= 4) {
@@ -503,9 +505,9 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             } else if (lvpoints <= 14) {
                 var role = "🧜‍♂️Master of Mage";
             } else if (lvpoints <= 16) {
-                var role = "🌬Child of Nobel";
+                var role = "🌬Nobel";
             } else if (lvpoints <= 18) {
-                var role = "❄Nobel";
+                var role = "❄Nobel Lord";
             } else if (lvpoints <= 20) {
                 var role = "⚡Monster";
             } else if (lvpoints <= 22) {
@@ -536,6 +538,8 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
                 var role = "⚔Demon King";
             } else if (lvpoints <= 55) {
                 var role = "🐉Demon Lord";
+		    } else if (lvpoints <= 100) {
+                var role = "⚠️God of Multiverse";
             }
             let disc = citel.sender.substring(3, 7);
             let textr = '';
@@ -590,7 +594,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 \n\n`
             for (let i = 0; i < fetchlb.length; i++) {
                 const lvpoints = fetchlb[i].level
-                var role = "Developer✨";
+                var role = "New Born✨";
                 if (lvpoints <= 2) {
                 var role = "🏳Slime";
             } else if (lvpoints <= 4) {
@@ -606,9 +610,9 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             } else if (lvpoints <= 14) {
                 var role = "🧜‍♂️Master of Mage";
             } else if (lvpoints <= 16) {
-                var role = "🌬Child of Nobel";
+                var role = "🌬Nobel";
             } else if (lvpoints <= 18) {
-                var role = "❄Nobel";
+                var role = "❄Nobel Lord";
             } else if (lvpoints <= 20) {
                 var role = "⚡Monster";
             } else if (lvpoints <= 22) {
@@ -639,6 +643,8 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
                 var role = "⚔Demon King";
             } else if (lvpoints <= 55) {
                 var role = "🐉Demon Lord";
+		} else if (lvpoints <= 100) {
+                var role = "⚠️God of Multiverse"; 	
             }
                 let data = await sck1.findOne({ id: fetchlb[i].userID })
                 let namew = fetchlb[i].userID
@@ -1125,6 +1131,8 @@ cmd({ on: "text" }, async(Void, citel) => {
                 var role = "⚔Demon King";
             } else if (lvpoints <= 55) {
                 var role = "🐉Demon Lord";
+		} else if (lvpoints <= 100) {
+                var role = "⚠️God of Multiverse";
         }
         if (Config.levelupmessage !== 'false') {
             await Void.sendMessage(citel.chat, {
