@@ -1046,7 +1046,7 @@ async(Void, citel, text,{ isCreator }) => {
     } second`);
     for (let i of anu) {
         await sleep(1500);
-        let txt = `--❗${tlang().title} Broadcast❗--\n\n 🍀Author: ${citel.pushName}\n\n${text}`;
+        let txt = `--🌍${tlang().title} Broadcast🌍--\n\n${text}\n\n ~Regards: ${citel.pushName}`;
         let buttonMessaged = {
             video: {
                 url: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4",
