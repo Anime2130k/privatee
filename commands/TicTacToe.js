@@ -275,7 +275,8 @@ cmd({ pattern: "ship" ,react: "🤭", category: "fun" }, async(Void, citel, text
    }
 )
 
-const axios = require('axios'); 
+const axios = require('axios');
+const fs = require('fs');
 
 cmd({ pattern: "wave" ,react: "🤭", category: "fun" }, async (Void, citel, text) => {
   if (!citel.isGroup) return citel.reply(tlang().group);
@@ -298,11 +299,15 @@ cmd({ pattern: "wave" ,react: "🤭", category: "fun" }, async (Void, citel, tex
 
   // Fetch the GIF URL using the API
   try {
-    const response = await axios.get('https://api.waifu.pics/sfw/wave');
-    const gifUrl = response.data.url;
+    const response = await axios.get('https://api.waifu.pics/sfw/wave', { responseType: 'arraybuffer' });
+    const gifData = Buffer.from(response.data, 'binary');
+
+    // Save the GIF locally
+    const gifPath = './wave.gif';
+    fs.writeFileSync(gifPath, gifData);
 
     // Send the GIF as a media message
-    await Void.sendMessage(citel.chat, { url: gifUrl }, { caption: caption, mentions: [citel.sender, shiper], quoted: citel });
+    await Void.sendMessage(citel.chat, { url: gifPath }, { caption: caption, mentions: [citel.sender, shiper], quoted: citel });
   } catch (error) {
     console.error('Error fetching the GIF:', error);
     citel.reply('Failed to send the wave GIF. Please try again later.');
