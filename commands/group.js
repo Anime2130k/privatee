@@ -59,7 +59,7 @@ _Don't text the Bot in pm._
 *〽️Developer:*
 • wa.me/916000530073
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://tinyurl.com/285yd249*
 
 *💗Have a nice day💗*
 
@@ -121,7 +121,7 @@ _Don't text the Bot in pm._
 *〽️Developer:*
 • wa.me/916000530073
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://tinyurl.com/285yd249*
 
 *💗Have a nice day💗*
 
@@ -130,7 +130,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
         citel.reply(`*Check your Pm ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*🎀Group Name: Ronen-Bots Support*\n_The purpose of this group is to help the users using our bots. You can ask about any issue regarding any of our Bots in this group. If you want our Bots in your gc then you can text the Admin personally or tag them in the group, and don't forget to be respectful to everyone in this group._\n\n*🧧Group Link:* http://surl.li/eumln`,
+            caption: `*🎀GROUP NAME: RONEN-BOTS SUPPORT*\n\n_The purpose of this group is to help the users using our bots. You can ask about any issue regarding any of our Bots in this group. If you want our Bots in your gc then you can text the Admin personally or tag them in the group, and don't forget to be respectful to everyone in this group._\n\n*🧧Group Link:* https://tinyurl.com/285yd249`,
         });
 
     }
@@ -282,7 +282,7 @@ _Don't text the Bot in pm._
 *〽️Developer:*
 • wa.me/916000530073
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://tinyurl.com/285yd249*
 
 *💗Have a nice day💗*
 
@@ -366,7 +366,7 @@ _Don't text the Bot in pm._
 *〽️Developer:*
 • wa.me/916000530073
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://tinyurl.com/285yd249*
 
 *💗Have a nice day💗*
 
@@ -481,7 +481,7 @@ _Don't text the Bot in pm._
 *〽️Developer:*
 • wa.me/916000530073
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://tinyurl.com/285yd249*
 
 *💗Have a nice day💗*
 
@@ -580,7 +580,7 @@ _Don't text the Bot in pm._
 *〽️Developer:*
 • wa.me/916000530073
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://tinyurl.com/285yd249*
 
 *💗Have a nice day💗*
 
@@ -731,7 +731,7 @@ _Don't text the Bot in pm._
 *〽️Developer:*
 • wa.me/916000530073
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://tinyurl.com/285yd249*
 
 *💗Have a nice day💗*
 
