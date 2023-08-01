@@ -163,12 +163,15 @@ _Don't text the Bot in pm._
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
+	    let getGroups = await Void.groupFetchAllParticipating();
+    let groups = Object.entries(getGroups).slice(0).map((entry) => entry[1]);
+    let anu = groups.map((v) => v.id);
 	    let total = await sck1.countDocuments()
         let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
         let cap = `Konichiwa! ${citel.pushName}, I'm *Mikasa💗*
 _🧩 Server Uptime:_ *${runtime(process.uptime())}*
 _👤 User Counts :_ *${total}*
-_📛 Group counts:_ *undefined*
+_📛 Group counts:_ *${anu.length}*
 _🎀 Status:_ *⬜Active*
 
 💜 *Our official support group* : http://surl.li/eumln
