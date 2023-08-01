@@ -274,4 +274,23 @@ cmd({ pattern: "ship" ,react: "🤭", category: "fun" }, async(Void, citel, text
         await Void.sendMessage(citel.chat,{text: caption,mentions: [citel.sender,shiper]},{quoted:citel})
    }
 )
+
+cmd({ pattern: "wave" ,react: "🤭", category: "fun" }, async(Void, citel, text) => {
+    const { tlang } = require('../lib')
+   if (!citel.isGroup) return citel.reply(tlang().group);
+   const groupMetadata = citel.isGroup ? await Void.groupMetadata(citel.chat).catch((e) => {}) : "";
+	 const participants = citel.isGroup ? await groupMetadata.participants : "";
+   let members = participants.map(u => u.id)
+       var user = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+       var shiper;
+       if (user) {
+       shiper = user
+       } else {
+       shiper = members[Math.floor(Math.random() * members.length)]
+       }
+       let caption = `\t*@${citel.sender.split('@')[0]}  waved at  @${shiper.split('@')[0]}*\n`
+        if(citel.sender.split('@')[0]===shiper.split('@')[0]) return citel.reply('```'+'Wait... What!!!,You wanna do matchmaking with yourself'+'```')
+        await Void.sendMessage(citel.chat,{text: caption,mentions: [citel.sender,shiper]},{quoted:citel})
+   }
+)
 // IDEA of Shipcent from => https://github.com/iamherok/WhatsApp-Botto-Ruka/blob/master/handler/message.js#L842
