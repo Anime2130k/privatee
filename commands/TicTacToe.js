@@ -275,8 +275,7 @@ cmd({ pattern: "ship" ,react: "🤭", category: "fun" }, async(Void, citel, text
    }
 )
 
-const axios = require('axios');
-const { tlang } = require('../lib');
+const axios = require('axios'); 
 
 cmd({ pattern: "wave" ,react: "🤭", category: "fun" }, async (Void, citel, text) => {
   if (!citel.isGroup) return citel.reply(tlang().group);
