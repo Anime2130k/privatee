@@ -278,7 +278,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
                         image: {
                             url: images,
                         },
-                        caption: `_Sector Image Search_\n*${name1}*`,
+                        caption: `_Mikasa Image Search_\n*${name1}*`,
                         headerType: 4,
                     };
                     Void.sendMessage(citel.chat, buttonMessage, {
