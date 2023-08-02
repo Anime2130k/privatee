@@ -55,11 +55,11 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
         if (mongoschemas == "false") return citel.reply("*🚦Economy* is not active in current group.");
          if (!citel.isGroup) return citel.reply(tlang().group);
 	const secktor = "secktor"
-	const daily  = await eco.daily(citel.sender, secktor, 10000); //give 500 for daily, can be changed
+	const daily  = await eco.daily(citel.sender, secktor, 2000); //give 500 for daily, can be changed
 	 if (daily.cd) { //cdL is already formatted cooldown Left
         return await  citel.reply(`🎀 You already claimed daily for today, come back in ${daily.cdL}🫡`)
 	 } else {
-	 citel.reply(`you claimed daily ${daily.amount} 🪙 for today🔱 (You'll get 10000 coins for today bcoz we crossed 1k users).`);   
+	 citel.reply(`you claimed daily ${daily.amount} 🪙 for today🔱`);   
 	 }
  }
  )
