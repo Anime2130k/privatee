@@ -66,42 +66,42 @@ _💾 My Memory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalme
 _⏳ Time:_ *${time}*
 _🗓️ Date:_ *${date}*
 
-*Here's the list of my commands:*`
-            for (const category in cmds) {
-                str += `🌟 *Owner* 
+*Here's the list of my commands:*
+
+☢️ *Owner* ☢️
 🌐 ᴘʟᴜɢɪɴꜱ, 🗑 ʀᴇᴍᴏᴠᴇ, ➕ ɪɴꜱᴛᴀʟʟ, 🤝 ᴊᴏɪɴ, 🔓 ᴜɴʙʟᴏᴄᴋ, 🆔 ᴜᴊɪᴅ, 🚫 ʙʟᴏᴄᴋ, 📝 ᴀᴅᴅɴᴏᴛᴇ, ♻️ ϙʀ, 🐚 ꜱʜᴇʟʟ, 🔄 ᴇᴠᴀʟ, 🗑 ᴅᴇʟɴᴏᴛᴇ, 🗑 ᴅᴇʟᴀʟʟɴᴏᴛᴇꜱ, 🚷 ʙᴀɴ, 📜 ᴀʟʟɴᴏᴛᴇꜱ, 
 
-🌟 *Extra* 
+⚜️ *Extra* ⚜️
 📋 ᴘᴀꜱᴛᴇ, 📋 ᴘᴀꜱᴛᴇʙɪɴ, 
 
-🌟 *Game* 
+🎲 *Game* 🎲
 🎲 ᴅᴇʟᴛᴛᴛ, 🎲 ᴛᴛᴛ, 
 
-🌟 *Fun* 
+🎍 *Fun* 🎍
 ❤️ ꜱʜɪᴘ, 👋 ᴡᴀᴠᴇ, ❓ ϙᴜᴇꜱᴛɪᴏɴ, ❓ ᴛʀᴜᴛʜ, ❓ ᴅᴀʀᴇ, 💡 ꜰᴀᴄᴛ, 📜 ϙᴜᴏᴛᴇꜱ, 📚 ᴅᴇꜰɪɴᴇ, 
 
-🌟 *General* 
+🎗️ *General* 🎗️
 🆘 ʜᴇʟᴘ, 🆘 ᴏᴡɴᴇʀ, 📁 ꜰɪʟᴇ, ℹ️ ɪɴꜰᴏ, 📈 ꜱᴛᴀᴛᴜꜱ, 📊 ʀᴇᴘᴏʀᴛ, 🏆 ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ, 📶 ᴘɪɴɢ, 👀 ᴀʟɪᴠᴇ, 
 
-🌟 *Tools* 
+🎐 *Tools* 🎐
 🔄 ʀᴇꜱᴛᴀʀᴛ, 
 
-💗 *Misc* 💗
+🔖 *Misc* 🔖
 🔄 ᴜᴘᴅᴀᴛᴇ, 🎐 ᴠᴠ, 🏵 ꜱᴇᴛᴡᴇʟᴄᴏᴍᴇ, 🌅 ꜱᴇᴛɢᴏᴏᴅʙʏᴇ, 📖 ʀᴇᴀᴅᴍᴏʀᴇ, 🕒 ᴜᴘᴛɪᴍᴇ, 📊 ᴡᴍ, 🎨 ᴘɪᴄᴋ, 🔄 ꜰʟɪᴘᴛᴇxᴛ, 🎥 ᴍᴘ4ꜰʀᴏᴍᴜʀʟ, 📚 ᴄʜᴀᴛʙᴏᴛ, 📥 ᴇʙɪɴᴀʀʏ, 📤 ᴅʙɪɴᴀʀʏ, 🤖 ʙᴏᴛ, 🔓 ᴜɴʙᴀɴ, 🔗 ᴜʀʟ, 🔍 ᴛʀ, 
 
-💗 *Converter* 💗
+🎀 *Converter* 🎀
 ⏱️ ᴛᴏɪᴍɢ, 🎀 ꜰᴀɴᴄʏ, 🔎 ᴛɪɴʏ, 🔊 ᴛᴏᴀᴜᴅɪᴏ, 
 
-💗 *Sticker* 💗
+🧧 *Sticker* 🧧
 ⚪ ᴄɪʀᴄʟᴇ, 🔳 ᴄʀᴏᴘ, 🔘 ʀᴏᴜɴᴅ, 🔒 ꜱᴛᴇᴀʟ, 
 
-💗 *Downloader* 💗
+⚡ *Downloader* ⚡
 📷 ɪɴꜱᴛᴀ, 🎵 ᴛᴛꜱ, 🎥 ʏᴛꜱ, 🎬 ᴠɪᴅᴇᴏ, ▶️ ᴘʟᴀʏ, 📌 ᴘɪɴ, 📺 ᴍᴇᴅɪᴀꜰɪʀᴇ, 🔊 ᴀᴜᴅɪᴏ, ▶️ ʏᴛᴍᴘ4, ▶️ ʏᴛᴍᴘ3, 📄 ʏᴛᴅᴏᴄ, 📃 ᴘʟᴀʏʟɪꜱᴛ, 
 
-💗 *Economy* 💗
+❄️ *Economy* ❄️
 💵 ᴅᴀɪʟʏ, 🔄 ʀᴇꜱᴇᴛᴡᴀʟʟᴇᴛ, 🏦 ᴄᴀᴘᴀᴄɪᴛʏ, 💰 ᴅᴇᴘᴏꜱɪᴛ, 🏛️ ʟʙ, 🔄 ᴛʀᴀɴꜱꜰᴇʀ, 🏦 ᴡᴀʟʟᴇᴛ, 🎁 ɢɪᴠᴇ, 🏦 ʙᴀɴᴋ, 👤 ʀᴏʙ, 💸 ᴡɪᴛʜᴅʀᴀᴡ, 🎰 ɢᴀᴍʙʟᴇ, 🎰 ꜱʟᴏᴛ2, 🎰 ꜱʟᴏᴛ, 
 
-💗 *User* 💗
+🎑 *User* 🎑
 🖼️ ꜰᴜʟʟᴘᴘ, 
 
 💗 *AI* 💗
@@ -120,7 +120,7 @@ _🗓️ Date:_ *${date}*
 🔇 ᴀᴍᴜᴛᴇ, 🔈 ᴀᴜɴᴍᴜᴛᴇ, 🔇 ᴅᴜɴᴍᴜᴛᴇ, 🔇 ᴅᴍᴜᴛᴇ,`
                 
 
-            }
+            
             str += `\n\n\n*⭐️ Type:* _<${prefix}report>_ to report the developers about any issue you face in the bot\n\n*⭐ Type:* _<${prefix}help cmd name>_ to know more about a specific command.\n*Eg:* _${prefix}help attp_\n\n*🎐 RONEN-BOTS* `;
             let buttonMessaged = {
                 video: { url: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4" },
