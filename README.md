@@ -20,7 +20,7 @@
  
 ---
 
-<p align="center"><img src="https://profile-counter.glitch.me/{SamPandey001}/count.svg" alt="SamPandey001 :: Visitor's Count" /></p>
+<p align="center"><img src="(https://wallpapercave.com/wp/wp8939959.jpg)" alt="" /></p>
 
   <p align="center"> Mikasa is a all you need. </p>
  
