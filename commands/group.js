@@ -543,7 +543,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             }
             let disc = citel.sender.substring(3, 7);
             let textr = '';
-            textr += `*Hii ${tlang().greet} ,🌟 ${citel.pushName}∆${disc}'s* Exp\n\n`;
+            textr += `*Hii ${citel.pushName}!*\n\n`;
             let ttms = `${userq.xp}` / 8;
             textr += `*🌟Role*: ${role}\n*🟢Exp*: ${userq.xp} / ${Levels.xpFor(
     userq.level + 1
