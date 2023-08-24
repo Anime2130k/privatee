@@ -92,7 +92,7 @@ cmd({
                     }
                 }
                 break
-            case 'nsfw':
+            /*case 'nsfw':
                 {
                     let checkgroup = await sck.findOne({ id: citel.chat })
                     if (!checkgroup) {
@@ -106,10 +106,10 @@ cmd({
                         return
                     }
                 }
-                break
+                break*/
             default:
                 {
-                    citel.reply("Please provide me term like.\n1-events\n2-antilink\n3-nsfw\n4-economy")
+                    citel.reply("Please provide me term like.\n• events\n• antilink\n• economy")
                 }
         }
     }
