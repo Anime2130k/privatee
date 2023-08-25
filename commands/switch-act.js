@@ -28,7 +28,7 @@ cmd({
         const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
         //-----------------------------------------
         if (!citel.isGroup) return citel.reply("This command is only for group")
-        if (!text) return citel.reply(`❌ Please provide me term like like\n• events\n• antilink\n• economy`)
+        if (!text) return citel.reply(`❌ Please provide me term like like\n• events\n• antilink\n• economy \n• nsfw`)
         if (!isAdmins) return citel.reply("❌ This command is only for admin")
         switch (text.split(" ")[0]) {
             case 'antilink':
@@ -109,7 +109,7 @@ cmd({
                 break
             default:
                 {
-                    citel.reply("Please provide me term like.\n• events\n• antilink\n• economy")
+                    citel.reply("Please provide me term like.\n• events\n• antilink\n• economy\n• nsfw")
                 }
         }
     }
