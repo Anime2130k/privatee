@@ -1168,7 +1168,7 @@ cmd({
 },
 async (Void, citel, text) => {
     if (!text && !citel.quoted) {
-        await doReact("❔");
+       /* await doReact("❔");*/
         return citel.reply(`Please provide a text (Type or mention a message) !\n\nExample: ${prefix}quote Mikasa is love`);
     }
 
