@@ -1160,7 +1160,7 @@ cmd({ on: "text" }, async(Void, citel) => {
 }
 
 cmd({
-    pattern: "quote",
+    pattern: "squote",
     alias: ["q"],
     desc: "Generates a quote sticker from a replied message.",
     category: "group",
@@ -1172,7 +1172,7 @@ async (Void, citel, text) => {
         return citel.reply(`Please provide a text (Type or mention a message) !\n\nExample: ${prefix}quote Mikasa is love`);
     }
 
-    let waUserName = pushName;
+    let waUserName = ${citel.pushName};
     let quoteText = citel.quoted ? citel.quoted.msg : text;
 
   /*  await doReact("📮");*/
@@ -1210,7 +1210,7 @@ async (Void, citel, text) => {
 
         let stickerMess = new Sticker("quote.png", {
             pack: packname,
-            author: pushName,
+            author: ${citel.pushName},
             type: text.includes("--crop" || '-c') ? StickerTypes.CROPPED : StickerTypes.FULL,
             categories: ["🤩", "🎉"],
             id: "12345",
