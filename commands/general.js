@@ -178,19 +178,15 @@ _🎀 Status:_ *⬜Active*
 🔖 *Website* : Coming soon...
 
 
-*🔰NO. OF BOTS WE OPERATE:* 3️⃣
+*🔰NO. OF BOTS WE OPERATE:* 2️⃣
 
-#1 *Elaina✨*
+#1 *Mikasa💗*
 _〽️Status:_ *⬜ACTIVE*
 _No:_ *wa.me/918811935376*
 
 #2 *Ladybug🐞*
 _〽️Status:_ *⬜ACTIVE*
 _No:_ *wa.me/917083409908*
-
-#3 *Mikasa💗*
-_〽️Status:_ *⬜ACTIVE*
-_No:_ *wa.me/14404445923*
 
 *⚜️Currently Active in this Group:* _Mikasa💗_`
         let buttonMessaged = {
