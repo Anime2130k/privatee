@@ -120,7 +120,7 @@ Fᴜʟʟᴘᴘ,
             
             str += `\n\n\n*⭐️ Type:* _<${prefix}report>_ to report the developers about any issue you face in the bot\n\n*⭐ Type:* _<${prefix}help cmd name>_ to know more about a specific command.\n*Eg:* _${prefix}help attp_\n\n*🎐 RONEN-BOTS* `;
             let buttonMessaged = {
-                video: { url: "https://media.tenor.com/lUn8z2EuQ1QAAAAC/snk-mikasa-season4.gif" },
+                video: { url: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4" },
                 caption: str
             };
             return await Void.sendMessage(citel.chat, buttonMessaged);
