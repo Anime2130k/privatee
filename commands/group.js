@@ -1175,7 +1175,7 @@ async (Void, citel, text) => {
     let waUserName = pushName;
     let quoteText = citel.quoted ? citel.quoted.msg : text;
 
-    await doReact("📮");
+  /*  await doReact("📮");*/
 
     let quoteJson = {
         type: "quote",
