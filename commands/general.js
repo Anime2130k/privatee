@@ -9,7 +9,7 @@
  * @version 0.0.6
  **/
 
-const { formatp , formatDate , tlang, botpic,cmd, prefix, runtime,Config , parsedJid ,sleep } = require('../lib')
+const { formatp , sck1, formatDate , tlang, botpic,cmd, prefix, runtime,Config , parsedJid ,sleep } = require('../lib')
 const axios = require('axios')
 const fetch = require('node-fetch');
 const speed = require('performance-now')
