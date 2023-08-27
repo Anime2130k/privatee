@@ -1720,17 +1720,18 @@ else if(text=="Detail" || text=="Info" || text=="info" || text=="details" )
 
     let ginfos = `
       *「 INFO GROUP 」*
-*▢ ID :*
+*🆔 ID :*
    • ${groupMetadata.id}
-*▢ NAME :* 
+*👤 NAME :* 
    • ${groupMetadata.subject}
-*▢ Members :*
+*👥 Members :*
    • ${participants.length}
-*▢ Group Owner :*
+*👑 Group Owner :*
    • wa.me/${owner.split('@')[0]}
-*▢ Description :*
+*🔖 Description :*
    • ${groupMetadata.desc?.toString() || 'unknown'}
-*▢ 🪢 Extra Group Configuration :*";
+   
+*🪢 Extra Group Configuration :*
   • Group Nsfw :    ${Group.nsfw=='true'? '✅' : '❎'} 
   • Antilink        :    ${Group.antilink=='true'? '✅' : '❎'}
   • Economy      :    ${Group.economy=='true'? '✅' : '❎'}
