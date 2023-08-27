@@ -1693,6 +1693,7 @@ cmd({
         async(Void, citel, text) => {
             //if (!citel.isGroup) return citel.reply(tlang().group);
             const groupAdmins = await getAdmin(Void, citel)
+		const participants = citel.isGroup ? await groupMetadata.participants : "";
             const botNumber = await Void.decodeJid(Void.user.id)
             const isBotAdmins = citel.isGroup ? groupAdmins.includes(botNumber) : false;
             const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
@@ -1712,8 +1713,8 @@ cmd({
 else if(text=="Detail" || text=="Info" || text=="info" || text=="details" ) 
 {
     const pp = await Void.profilePictureUrl(citel.chat, 'image').catch(_ => null) || ''
-   /* const groupAdmins = participants.filter(p => p.admin)*/
-    const listAdmin = groupAdmins.map((v, i) => `  ${i + 1}. wa.me/${v.id.split('@')[0]}`).join('\n')
+    const groupAdmins = participants.filter(p => p.admin)
+    //const listAdmin = groupAdmins.map((v, i) => `  ${i + 1}. wa.me/${v.id.split('@')[0]}`).join('\n')//
     const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || citel.chat.split`-`[0] + '@s.whatsapp.net'
 
     let ginfos = `
