@@ -246,7 +246,7 @@ cmd({
       }else if (text.toLowerCase().startsWith("off") || text.toLowerCase().startsWith("deact") || text.toLowerCase().startsWith("disable") ) {
         if (checkinfo.antidemote == 'false') return await citel.send("*Anti_Demote Already Disabled In Current Chat!*")
         await sck.updateOne({ id: citel.chat }, { antidemote : 'false' });
-        return await citel.send("*Anti_Demote Disable Succesfully!*")
+        return await citel.reply("*Anti_Demote Disable Succesfully!*")
       }
       else return await citel.reply(`*Uhh Dear, Please Toggle between "On" And "Off".* \n*_To Enable & Disable Stop Demoting Peoples!_*`)
 });
@@ -273,7 +273,7 @@ cmd({
       }else if (text.toLowerCase().startsWith("off") || text.toLowerCase().startsWith("deact") || text.toLowerCase().startsWith("disable") ) {
         if (checkinfo.antipromote == 'false') return await citel.send("*Anti_Promote Already Disabled In Current Chat!*")
         await sck.updateOne({ id: citel.chat }, { antipromote : 'false' });
-        return await citel.send("*Anti_Promote Disable Succesfully!*")
+        return await citel.reply("*Anti_Promote Disable Succesfully!*")
       }
       else return await citel.reply(`*Uhh Dear, Please Toggle between "On" And "Off".* \n*_To Stop Promoting Peoples in Chat_*`)
 });
@@ -300,7 +300,7 @@ cmd({
       }else if (text.toLowerCase().startsWith("off") || text.toLowerCase().startsWith("deact") || text.toLowerCase().startsWith("disable") ) {
         if (checkinfo.pdm == 'false') return await citel.send("*Promote/Demote Alerts Already Disabled In Current Chat!*")
         await sck.updateOne({ id: citel.chat }, { pdm : 'false' });
-        return await citel.send("*Promote/Demote Alerts Disable Succesfully!*")
+        return await citel.reply("*Promote/Demote Alerts Disable Succesfully!*")
       }
       else return await citel.reply(`*Uhh Dear, Please Toggle between "On" And "Off".* \n*_To get And Stop Promote/Demote Alerts_*`)
 });
@@ -1744,7 +1744,7 @@ return await Void.sendMessage(citel.chat,{image:{url : pp} , caption: ginfos } ,
 }
 else
 { 
-    return await citel.send(`*_Uhh Dear Give me Query From Bellow Options_*
+    return await citel.reply(`*_Uhh Dear Give me Query From Bellow Options_*
 _1:- .group Mute_
 _2:- .group Unmute_
 _3:- .group Info_
