@@ -1728,8 +1728,6 @@ else if(text=="Detail" || text=="Info" || text=="info" || text=="details" )
    • ${participants.length}
 *▢ Group Owner :*
    • wa.me/${owner.split('@')[0]}
-*▢ Admins :*
-${listAdmin}
 *▢ Description :*
    • ${groupMetadata.desc?.toString() || 'unknown'}
 *▢ 🪢 Extra Group Configuration :*";
