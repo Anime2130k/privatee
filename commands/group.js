@@ -1712,7 +1712,7 @@ cmd({
 else if(text=="Detail" || text=="Info" || text=="info" || text=="details" ) 
 {
     const pp = await Void.profilePictureUrl(citel.chat, 'image').catch(_ => null) || ''
-    const groupAdmins = participants.filter(p => p.admin)
+   /* const groupAdmins = participants.filter(p => p.admin)*/
     const listAdmin = groupAdmins.map((v, i) => `  ${i + 1}. wa.me/${v.id.split('@')[0]}`).join('\n')
     const owner = groupMetadata.owner || groupAdmins.find(p => p.admin === 'superadmin')?.id || citel.chat.split`-`[0] + '@s.whatsapp.net'
 
