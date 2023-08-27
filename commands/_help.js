@@ -65,6 +65,7 @@ _☘️ My Uptime:_ *${runtime(process.uptime())}*
 _💾 My Memory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
 _⏳ Time:_ *${time}*
 _🗓️ Date:_ *${date}*
+_〽️ Support:_ *https://tinyurl.com/285yd249*
 
 *⬇️Here's the list of my commands⬇️*
 
