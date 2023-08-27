@@ -1368,7 +1368,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 });
 
     //---------------------------------------------------------------------------
-cmd({
+/**cmd({
             pattern: "group",
 react: "✔️",
 
@@ -1398,7 +1398,7 @@ react: "✔️",
                 return citel.reply(`Group Mode:\n${prefix}group open- to open\n${prefix}group close- to close`);
             }
         }
-    )
+    )**/
     //---------------------------------------------------------------------------
 cmd({
             pattern: "grouppic",
