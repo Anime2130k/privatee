@@ -80,7 +80,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             },
         };
         return await Void.sendMessage(citel.chat, buttonMessaged, {
-            quoted: citel
+            quoted: citel,
         }
     )
     //---------------------------------------------------------------------------
