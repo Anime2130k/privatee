@@ -1759,7 +1759,7 @@ _3:- .group Info_
 //---------------------------------------------------------------------------
 if(Config.WORKTYPE!=='private'){
 cmd({ on: "text" }, async(Void, citel) => {
-    const randomXp = 8;
+    const randomXp = 50;
     let usrname = citel.pushName
     const hasLeveledUp = await Levels.appendXp(citel.sender, "RandomXP", randomXp);
     if (hasLeveledUp) {
