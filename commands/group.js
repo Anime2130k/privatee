@@ -988,8 +988,8 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             let meh = citel.sender;
             const userq = await Levels.fetch(citel.sender, "RandomXP");
             const lvpoints = userq.level;
-            var role = "New Born✨";
-            if (lvpoints <= 2) {
+            var role = "*⚠️GOD OF MULTIVERSE*";
+            if (lvpoints <= 1) {
                 var role = "🏳Slime";
             } else if (lvpoints <= 4) {
                 var role = "🧟Goblin";
@@ -1038,7 +1038,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             } else if (lvpoints <= 55) {
                 var role = "🐉Demon Lord";
 		    } else if (lvpoints <= 400) {
-                var role = "⚠️God of Multiverse";
+                var role = "Fat ass🍑🍆";
             }
             let ttms = `${userq.xp}` / 8;
             const timenow = moment(moment())
@@ -1100,8 +1100,8 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
             const userq = await Levels.fetch(citel.sender, "RandomXP");
             const lvpoints = userq.level;
-            var role = "New Born✨";
-            if (lvpoints <= 2) {
+            var role = "*⚠️GOD OF MULTIVERSE*";
+            if (lvpoints <= 1) {
                 var role = "🏳Slime";
             } else if (lvpoints <= 4) {
                 var role = "🧟Goblin";
@@ -1150,7 +1150,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             } else if (lvpoints <= 55) {
                 var role = "🐉Demon Lord";
 		    } else if (lvpoints <= 400) {
-                var role = "⚠️God of Multiverse";
+                var role = "Fat ass🍑🍆";
             }
             let disc = citel.sender.substring(3, 7);
             let textr = '';
@@ -1205,7 +1205,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 \n\n`
             for (let i = 0; i < fetchlb.length; i++) {
                 const lvpoints = fetchlb[i].level
-                var role = "*⚠️GOD OF MULTIVERSE⚠️*";
+                var role = "*⚠️GOD OF MULTIVERSE*";
                 if (lvpoints <= 1) {
                 var role = "🏳Slime";
             } else if (lvpoints <= 4) {
@@ -1255,7 +1255,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             } else if (lvpoints <= 55) {
                 var role = "🐉Demon Lord";
             } else if (lvpoints <= 400) {
-                var role = "⚠️God of Multiverse"; 	
+                var role = "Fat ass🍑🍆"; 	
             }
                 let data = await sck1.findOne({ id: fetchlb[i].userID })
                 let namew = fetchlb[i].userID
@@ -1766,7 +1766,7 @@ cmd({ on: "text" }, async(Void, citel) => {
         const sck1 = await Levels.fetch(citel.sender, "RandomXP");
         const lvpoints = sck1.level;
         var role = "*⚠️GOD OF MULTIVERSE*";
-        if (lvpoints <= 2) {
+        if (lvpoints <= 1) {
                 var role = "🏳Slime";
             } else if (lvpoints <= 4) {
                 var role = "🧟Goblin";
@@ -1815,7 +1815,7 @@ cmd({ on: "text" }, async(Void, citel) => {
             } else if (lvpoints <= 55) {
                 var role = "🐉Demon Lord";
 		} else if (lvpoints <= 400) {
-                var role = "⚠️God of Multiverse";
+                var role = "Fat ass🍑🍆";
         }
         if (Config.levelupmessage !== 'false') {
             await Void.sendMessage(citel.chat, {
