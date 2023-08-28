@@ -63,10 +63,10 @@ _Don't text the Bot in pm._
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
-		let ter = (`${truth()}`);
+		let ter = `${truth()}`;
 		let buttonMessaged = {
             image: { url: await botpic() },
-            caption: `ter`,
+            caption: ter,
             footer: tlang().footer,
             headerType: 4,
             contextInfo: {
