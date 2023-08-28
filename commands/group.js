@@ -1205,8 +1205,8 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 \n\n`
             for (let i = 0; i < fetchlb.length; i++) {
                 const lvpoints = fetchlb[i].level
-                var role = "New Born✨";
-                if (lvpoints <= 2) {
+                var role = "*⚠️GOD OF MULTIVERSE⚠️*";
+                if (lvpoints <= 1) {
                 var role = "🏳Slime";
             } else if (lvpoints <= 4) {
                 var role = "🧟Goblin";
@@ -1254,7 +1254,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
                 var role = "⚔Demon King";
             } else if (lvpoints <= 55) {
                 var role = "🐉Demon Lord";
-		} if (lvpoints <= 400) {
+            } else if (lvpoints <= 400) {
                 var role = "⚠️God of Multiverse"; 	
             }
                 let data = await sck1.findOne({ id: fetchlb[i].userID })
