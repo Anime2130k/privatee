@@ -63,7 +63,24 @@ _Don't text the Bot in pm._
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
-            return await citel.reply(`${truth()}`);
+		let buttonMessaged = {
+            image: { url: await botpic() },
+            caption: `${truth()}`,
+            footer: tlang().footer,
+            headerType: 4,
+            contextInfo: {
+                externalAdReply: {
+                    title: "",
+                    body: "Mikasa💗",
+                    thumbnail: log0,
+                    mediaType: 4,
+                    mediaUrl: '',
+                    sourceUrl: ``,
+                },
+            },
+        };
+        return await Void.sendMessage(citel.chat, buttonMessaged, {
+            quoted: citel
         }
     )
     //---------------------------------------------------------------------------
