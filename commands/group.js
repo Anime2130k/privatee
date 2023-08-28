@@ -1254,7 +1254,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
                 var role = "⚔Demon King";
             } else if (lvpoints <= 55) {
                 var role = "🐉Demon Lord";
-		} else if (lvpoints <= 400) {
+		} if (lvpoints <= 400) {
                 var role = "⚠️God of Multiverse"; 	
             }
                 let data = await sck1.findOne({ id: fetchlb[i].userID })
