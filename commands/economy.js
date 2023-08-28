@@ -132,7 +132,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
   let mongoschemas = zerogroup.economy || false;
   if (!mongoschemas) return citel.reply("*🚦Economy* is not active in the current group.");
   if (!citel.isGroup) return citel.reply(tlang().group);
-  if (!text) return citel.reply(`💴 *Bank-capacity* 💳\n\n1 | *1000 sp* = 🪙100\n\n2 | *100000 sp* = 🪙1000\n\n3 | *10000000 sp* = 🪙10000000\n\nExample: ${prefix}capacity 1 OR ${prefix}bankupgrade 1000`);
+  if (!text) return citel.reply(`💴 *Bank-capacity* 💳\n\n1 | *1000 sp* = 🪙100\n\n2 | *100000 sp* = 🪙1000\n\n3 | *10000 sp* = 🪙10000000\n\nExample: ${prefix}capacity 1 OR ${prefix}bankupgrade 1000`);
 
   const secktor = "secktor";
   let value = text.trim();
