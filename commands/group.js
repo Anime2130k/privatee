@@ -1197,7 +1197,7 @@ _Don't text the Bot in pm._
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
-            const fetchlb = await Levels.fetchLeaderboard("RandomXP", 5);
+            const fetchlb = await Levels.fetchLeaderboard("RandomXP", 10);
             let leadtext = `
 *-------------------------------*
   *-----☣️ LEADERBOARD ☣️-----*
