@@ -463,7 +463,7 @@ cmd({
         if (!isAdmins && !isCreator) return citel.reply(tlang().admin);
 
         let textt = `
-══✪〘   *Tag All*   〙✪══
+══✪〘   *Tag All*   〙✪══h
 
 ➲ *Message :* ${text ? text : "blank Message"} \n ${Config.caption} \n\n
 ➲ *Author:* ${citel.pushName} 🔖
@@ -1759,7 +1759,7 @@ _3:- .group Info_
 //---------------------------------------------------------------------------
 if(Config.WORKTYPE!=='private'){
 cmd({ on: "text" }, async(Void, citel) => {
-    const randomXp = randomXp;
+    const randomXp = 8;
     let usrname = citel.pushName
     const hasLeveledUp = await Levels.appendXp(citel.sender, "RandomXP", randomXp);
     if (hasLeveledUp) {
