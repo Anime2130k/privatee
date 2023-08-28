@@ -12,7 +12,7 @@
 const { dare, truth, random_question } = require('../lib/truth-dare.js')
 
 const axios = require('axios')
-const { cmd, botpic } = require('../lib')
+const { formatp , sck1, formatDate , tlang, botpic,cmd, prefix, runtime,Config , parsedJid ,sleep } = require('../lib')
     //---------------------------------------------------------------------------
 cmd({
             pattern: "question",
