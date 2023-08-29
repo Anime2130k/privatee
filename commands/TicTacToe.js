@@ -57,7 +57,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
 	if(!users) return citel.reply('Please tag a user.')
     let ter = `*Gay Check:* ${percent()}`;
     let buttonMessaged = {
-        image: { url: `${botpic()}`},
+        image: { url: await botpic()},
         caption: ter,
     };
     return await Void.sendMessage(citel.chat, buttonMessaged, {
