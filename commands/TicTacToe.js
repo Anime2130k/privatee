@@ -273,7 +273,7 @@ cmd({ pattern: "ship", react: "🤭", category: "fun" }, async (Void, citel, tex
     const groupMetadata = citel.isGroup ? await Void.groupMetadata(citel.chat).catch((e) => {}) : "";
     const participants = citel.isGroup ? groupMetadata.participants : [];
     const members = participants.map(u => u.id);
-    
+
     const percentage = Math.floor(Math.random() * 100);
 
     async function couple(percent) {
@@ -310,21 +310,18 @@ cmd({ pattern: "ship", react: "🤭", category: "fun" }, async (Void, citel, tex
         + `\t\t✯────────────────────💘\n`
         + await couple(percentage);
 
-    const ter = {
-        text: caption,
-        mentions: [citel.sender, shiper],
-        quoted: citel
-    };
-
     const buttonMessaged = {
-        image: { url: `https://graph.org/file/76810328b86d0d0bad192.jpg`},
-        caption: ter,
+        image: { url: `https://graph.org/file/76810328b86d0d0bad192.jpg` },
+        caption: caption, // Use the caption directly here
+        mentions: [citel.sender, shiper], // Add mentions if required
+        quoted: citel,
     };
 
     return await Void.sendMessage(citel.chat, buttonMessaged, {
         quoted: citel,
     });
 });
+
 
 
 const axios = require('axios');
