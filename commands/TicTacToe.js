@@ -12,7 +12,7 @@
  const { cmd, botpic, parseJid,getAdmin,tlang } = require("../lib/");
  const eco = require('discord-mongoose-economy')
  const ty = eco.connect(mongodb);
-
+const { percent } = require("../lib/percent.js");
 
  const stickers = [
   "https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md-Media/main/ᴅɪᴄᴇ/sᴜʜᴀɪʟ-ᴍᴅ-ᴅɪᴄᴇ-1.webp",
