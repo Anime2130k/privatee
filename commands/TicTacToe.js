@@ -32,7 +32,7 @@ const { percent } = require("../lib/percent.js");
 **/
 cmd({
     pattern: "gaycheck",
-    desc: "Check if your friend is gay?",
+    desc: "Check if your friend is gay or not?",
     react: "🤔",
     category: "fun",
     filename: __filename,
