@@ -203,15 +203,15 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 return await citel.reply(`⛩️ Sender: ${citel.pushName}\n🍀Successfully 💰Deposited 🪙${deposit.amount} to your bank.Upgrade your bank capacity to add more money📈.`)
     }
 )
-     cmd({
-        pattern: "lb",
-        desc: "check leaderboard.",
-        category: "economy",
-        filename: __filename,
-        react: "💷"
-    },
-    async(Void, citel, text,{ isCreator }) => {
-	    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+cmd({
+     pattern: "lb",
+desc: "check leaderboard.",
+category: "economy",
+filename: __filename,
+react: "💷"
+},
+async(Void, citel, text,{ isCreator }) => {
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -226,31 +226,32 @@ _Don't text the Bot in pm._
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
-	let h = await eco.lb('secktor',10);
-	let str = `*Top ${h.length} users with more money in wallet.*\n`
-	const { sck1 } = require('../lib');
-	let arr = []
-	 for(let i=0;i<h.length;i++){
-            let username = await sck1.findOne({ id: h[i].userID })
-            var tname;
-            if (username.name && username.name !== undefined) {
-                tname = username.name
-            } else {
-                tname = Void.getName(h[i].userID)
-            }
-str+= `*${i+1}*\n╭─────────────🏁\n│ *Name:-* _${tname}_\n│ *User:-* _@${h[i].userID.split('@')[0]}_\n│ *Wallet:-* _${h[i].wallet}_\n│ *Bank Amount:-* _${h[i].bank}_\n│ *Bank Capacity:-* _${h[i].bankCapacity}_\n╰─────────────🏁\n\n`  	 
-	 arr.push(h[i].userID)
-	 }
-	     let ter = (str,{mentions:arr})
-    let buttonMessaged = {
+    let h = await eco.lb('secktor',10);
+    let str = `*Top ${h.length} users with more money in wallet.*\n`
+    const { sck1 } = require('../lib');
+    let arr = []
+     for(let i=0;i<h.length;i++){
+        let username = await sck1.findOne({ id: h[i].userID })
+        var tname;
+        if (username.name && username.name !== undefined) {
+            tname = username.name
+        } else {
+            tname = Void.getName(h[i].userID)
+        }
+        str+= `*${i+1}*\n╭─────────────🏁\n│ *Name:-* _${tname}_\n│ *User:-* _@${h[i].userID.split('@')[0]}_\n│ *Wallet:-* _${h[i].wallet}_\n│ *Bank Amount:-* _${h[i].bank}_\n│ *Bank Capacity:-* _${h[i].bankCapacity}_\n╰─────────────🏁\n\n`    
+     arr.push(h[i].userID)
+     }
+     let ter = str.replace(/\{mentions:arr\}/g, arr.join(' '));
+     let buttonMessaged = {
         image: { url: `https://graph.org/file/c9f83b554a6afab8b828a.jpg`},
         caption: ter,
     };
-return await Void.sendMessage(citel.chat, buttonMessaged, {
-        quoted: citel,	  
+    return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,      
     });	    
-	     
-     })
+     
+ }) 
+
 
 cmd({
     pattern: "transfer",
