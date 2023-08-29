@@ -10,12 +10,12 @@ cmd({
 }, async (Void, citel, text, { isCreator }) => {
   if (citel.isGroup) {
     const { Insta } = require('../lib');
-    if (!text) let ter = `Mikasa is active! Type *.help* to get my command list!`;
+    let ter = `Mikasa is active! Type *.help* to get my command list!`;
     let buttonMessaged = {
         image: { url: await botpic() },
         caption: ter,
     };
-return await Void.sendMessage(citel.chat, buttonMessaged, {
+if (!text) return await Void.sendMessage(citel.chat, buttonMessaged, {
         quoted: citel,	  
     });
     let response = 'Mikasa is active! Type *.help* to get my command list!';
