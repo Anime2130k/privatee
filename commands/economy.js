@@ -336,7 +336,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
          const balance = await eco.balance(citel.sender, secktor); //Returns wallet, bank, and bankCapacity. Also creates a USer if it doesn't exist.
 let ter = `*👛 ${citel.pushName}'s wallet:*\n\n_💵${balance.wallet}_`;
     let buttonMessaged = {
-        image: { url: await botpic() },
+        image: { url: `https://graph.org/file/c9f83b554a6afab8b828a.jpg`},
         caption: ter,
     };
 return await Void.sendMessage(citel.chat, buttonMessaged, {
@@ -412,9 +412,9 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
         let mongoschemas = zerogroup.economy || "false";
         if (mongoschemas == "false") return citel.reply("*🚦Economy* is not active in current group.");
         const balance = await eco.balance(citel.sender, "secktor"); //Returns wallet, bank, and bankCapacity. Also creates a USer if it doesn't exist.
-let ter = `👤User: ${citel.pushName}\n\n*💵Balance:* _${balance.bank}/${balance.bankCapacity}_`;
+let ter = `*👤User:* ${citel.pushName}\n\n*💵Balance:* _${balance.bank}/${balance.bankCapacity}_`;
     let buttonMessaged = {
-        image: { url: await botpic() },
+        image: { url: `https://graph.org/file/3bfc94539b2a23f32a135.jpg`},
         caption: ter,
     };
 return await Void.sendMessage(citel.chat, buttonMessaged, {
