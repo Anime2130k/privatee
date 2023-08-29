@@ -79,8 +79,8 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
                 mediaType: 4,
                 mediaUrl: '',
                 sourceUrl: ``,
-            },*/
-        },
+            },
+        },*/
     };
     return await Void.sendMessage(citel.chat, buttonMessaged, {
         quoted: citel,
@@ -127,8 +127,8 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
                 mediaType: 4,
                 mediaUrl: '',
                 sourceUrl: ``,
-            },*/
-        },
+            },
+        },*/
     };
     return await Void.sendMessage(citel.chat, buttonMessaged, {
         quoted: citel,
