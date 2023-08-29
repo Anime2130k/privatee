@@ -317,7 +317,7 @@ cmd({ pattern: "ship", react: "🤭", category: "fun" }, async (Void, citel, tex
     };
 
     const buttonMessaged = {
-        image: { url: await botpic() },
+        image: { url: `https://graph.org/file/76810328b86d0d0bad192.jpg`},
         caption: ter,
     };
 
