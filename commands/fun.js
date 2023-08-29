@@ -160,10 +160,17 @@ _Don't text the Bot in pm._
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
         const { data } = await axios.get(`https://nekos.life/api/v2/fact`)
-        return citel.reply(`*Fact:* ${data.fact}\n\n*Powered by Mikasa💗*`)   
-    }
+         
+	  let ter = `*FACT:* ${data.fact}\n\n_Powered by Mikasa💗_`;
+    let buttonMessaged = {
+        image: { url: await botpic() },
+        caption: ter,
+    };
+return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,	  
+    });
 
-)
+  });
     //---------------------------------------------------------------------------
     cmd({
         pattern: "quotes",
