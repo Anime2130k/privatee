@@ -243,7 +243,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
      }
      let ter = str.replace(/\{mentions:arr\}/g, arr.join(' '));
      let buttonMessaged = {
-        image: { url: `https://graph.org/file/c9f83b554a6afab8b828a.jpg`},
+        image: { url: `https://graph.org/file/d9a4bd15bba73699338d9.jpg`},
         caption: ter,
     };
     return await Void.sendMessage(citel.chat, buttonMessaged, {
