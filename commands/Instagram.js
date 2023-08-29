@@ -10,7 +10,14 @@ cmd({
 }, async (Void, citel, text, { isCreator }) => {
   if (citel.isGroup) {
     const { Insta } = require('../lib');
-    if (!text) return citel.reply('Mikasa is active! Type *.help* to get my command list!');
+    if (!text) let ter = `Mikasa is active! Type *.help* to get my command list!`;
+    let buttonMessaged = {
+        image: { url: await botpic() },
+        caption: ter,
+    };
+return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,	  
+    });
     let response = 'Mikasa is active! Type *.help* to get my command list!';
     for (let i = 0; i < response.length; i++) {
       await Void.sendFileUrl(citel.chat, response[i], `*Mikasa is active! Type *.help* to get my command list!*`, citel);
