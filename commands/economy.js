@@ -57,12 +57,26 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 	const secktor = "secktor"
 	const daily  = await eco.daily(citel.sender, secktor, 2000); //give 500 for daily, can be changed
 	 if (daily.cd) { //cdL is already formatted cooldown Left
-        return await  citel.reply(`🎀 You already claimed daily for today, come back in ${daily.cdL}🫡`)
+       let ter = `🎀 You already claimed daily for today, come back in ${daily.cdL}🫡`;
+    let buttonMessaged = {
+        image: { url: await botpic() },
+        caption: ter,
+    };
+return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,	  
+    }); 
 	 } else {
-	 citel.reply(`you claimed daily ${daily.amount} 💵 for today🔱`);   
+	 let ter = `You claimed daily ${daily.amount} 💵 for today🔱`;
+    let buttonMessaged = {
+        image: { url: await botpic() },
+        caption: ter,
+    };
+return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,	  
+    });    
 	 }
  }
- )
+ });
 
  cmd({
          pattern: "resetwallet",
