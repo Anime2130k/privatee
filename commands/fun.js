@@ -208,14 +208,14 @@ return await Void.sendMessage(citel.chat, buttonMessaged, {
     });
     //---------------------------------------------------------------------------
     cmd({
-        pattern: "define",
-        desc: "urban dictionary.",
-     react: "✳️",
-        category: "fun",
-        filename: __filename,
-    },
-    async(Void, citel, text,{ isCreator }) => {
-	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+    pattern: "define",
+    desc: "urban dictionary.",
+    react: "✳️",
+    category: "fun",
+    filename: __filename,
+},
+async (Void, citel, text, { isCreator }) => {
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -230,20 +230,19 @@ _Don't text the Bot in pm._
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
-        try{
-            let { data } = await axios.get(`http://api.urbandictionary.com/v0/define?term=${text}`)
-            var textt = `🔰Word: ${text}
-            📛Definition: ${data.list[0].definition.replace(/\[/g, "").replace(/\]/g, "")}
-            ⚜️Example: ${data.list[0].example.replace(/\[/g, "").replace(/\]/g, "")}`
-            let buttonMessaged = {
-        image: { url: await botpic() },
-        caption: textt,
-    };
-return await Void.sendMessage(citel.chat, buttonMessaged, {
-        quoted: citel,	  
-}
-	catch {
-                        return citel.reply(`No result for ${text}`)
-                    }
+    try {
+        let { data } = await axios.get(`http://api.urbandictionary.com/v0/define?term=${text}`);
+        var textt = `🔰Word: ${text}
+        📛Definition: ${data.list[0].definition.replace(/\[/g, "").replace(/\]/g, "")}
+        ⚜️Example: ${data.list[0].example.replace(/\[/g, "").replace(/\]/g, "")}`;
+        let buttonMessaged = {
+            image: { url: await botpic() },
+            caption: textt,
+        };
+        return await Void.sendMessage(citel.chat, buttonMessaged, {
+            quoted: citel,
+        });
+    } catch {
+        return citel.reply(`No result for ${text}`);
     }
-)
+});
