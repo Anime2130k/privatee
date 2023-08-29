@@ -86,6 +86,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
 });
 
 
+
  cmd({
          pattern: "resetwallet",
          desc: "reset wallet of quoted user.",
