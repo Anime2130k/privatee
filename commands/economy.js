@@ -334,9 +334,15 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
         if (mongoschemas == "false") return citel.reply("*🚦Economy* is not active in current group.");
          const secktor = "secktor"
          const balance = await eco.balance(citel.sender, secktor); //Returns wallet, bank, and bankCapacity. Also creates a USer if it doesn't exist.
-return await citel.reply(`*👛 ${citel.pushName}'s Purse:*\n\n_🪙${balance.wallet}_`)
-    }
-)
+let ter = `*👛 ${citel.pushName}'s wallet:*\n\n_💵${balance.wallet}_`;
+    let buttonMessaged = {
+        image: { url: await botpic() },
+        caption: ter,
+    };
+return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,	  
+    });	    
+    });
 
      //---------------------------------------------------------------------------
      cmd({
@@ -406,9 +412,16 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
         let mongoschemas = zerogroup.economy || "false";
         if (mongoschemas == "false") return citel.reply("*🚦Economy* is not active in current group.");
         const balance = await eco.balance(citel.sender, "secktor"); //Returns wallet, bank, and bankCapacity. Also creates a USer if it doesn't exist.
-return await citel.reply(`🍀User: ${citel.pushName}\n\n_🪙${balance.bank}/${balance.bankCapacity}_`)
-    }
-)
+let ter = `👤User: ${citel.pushName}\n\n*💵Balance:* _${balance.bank}/${balance.bankCapacity}_`;
+    let buttonMessaged = {
+        image: { url: await botpic() },
+        caption: ter,
+    };
+return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,	  
+    });	    
+	    
+    });
 
      //---------------------------------------------------------------------------
      cmd({
