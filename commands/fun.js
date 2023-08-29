@@ -65,7 +65,7 @@ async (Void, citel, text, { isCreator }) => {
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
     // The rest of your warning message
     
-    let ter = `${truth()}`;
+    let ter = `*TRUTH*\n\n${truth()}`;
     let buttonMessaged = {
         image: { url: await botpic() },
         caption: ter,
@@ -89,17 +89,16 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
 
 
     //---------------------------------------------------------------------------
-cmd({
-            pattern: "dare",
-            desc: "truth and dare(dare game.).",
- react: "😁",
-            category: "fun",
-            filename: __filename,
-        },
-        async(Void, citel, text,{ isCreator }) => {
-	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
-  
-_Don't text the Bot in pm._
+    pattern: "dare",
+    desc: "truth and dare (dare game.)",
+    react: "🤔",
+    category: "fun",
+    filename: __filename,
+},
+async (Void, citel, text, { isCreator }) => {
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️* 
+    
+    _Don't text the Bot in pm._
 
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
@@ -110,11 +109,31 @@ _Don't text the Bot in pm._
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-`);
-            return await citel.reply(`${dare()}`);
-        }
-    )
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+    // The rest of your warning message
+    
+    let ter = `*DARE*\n\n${dare()}`;
+    let buttonMessaged = {
+        image: { url: await botpic() },
+        caption: ter,
+        footer: tlang().footer,
+        headerType: 4,
+        contextInfo: {
+            externalAdReply: {
+                title: "",
+                body: "Mikasa💗",
+                thumbnail: log0,
+                mediaType: 4,
+                mediaUrl: '',
+                sourceUrl: ``,
+            },
+        },
+    };
+    return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,
+    });
+});
+
     //---------------------------------------------------------------------------
 cmd({
         pattern: "fact",
