@@ -196,13 +196,16 @@ _Don't text the Bot in pm._
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
         var quoo = await axios.get(`https://favqs.com/api/qotd`)
-       const replyf = `
-*🎗️Content:* ${quoo.data.quote.body}
-*👤Author:* ${quoo.data.quote.author}`
-return citel.reply(replyf)
-    }
-
-)
+	    let ter = `*🎗️Content:* ${quoo.data.quote.body}\n*👤Author:* ${quoo.data.quote.author}\n\n*Powered by Mikasa💗*`;
+    let buttonMessaged = {
+        image: { url: await botpic() },
+        caption: ter,
+    };
+return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,	  
+    });
+    
+    });
     //---------------------------------------------------------------------------
     cmd({
         pattern: "define",
@@ -232,8 +235,14 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
             var textt = `🔰Word: ${text}
             📛Definition: ${data.list[0].definition.replace(/\[/g, "").replace(/\]/g, "")}
             ⚜️Example: ${data.list[0].example.replace(/\[/g, "").replace(/\]/g, "")}`
-            return citel.reply(textt)
-                    } catch {
+            let buttonMessaged = {
+        image: { url: await botpic() },
+        caption: textt,
+    };
+return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,	  
+}
+	catch {
                         return citel.reply(`No result for ${text}`)
                     }
     }
