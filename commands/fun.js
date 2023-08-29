@@ -89,7 +89,8 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
 
 
     //---------------------------------------------------------------------------
-    pattern: "dare",
+cmd({
+	pattern: "dare",
     desc: "truth and dare (dare game.)",
     react: "🤔",
     category: "fun",
