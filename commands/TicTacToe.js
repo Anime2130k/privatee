@@ -53,10 +53,11 @@ async (Void, citel, text, { isCreator }) => {
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
     // The rest of your warning message
-    
-    let ter = `*Gay Check:*${percent()}`;
+    let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+	if(!users) return citel.reply('Please tag a user.')
+    let ter = `*Gay Check:* ${percent()}`;
     let buttonMessaged = {
-        image: { url: `https://graph.org/file/4da4f140f5524e63a0b8b.jpg`},
+        image: { url: `${botpic()}`},
         caption: ter,
     };
     return await Void.sendMessage(citel.chat, buttonMessaged, {
