@@ -37,9 +37,16 @@ _Don't text the Bot in pm._
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
-            return await citel.reply(`${random_question()}`);
-        }
-    )
+           let ter = `*Question:* ${random_question()}\n\n*Powered by Mikasa💗*`;
+    let buttonMessaged = {
+        image: { url: await botpic() },
+        caption: ter,
+    };
+return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,	  
+    });
+		 
+	});
     //---------------------------------------------------------------------------
 cmd({
     pattern: "truth",
@@ -161,7 +168,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
         const { data } = await axios.get(`https://nekos.life/api/v2/fact`)
          
-	  let ter = `*FACT:* ${data.fact}\n\n_Powered by Mikasa💗_`;
+	  let ter = `*FACT:* ${data.fact}\n\n*Powered by Mikasa💗*`;
     let buttonMessaged = {
         image: { url: await botpic() },
         caption: ter,
@@ -232,9 +239,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
     try {
         let { data } = await axios.get(`http://api.urbandictionary.com/v0/define?term=${text}`);
-        var textt = `🔰Word: ${text}
-        📛Definition: ${data.list[0].definition.replace(/\[/g, "").replace(/\]/g, "")}
-        ⚜️Example: ${data.list[0].example.replace(/\[/g, "").replace(/\]/g, "")}`;
+        var textt = `*🔰Word:* ${text}\n*📛Definition:* ${data.list[0].definition.replace(/\[/g, "").replace(/\]/g, "")}\n*⚜️Example:* ${data.list[0].example.replace(/\[/g, "").replace(/\]/g, "")}\n\n*Powered by Mikasa💗*`;
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: textt,
