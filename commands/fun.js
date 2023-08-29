@@ -74,7 +74,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
     
     let ter = `*TRUTH*\n\n${truth()}`;
     let buttonMessaged = {
-        image: { url: await botpic() },
+        image: { url: `https://graph.org/file/4da4f140f5524e63a0b8b.jpg`},
         caption: ter,
         /*footer: tlang().footer,
         headerType: 4,
@@ -122,7 +122,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
     
     let ter = `*DARE*\n\n${dare()}`;
     let buttonMessaged = {
-        image: { url: await botpic() },
+        image: { url: `https://graph.org/file/2d22d8358f911e70a252d.jpg`},
         caption: ter,
         /*footer: tlang().footer,
         headerType: 4,
