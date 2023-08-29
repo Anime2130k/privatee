@@ -12,7 +12,7 @@ cmd({
     const { Insta } = require('../lib');
     let ter = `Mikasa is active! Type *.help* to get my command list!`;
     let buttonMessaged = {
-        image: { url: await botpic() },
+        image: { url: `https://wallpapercave.com/wp/wp8939959.jpg`},
         caption: ter,
     };
 if (!text) return await Void.sendMessage(citel.chat, buttonMessaged, {
