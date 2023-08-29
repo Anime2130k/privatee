@@ -30,6 +30,39 @@ const { percent } = require("../lib/percent.js");
  * For These Dice Stickers
  * @author : Suhail Tech Info
 **/
+cmd({
+    pattern: "gaycheck",
+    desc: "Check if your friend is gay?",
+    react: "🤔",
+    category: "fun",
+    filename: __filename,
+},
+async (Void, citel, text, { isCreator }) => {
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️* 
+    
+    _Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+    // The rest of your warning message
+    
+    let ter = `*Gay Check:*${percent()}`;
+    let buttonMessaged = {
+        image: { url: `https://graph.org/file/4da4f140f5524e63a0b8b.jpg`},
+        caption: ter,
+    };
+    return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,
+    });
+});
 
  cmd(
   {
