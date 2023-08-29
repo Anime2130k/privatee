@@ -71,15 +71,15 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
         caption: ter,
         footer: tlang().footer,
         headerType: 4,
-        contextInfo: {
+       /* contextInfo: {
             externalAdReply: {
-                title: "",
-                body: "Mikasa💗",
-                //thumbnail: log0,
+               title: "",
+               body: "Mikasa💗",
+                thumbnail: log0,
                 mediaType: 4,
                 mediaUrl: '',
                 sourceUrl: ``,
-            },
+            },*/
         },
     };
     return await Void.sendMessage(citel.chat, buttonMessaged, {
@@ -119,7 +119,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
         caption: ter,
         footer: tlang().footer,
         headerType: 4,
-        contextInfo: {
+       /* contextInfo: {
             externalAdReply: {
                 title: "",
                 body: "Mikasa💗",
@@ -127,7 +127,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
                 mediaType: 4,
                 mediaUrl: '',
                 sourceUrl: ``,
-            },
+            },*/
         },
     };
     return await Void.sendMessage(citel.chat, buttonMessaged, {
