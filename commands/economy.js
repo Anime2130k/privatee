@@ -241,7 +241,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 str+= `*${i+1}*\n╭─────────────🏁\n│ *Name:-* _${tname}_\n│ *User:-* _@${h[i].userID.split('@')[0]}_\n│ *Wallet:-* _${h[i].wallet}_\n│ *Bank Amount:-* _${h[i].bank}_\n│ *Bank Capacity:-* _${h[i].bankCapacity}_\n╰─────────────🏁\n\n`  	 
 	 arr.push(h[i].userID)
 	 }
-	     let ter = (str,{mentions:arr});
+	     let ter = (str,{mentions:arr})
     let buttonMessaged = {
         image: { url: `https://graph.org/file/c9f83b554a6afab8b828a.jpg`},
         caption: ter,
