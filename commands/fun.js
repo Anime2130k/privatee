@@ -75,7 +75,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
             externalAdReply: {
                 title: "",
                 body: "Mikasa💗",
-                thumbnail: log0,
+                //thumbnail: log0,
                 mediaType: 4,
                 mediaUrl: '',
                 sourceUrl: ``,
@@ -123,7 +123,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
             externalAdReply: {
                 title: "",
                 body: "Mikasa💗",
-                thumbnail: log0,
+                //thumbnail: log0,
                 mediaType: 4,
                 mediaUrl: '',
                 sourceUrl: ``,
