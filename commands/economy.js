@@ -22,15 +22,15 @@
      },
      */
      //---------------------------------------------------------------------------
- cmd({
-         pattern: "daily",
-         desc: "daily gold.",
-         category: "economy",
-         filename: __filename,
-         react: "💷"
-     },
-     async(Void, citel, text,{ isCreator }) => {
-	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+cmd({
+    pattern: "daily",
+    desc: "daily gold.",
+    category: "economy",
+    filename: __filename,
+    react: "💷"
+},
+async (Void, citel, text, { isCreator }) => {
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
   
 _Don't text the Bot in pm._
 
@@ -43,40 +43,48 @@ _Don't text the Bot in pm._
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
-`);
-        let zerogroup = (await sck.findOne({
-            id: citel.chat,
-        })) || (await new sck({
-                id: citel.chat,
-            })
-            .save());
-        let mongoschemas = zerogroup.economy || "false";
-        if (mongoschemas == "false") return citel.reply("*🚦Economy* is not active in current group.");
-         if (!citel.isGroup) return citel.reply(tlang().group);
-	const secktor = "secktor"
-	const daily  = await eco.daily(citel.sender, secktor, 2000); //give 500 for daily, can be changed
-	 if (daily.cd) { //cdL is already formatted cooldown Left
-       let ter = `🎀 You already claimed daily for today, come back in ${daily.cdL}🫡`;
-    let buttonMessaged = {
-        image: { url: await botpic() },
-        caption: ter,
-    };
-return await Void.sendMessage(citel.chat, buttonMessaged, {
-        quoted: citel,	  
-    }); 
-	 } else {
-	 let ter = `You claimed daily ${daily.amount} 💵 for today🔱`;
-    let buttonMessaged = {
-        image: { url: await botpic() },
-        caption: ter,
-    };
-return await Void.sendMessage(citel.chat, buttonMessaged, {
-        quoted: citel,	  
-    });    
-	 }
- }
- });
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
+
+    let zerogroup = (await sck.findOne({
+        id: citel.chat,
+    })) || (await new sck({
+        id: citel.chat,
+    }).save());
+
+    let mongoschemas = zerogroup.economy || "false";
+
+    if (mongoschemas == "false") return citel.reply("*🚦Economy* is not active in the current group.");
+
+    if (!citel.isGroup) return citel.reply(tlang().group);
+
+    const secktor = "secktor";
+    const daily = await eco.daily(citel.sender, secktor, 2000); // give 2000 for daily, can be changed
+
+    if (daily.cd) {
+        let ter = `🎀 You already claimed daily for today, come back in ${daily.cdL}🫡`;
+
+        let buttonMessaged = {
+            image: { url: await botpic() },
+            caption: ter,
+        };
+
+        return await Void.sendMessage(citel.chat, buttonMessaged, {
+            quoted: citel,
+        });
+    } else {
+        let ter = `You claimed daily ${daily.amount} 💵 for today🔱`;
+
+        let buttonMessaged = {
+            image: { url: await botpic() },
+            caption: ter,
+        };
+
+        return await Void.sendMessage(citel.chat, buttonMessaged, {
+            quoted: citel,
+        });
+    }
+});
+
 
  cmd({
          pattern: "resetwallet",
