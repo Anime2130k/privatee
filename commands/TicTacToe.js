@@ -9,7 +9,7 @@
  * @version 0.0.6
  **/
 
- const { cmd, parseJid,getAdmin,tlang } = require("../lib/");
+ const { cmd, botpic, parseJid,getAdmin,tlang } = require("../lib/");
  const eco = require('discord-mongoose-economy')
  const ty = eco.connect(mongodb);
 
@@ -301,9 +301,17 @@ cmd({ pattern: "ship" ,react: "🤭", category: "fun" }, async(Void, citel, text
         caption += `\t\t✯────────────────────💘\n`
         caption += await couple(percentage)
         if(citel.sender.split('@')[0]===shiper.split('@')[0]) return citel.reply('```'+'Wait... What!!!,You wanna do matchmaking with yourself'+'```')
-        await Void.sendMessage(citel.chat,{text: caption,mentions: [citel.sender,shiper]},{quoted:citel})
-   }
-)
+        
+   let ter = (citel.chat,{text: caption,mentions: [citel.sender,shiper]},{quoted:citel});
+    let buttonMessaged = {
+        image: { url: await botpic() },
+        caption: ter,
+    };
+return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,	  
+    });
+
+    });
 
 const axios = require('axios');
 const fs = require('fs');
