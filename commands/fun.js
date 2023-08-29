@@ -69,7 +69,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
     let buttonMessaged = {
         image: { url: await botpic() },
         caption: ter,
-        footer: tlang().footer,
+        /*footer: tlang().footer,
         headerType: 4,
         contextInfo: {
             externalAdReply: {
@@ -79,7 +79,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
                 mediaType: 4,
                 mediaUrl: '',
                 sourceUrl: ``,
-            },
+            },*/
         },
     };
     return await Void.sendMessage(citel.chat, buttonMessaged, {
@@ -117,7 +117,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
     let buttonMessaged = {
         image: { url: await botpic() },
         caption: ter,
-        footer: tlang().footer,
+        /*footer: tlang().footer,
         headerType: 4,
        contextInfo: {
             externalAdReply: {
@@ -127,7 +127,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
                 mediaType: 4,
                 mediaUrl: '',
                 sourceUrl: ``,
-            },
+            },*/
         },
     };
     return await Void.sendMessage(citel.chat, buttonMessaged, {
