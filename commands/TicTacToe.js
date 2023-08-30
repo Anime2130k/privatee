@@ -356,9 +356,64 @@ cmd({ pattern: "ship", react: "🤭", category: "fun" }, async (Void, citel, tex
     });
 });
 
+cmd({ pattern: "friendcheck", react: "🤝", category: "fun" }, async (Void, citel, text) => {
+    const { tlang } = require('../lib');
+    if (!citel.isGroup) return citel.reply(tlang().group);
+
+    const groupMetadata = citel.isGroup ? await Void.groupMetadata(citel.chat).catch((e) => {}) : "";
+    const participants = citel.isGroup ? groupMetadata.participants : [];
+    const members = participants.map(u => u.id);
+
+    const percentage = Math.floor(Math.random() * 100);
+
+    async function couple(percent) {
+        let text;
+        if (percent < 25) {
+            text = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\tStay together and your friendship will get stronger 💪`;
+        } else if (percent < 50) {
+            text = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\t Good enough, I guess! 💫`;
+        } else if (percent < 75) {
+            text = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\t\t\tIt seems like both of you are good friend ⭐️`;
+        } else if (percent < 90) {
+            text = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\tAmazing! Seems like you two are best friends💗`;
+        } else {
+            text = `\t\t\t\t\t*ShipCent : ${percentage}%* \n\tYou aren't friends anymore, You are brothers!🔱`;
+        }
+        return text;
+    }
+
+    const user = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+    let shiper;
+    if (user) {
+        shiper = user;
+    } else {
+        shiper = members[Math.floor(Math.random() * members.length)];
+    }
+
+    if (citel.sender.split('@')[0] === shiper.split('@')[0]) {
+        return citel.reply('```' + 'Wait... What!!!,You wanna do friendship check with yourself' + '```');
+    }
+
+    const caption = `\t👥 *Friendship Check...* 👥 \n`
+        + `\t\t✯───────────────────🤝\n`
+        + `@${citel.sender.split('@')[0]}  x  @${shiper.split('@')[0]}\n`
+        + `\t\t✯───────────────────🤝\n`
+        + await couple(percentage);
+
+    const buttonMessaged = {
+        image: { url: `https://graph.org/file/76810328b86d0d0bad192.jpg` },
+        caption: caption, // Use the caption directly here
+        mentions: [citel.sender, shiper], // Add mentions if required
+        quoted: citel,
+    };
+
+    return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,
+    });
+});
 
 
-const axios = require('axios');
+/*const axios = require('axios');
 const fs = require('fs');
 
 cmd({ pattern: "wave" ,react: "🤭", category: "fun" }, async (Void, citel, text) => {
