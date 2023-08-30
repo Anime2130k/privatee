@@ -453,4 +453,4 @@ cmd({ pattern: "wave" ,react: "🤭", category: "fun" }, async (Void, citel, tex
     console.error('Error fetching the GIF:', error);
     citel.reply('Failed to send the wave GIF. Please try again later.');
   }
-});
+});*/
