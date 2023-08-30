@@ -401,7 +401,7 @@ cmd({ pattern: "friendcheck", react: "🤝", category: "fun" }, async (Void, cit
         + await couple(percentage);
 
     const buttonMessaged = {
-        image: { url: `https://graph.org/file/76810328b86d0d0bad192.jpg` },
+        image: { url: `https://graph.org/file/76ea495e758e66a32ffeb.jpg` },
         caption: caption, // Use the caption directly here
         mentions: [citel.sender, shiper], // Add mentions if required
         quoted: citel,
