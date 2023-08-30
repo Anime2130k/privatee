@@ -55,7 +55,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
     // The rest of your warning message
     let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
 	if(!users) return citel.reply('Please tag a user.')
-    let ter = `*Gay Check:* ${percent()}`;
+    let ter = `*👤User:*  @${users.split('@')[0]}\nThey are *${percent()}* gay i bet`;
     let buttonMessaged = {
         image: { url: await botpic()},
         caption: ter,
