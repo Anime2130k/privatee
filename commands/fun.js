@@ -28,7 +28,7 @@ let buttonMessaged = {
         caption: 
     
 
-	"*Terms and Conditions for Ronen Bots' WhatsApp Bot:*
+	`*Terms and Conditions for Ronen Bots WhatsApp Bot:*
 
 🎀 Thank you for using our WhatsApp bot, developed by Ronen Bots. By using our bot in your group, you are agreeing to comply with these Terms and Conditions. Please read them carefully.
 
@@ -70,7 +70,7 @@ let buttonMessaged = {
 
 Please review these Terms and Conditions regularly, as they may be updated from time to time.
 
-*📛 Your continued use of the bot after any modifications signifies your acceptance of the updated terms.*",
+*📛 Your continued use of the bot after any modifications signifies your acceptance of the updated terms.*`,
 	
 return await Void.sendMessage(citel.chat, buttonMessaged, {
         quoted: citel,	  
