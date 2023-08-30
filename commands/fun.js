@@ -17,7 +17,7 @@ const { formatp , sck1, formatDate , tlang, botpic,cmd, prefix, runtime,Config ,
 
 
  
-cmd({
+/*cmd({
   pattern: 'tc',
   desc: 'Sends the Terms and conditions of Ronen-Bots',
   category: 'general',
@@ -77,7 +77,7 @@ return await Void.sendMessage(citel.chat, buttonMessaged, {
         quoted: citel,	  
     });
 		 
-	});
+	});*/
 
 cmd({
             pattern: "question",
