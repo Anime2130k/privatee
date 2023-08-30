@@ -31,7 +31,7 @@ await Void.sendFileUrl(citel.chat, response[i], `*Downloaded Media from instagra
 }
     });
 
-const {cmd } = require('../lib')
+
 cmd({
         pattern: "iguser",
         alias: "ig",
