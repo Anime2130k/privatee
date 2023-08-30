@@ -56,7 +56,7 @@ _Don't text the Bot in pm._
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
-        const { Insta } = require('../lib')
+        const { iginfo } = require('../lib')
 if(!text) return citel.reply('Need Username.')
 let response = await iginfo(username)
 for (let i=0;i<response.length;i++) {
