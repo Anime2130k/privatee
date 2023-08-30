@@ -58,7 +58,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
         const { iginfo } = require('../lib')
 if(!text) return citel.reply('Need Username.')
-let response = await iginfo(username)
+let response = await iginfo(text)
 for (let i=0;i<response.length;i++) {
 await Void.sendFileUrl(citel.chat, response[i], `*Downloaded Media from instagram.*`, citel)
 }
