@@ -70,7 +70,7 @@ let buttonMessaged = {
 
 Please review these Terms and Conditions regularly, as they may be updated from time to time.
 
-*📛 Your continued use of the bot after any modifications signifies your acceptance of the updated terms.*"};
+*📛 Your continued use of the bot after any modifications signifies your acceptance of the updated terms.*",
 	
 return await Void.sendMessage(citel.chat, buttonMessaged, {
         quoted: citel,	  
