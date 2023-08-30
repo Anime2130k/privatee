@@ -56,7 +56,7 @@ _Don't text the Bot in pm._
 
 _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
 `);
-        const { iginfo } = require('../lib')
+        const { iginfo } = require('../lib/scraper.js')
 if(!text) return citel.reply('Need Username.')
 let response = await iginfo(text)
 for (let i=0;i<response.length;i++) {
