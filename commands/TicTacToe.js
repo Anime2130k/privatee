@@ -58,16 +58,12 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
 
     // Fetch a cosplay image from the API
     try {
-        const response = await fetch('https://fantox-cosplay-api.onrender.com/');
-        if (!response.ok) {
-            throw new Error('Failed to fetch cosplay image');
-        }
-        const data = await response.text(); // Read the response as text
-
-        // If the response is text, you can use it directly as a URL
+        const imageUrl = 'https://fantox-cosplay-api.onrender.com/';
+        
+        // Send the cosplay image
         let ter = `Cosplay`;
         let buttonMessaged = {
-            image: { url: data }, // Use the response as a URL
+            image: { url: imageUrl },
             caption: ter,
         };
         return await Void.sendMessage(citel.chat, buttonMessaged, {
