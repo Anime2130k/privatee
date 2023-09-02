@@ -25,7 +25,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
 
     const fetch = require('node-fetch');
     const url = 'https://instagram-video-or-images-downloader.p.rapidapi.com/';
-    const instagramUrl = (text) // Replace with the Instagram URL you want to download
+    const instagramUrl = 'https://www.instagram.com/reel/CvfJ31qI2dR/?igshid=MzRlODBiNWFlZA=='; // Replace with the Instagram URL you want to download
 
     const options = {
         method: 'POST',
