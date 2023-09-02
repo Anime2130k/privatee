@@ -58,7 +58,7 @@ const _0x2b42ca=_0x59a4;function _0x5b2c(){const _0x16b3fd=['info','2945100QotfT
 //----------------------------------------------------------------------------
 cmd({
     pattern :"chat",
-    alias :['gpt'],
+    alias :['gpt','ai'],
 	react: "✔️",
     desc: "chat with an I(GPT)",
     category: "AI",
