@@ -30,51 +30,6 @@ const { percent } = require("../lib/percent.js");
  * For These Dice Stickers
  * @author : Suhail Tech Info
 **/
-cmd({
-    pattern: "cosplay",
-    desc: "sends a cosplay image",
-    react: "🤔",
-    category: "fun",
-    filename: __filename,
-},
-async (Void, citel, text) => {
-    // Check if it's not a group chat
-    if (!citel.isGroup) {
-        return citel.reply(`*⚠️WARNING⚠️* 
-    
-_Don't text the Bot in pm._
-
-*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
-
-*〽️Developer:*
-• wa.me/916000530073
-
-*📛Our official Support GC: http://surl.li/eumln*
-
-*💗Have a nice day💗*
-
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
-    }
-
-    // Fetch a cosplay image from the API
-    try {
-        const imageUrl = 'https://fantox-cosplay-api.onrender.com/';
-        
-        // Send the cosplay image
-        let ter = `Cosplay`;
-        let buttonMessaged = {
-            image: { url: imageUrl },
-            caption: ter,
-        };
-        return await Void.sendMessage(citel.chat, buttonMessaged, {
-            quoted: citel,
-        });
-    } catch (error) {
-        console.error(error);
-        return citel.reply('Failed to fetch a cosplay image. Please try again later.');
-    }
-});
-
 
 cmd({
     pattern: "awesomecheck",
