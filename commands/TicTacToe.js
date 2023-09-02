@@ -31,7 +31,7 @@ const { percent } = require("../lib/percent.js");
  * @author : Suhail Tech Info
 **/
 cmd({
-    pattern: "cosplay2",
+    pattern: "cosplay",
     desc: "sends a cosplay image",
     react: "🤔",
     category: "fun",
@@ -62,12 +62,12 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
         if (!response.ok) {
             throw new Error('Failed to fetch cosplay image');
         }
-        const data = await response.json();
+        const data = await response.text(); // Read the response as text
 
-        // Send the cosplay image
+        // If the response is text, you can use it directly as a URL
         let ter = `Cosplay`;
         let buttonMessaged = {
-            image: { url: data.image_url }, // Use the image_url from the API response
+            image: { url: data }, // Use the response as a URL
             caption: ter,
         };
         return await Void.sendMessage(citel.chat, buttonMessaged, {
@@ -78,6 +78,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
         return citel.reply('Failed to fetch a cosplay image. Please try again later.');
     }
 });
+
 
 cmd({
     pattern: "awesomecheck",
