@@ -31,6 +31,213 @@ const { percent } = require("../lib/percent.js");
  * @author : Suhail Tech Info
 **/
 cmd({
+    pattern: "awesomecheck",
+    desc: "Check if your friend is awesome?",
+    react: "🤔",
+    category: "fun",
+    filename: __filename,
+},
+async (Void, citel, text, { isCreator }) => {
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️* 
+    
+    _Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+    // The rest of your warning message
+    let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+	if(!users) return citel.reply('Please tag a user.')
+    let ter = `*👤User:*  @${users.split('@')[0]}\nThey are *${percent()}* awesome for sure`;
+    let buttonMessaged = {
+        image: { url: await botpic()},
+        caption: ter,
+    };
+    return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,
+    });
+});
+
+cmd({
+    pattern: "cutecheck",
+    desc: "Check if your friend is cute or not?",
+    react: "🤔",
+    category: "fun",
+    filename: __filename,
+},
+async (Void, citel, text, { isCreator }) => {
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️* 
+    
+    _Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+    // The rest of your warning message
+    let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+	if(!users) return citel.reply('Please tag a user.')
+    let ter = `*👤User:*  @${users.split('@')[0]}\nThey are *${percent()}* cute yarrr`;
+    let buttonMessaged = {
+        image: { url: await botpic()},
+        caption: ter,
+    };
+    return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,
+    });
+});
+
+cmd({
+    pattern: "greatcheck",
+    desc: "Check if your friend is great or not?",
+    react: "🤔",
+    category: "fun",
+    filename: __filename,
+},
+async (Void, citel, text, { isCreator }) => {
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️* 
+    
+    _Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+    // The rest of your warning message
+    let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+	if(!users) return citel.reply('Please tag a user.')
+    let ter = `*👤User:*  @${users.split('@')[0]}\nThey are *${percent()}* great for right`;
+    let buttonMessaged = {
+        image: { url: await botpic()},
+        caption: ter,
+    };
+    return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,
+    });
+});
+
+cmd({
+    pattern: "handsomecheck",
+    desc: "Check if your friend is handsome or not?",
+    react: "🤔",
+    category: "fun",
+    filename: __filename,
+},
+async (Void, citel, text, { isCreator }) => {
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️* 
+    
+    _Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+    // The rest of your warning message
+    let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+	if(!users) return citel.reply('Please tag a user.')
+    let ter = `*👤User:*  @${users.split('@')[0]}\nThey are *${percent()}* handsome wow`;
+    let buttonMessaged = {
+        image: { url: await botpic()},
+        caption: ter,
+    };
+    return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,
+    });
+});
+cmd({
+    pattern: "hornycheck",
+    desc: "Check if your friend is horny or not?",
+    react: "🤔",
+    category: "fun",
+    filename: __filename,
+},
+async (Void, citel, text, { isCreator }) => {
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️* 
+    
+    _Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+    // The rest of your warning message
+    let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+	if(!users) return citel.reply('Please tag a user.')
+    let ter = `*👤User:*  @${users.split('@')[0]}\nThey are *${percent()}* horny ehee...`;
+    let buttonMessaged = {
+        image: { url: await botpic()},
+        caption: ter,
+    };
+    return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,
+    });
+});
+cmd({
+    pattern: "lesbiancheck",
+    desc: "Check if your friend is lesbian or not?",
+    react: "🤔",
+    category: "fun",
+    filename: __filename,
+},
+async (Void, citel, text, { isCreator }) => {
+    if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️* 
+    
+    _Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/916000530073
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+    // The rest of your warning message
+    let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
+	if(!users) return citel.reply('Please tag a user.')
+    let ter = `*👤User:*  @${users.split('@')[0]}\nThey are *${percent()}* lesbian uhh!`;
+    let buttonMessaged = {
+        image: { url: await botpic()},
+        caption: ter,
+    };
+    return await Void.sendMessage(citel.chat, buttonMessaged, {
+        quoted: citel,
+    });
+});
+cmd({
     pattern: "gaycheck",
     desc: "Check if your friend is gay or not?",
     react: "🤔",
