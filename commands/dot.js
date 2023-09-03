@@ -14,7 +14,7 @@ async (Void, citel, text, { isCreator }) => {
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/916000530073
+• wa.me/994402261750
 
 *📛Our official Support GC: http://surl.li/eumln*
 
@@ -69,7 +69,7 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/916000530073
+• wa.me/994402261750
 
 *📛Our official Support GC: http://surl.li/eumln*
 
@@ -102,7 +102,7 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/916000530073
+• wa.me/994402261750
 
 *📛Our official Support GC: http://surl.li/eumln*
 
@@ -134,7 +134,7 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/916000530073
+• wa.me/994402261750
 
 *📛Our official Support GC: http://surl.li/eumln*
 
