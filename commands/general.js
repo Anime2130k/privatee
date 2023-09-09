@@ -255,7 +255,7 @@ _No:_ *wa.me/917083409908*
 //---------------------------------------------------------------------------
 cmd({
         pattern: "status",
-        alias: ["about"],
+        alias: ["bot"],
 react: "🈂️",
 
         desc: "To check bot status",
