@@ -58,14 +58,15 @@ async (Void, citel, text) => {
             let str = `╔══ ≪` + fancytext(Config.botname.split(' ')[0], 58) + `≫ ══╗\n\n`
             str +=
                 `Konichiwa! *${citel.pushName} senpai👋*\n\n I'm *${Config.botname}* a WhatsApp Bot Created by *RONEN-BOTS* for your assistance.\n
-_🎗️ My Prefix:_ *[ ${prefix} ]*
-_🎐 My Owner:_ *${Config.ownername}*
-_👤 My Usercount:_ *${total}*
-_☘️ My Uptime:_ *${runtime(process.uptime())}*
-_💾 My Memory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
+_🎗️ Prefix:_ *[ ${prefix} ]*
+_🎐 Owner:_ *${Config.ownername}*
+_👤 Usercount:_ *${total}*
+_☘️ Uptime:_ *${runtime(process.uptime())}*
+_💾 MMemory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
 _⏳ Time:_ *${time}*
 _🗓️ Date:_ *${date}*
 _〽️ Support:_ *https://tinyurl.com/285yd249*
+_🔰 Website:_ *ronenbots.000.pe*
 
 *⬇️Here's the list of my commands⬇️*
 
