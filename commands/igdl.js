@@ -20,11 +20,11 @@ const fs = require('fs-extra');
 cmd(
   {
     pattern: 'igdl2',
-    desc: 'IGDL ',
+    desc: 'igdl',
     react: '🎙️',
     category: 'downloader',
     filename: __filename,
-    use: 'IDFC',
+    use: 'idfc',
   },
   async (Void, citel, text) => {
     if (!text || !text.includes("instagram")) {
@@ -34,8 +34,10 @@ cmd(
     );
   }
   
-   await citel.reply("Please wait until @7thraone/instagramdl responds");
+   
     try {
+      
+    await citel.reply("Please wait until @7thraone/instagramdl responds");
     const videoLink = await instagramDL(text); // Use your 'igdl' package here
     if (videoLink) {
       await  Void.sendMessage(
