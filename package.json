@@ -57,6 +57,7 @@
                        "ytdl-secktor": "latest",
                        "pastebin-js": "latest",
                        "fb-info-video":"^1.0.2",
+                       "@7thraone/instagramdl": "^1.0.0",
                        "wa-sticker-formatter": "^4.3.2"
                       },
                   "directories": {
