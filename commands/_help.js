@@ -65,7 +65,7 @@ _☘️ Uptime:_ *${runtime(process.uptime())}*
 _💾 MMemory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
 _⏳ Time:_ *${time}*
 _🗓️ Date:_ *${date}*
-_〽️ Support:_ *https://tinyurl.com/285yd249*
+_〽️ Support:_ *https://tinyurl.com/yw5lxtlf*
 _🔰 Website:_ *ronenbots.000.pe*
 
 *⬇️Here's the list of my commands⬇️*
