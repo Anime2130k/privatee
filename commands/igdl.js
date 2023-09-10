@@ -19,12 +19,12 @@ const fs = require('fs-extra');
 
 cmd(
   {
-    pattern: 'igdl',
-    desc: 'Text to speech.',
+    pattern: 'igdl2',
+    desc: 'IGDL ',
     react: '🎙️',
     category: 'downloader',
     filename: __filename,
-    use: '<Hii, this is Mikasa>',
+    use: 'IDFC',
   },
   async (Void, citel, text) => {
     if (!text || !text.includes("instagram")) {
