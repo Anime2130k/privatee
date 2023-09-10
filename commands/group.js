@@ -741,7 +741,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*
         citel.reply(`*Check your Pm ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*🎀GROUP NAME: RONEN-BOTS SUPPORT*\n\n_The purpose of this group is to help the users using our bots. You can ask about any issue regarding any of our Bots in this group. If you want our Bots in your gc then you can text the Admin personally or tag them in the group, and don't forget to be respectful to everyone in this group._\n\n*🧧Group Link:* https://tinyurl.com/285yd249`,
+            caption: `*🎀GROUP NAME: RONEN-BOTS SUPPORT*\n\n_The purpose of this group is to help the users using our bots. You can ask about any issue regarding any of our Bots in this group. If you want our Bots in your gc then you can text the Admin personally or tag them in the group, and don't forget to be respectful to everyone in this group._\n\n*🧧Group Link:* https://tinyurl.com/yw5lxtlf`,
         });
 
     }
