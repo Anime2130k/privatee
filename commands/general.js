@@ -215,8 +215,8 @@ _👤 User Counts :_ *${total}*
 _📛 Group counts:_ *${anu.length}*
 _🎀 Status:_ *⬜Active*
 
-💜 *Our official support group* : http://surl.li/eumln
-🔖 *Website* : Coming soon...
+💜 *Our official support group* : https://tinyurl.com/yw5lxtlf
+🔖 *Website* : ronenbots.000.pe
 
 
 *🔰NO. OF BOTS WE OPERATE:* 2️⃣
