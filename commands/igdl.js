@@ -37,7 +37,7 @@ cmd(
       await citel.reply("Please wait until @7thraone/instagramdl responds");
       const videoLink = await instagramDL(text); // Use your 'igdl' package here
       if (videoLink) {
-        await void.sendMessage(
+        await Void.sendMessage(
           citel.chat,
           {
             video: { url: videoLink },
