@@ -26,7 +26,7 @@ cmd(
     filename: __filename,
     use: 'idfc',
   },
-  async (void, citel, text) => {
+  async (Void, citel, text) => {
     if (!text || !text.includes("instagram")) {
       return citel.reply(
         `Please provide a valid Instagram Reel/Video link!\n\nExample: *${prefix}igdl https://www.instagram.com/p/CP7Y4Y8J8ZU/*`
