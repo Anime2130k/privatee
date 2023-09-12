@@ -55,7 +55,7 @@ _Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
 
 cmd({
         pattern: "insta",
-        alias: "igdl",
+        alias: "ig",
         desc: "download instagram post.",
         react: "🛐",
         category: "downloader",
