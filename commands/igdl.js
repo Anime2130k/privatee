@@ -19,8 +19,8 @@ const fs = require('fs-extra');
 
 cmd(
   {
-    pattern: 'igdl2',
-    desc: 'igdl',
+    pattern: 'igdl',
+    desc: 'ig video downloader',
     react: '🎙️',
     category: 'downloader',
     filename: __filename,
