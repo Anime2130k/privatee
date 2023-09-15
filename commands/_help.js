@@ -62,7 +62,7 @@ _🎗️ Prefix:_ *[ ${prefix} ]*
 _🎐 Owner:_ *${Config.ownername}*
 _👤 Usercount:_ *${total}*
 _☘️ Uptime:_ *${runtime(process.uptime())}*
-_💾 MMemory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
+_💾 Memory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
 _⏳ Time:_ *${time}*
 _🗓️ Date:_ *${date}*
 _〽️ Support:_ *https://tinyurl.com/yw5lxtlf*
