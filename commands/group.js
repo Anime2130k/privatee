@@ -819,7 +819,7 @@ cmd({
         const participants = citel.isGroup ? await groupMetadata.participants : "";
         const groupAdmins = await getAdmin(Void, citel)
         const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
-        if (!isAdmins) return citel.reply(tlang().admin);
+        if (!isAdmins && !isCreator) return citel.reply(tlang().admin);
 
         let textt = `
    🎀〘   *Tag All*   〙🎀
@@ -1311,7 +1311,7 @@ react: "👟",
             const isBotAdmins = citel.isGroup ? groupAdmins.includes(botNumber) : false;
             const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
 
-            if (!isAdmins) return citel.reply(tlang().admin);
+            if (!isAdmins && !isCreator) return citel.reply(tlang().admin);
             if (!isBotAdmins) return citel.reply(tlang().botAdmin);
             try {
                 let users = citel.mentionedJid[0] ? citel.mentionedJid[0] : citel.quoted ? citel.quoted.sender : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
@@ -1418,7 +1418,7 @@ react: "✔️",
 
             let mime = citel.quoted.mtype
             if (!citel.isGroup) citel.reply(tlang().group);
-            if (!isAdmins) citel.reply(tlang().admin);
+            if (!isAdmins && !isCreator) citel.reply(tlang().admin);
             if (!isBotAdmins) citel.reply(tlang().botadmin);
             if (!citel.quoted) return citel.reply(`Send/Reply Image With Caption ${command}`);
             if (!/image/.test(mime)) return citel.reply(`Send/Reply Image With Caption ${command}`);
@@ -1451,7 +1451,7 @@ react: "🆗",
             const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
             if (!isAdmins) return citel.reply(tlang().admin);
 
-            if (!isAdmins) citel.reply(tlang().admin);
+            if (!isAdmins && !isCreator) citel.reply(tlang().admin);
             Void.sendMessage(citel.chat, {
                 text: text ? text : "",
                 mentions: participants.map((a) => a.id),
