@@ -57,16 +57,18 @@ async (Void, citel, text) => {
             let total = await sck1.countDocuments()
             let str = `╔══ ≪` + fancytext(Config.botname.split(' ')[0], 58) + `≫ ══╗\n\n`
             str +=
-                `Konichiwa! *${citel.pushName} senpai👋*\n\n I'm *${Config.botname}* a WhatsApp Bot Created by *RONEN-BOTS* for your assistance.\n
+                `_🎐 Name:_ *${Config.botname}*
+_👤 User:_ *${citel.pushName} senpai👋* 
 _🎗️ Prefix:_ *[ ${prefix} ]*
 _🎐 Owner:_ *${Config.ownername}*
-_👤 Usercount:_ *${total}*
+_🗣️ Usercount:_ *${total}*
 _☘️ Uptime:_ *${runtime(process.uptime())}*
 _💾 Memory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
 _⏳ Time:_ *${time}*
 _🗓️ Date:_ *${date}*
 _〽️ Support:_ *https://tinyurl.com/yw5lxtlf*
 _🔰 Website:_ *ronenbots.000.pe*
+_📑 Guide:_ *https://youtu.be/A3p1mAQnVds?si=8kGNRVZrxlWzPVdc*
 
 *⬇️Here's the list of my commands⬇️*
 
