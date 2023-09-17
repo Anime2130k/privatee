@@ -1479,6 +1479,7 @@ react: "✔️",
             const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
 
             if (!text) return citel.reply("Please provide me number.");
+            if (!isAdmins) return citel.reply(tlang().admin);
             if (!isCreator) return citel.reply(tlang().owner)
             if (!isBotAdmins) return citel.reply(tlang().botAdmin);
             let users = citel.mentionedJid[0] ? citel.mentionedJid[0] : citel.quoted ? citel.quoted.sender : text.replace(/[^0-9]/g, "") + "@s.whatsapp.net";
