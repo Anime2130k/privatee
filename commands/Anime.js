@@ -241,7 +241,7 @@ async(Void, citel, text) => {
 )
 
 cmd({
-    pattern: "npussy",
+    pattern: "pussy",
     category: "Anime Pics",
         filename: __filename,
     desc: "Sends image of pussy in current chat."
