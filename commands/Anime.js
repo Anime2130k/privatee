@@ -240,23 +240,7 @@ async(Void, citel, text) => {
 }
 )
 
-cmd({
-    pattern: "pussy",
-    category: "Anime Pics",
-        filename: __filename,
-    desc: "Sends image of pussy in current chat."
-},
-async(Void, citel, text) => {
-    waifud = await axios.get("https://fantox-apis.vercel.app/pussy");
-    var wbutss = [{
-        buttonId: `${prefix}loli`,
-        buttonText: { displayText: `Next Loli✨` },
-        type: 1,
-    }, ];
 
-    await Void.sendMessage(citel.chat, {image: { url: waifud.data.url }}, {quoted: citel})
-}
-)
 //-----------------------------------------------------------------------
 /*
 cmd({
