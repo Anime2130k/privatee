@@ -127,7 +127,7 @@ Fᴜʟʟᴘᴘ
 ᴀɴɪᴍᴇ, ᴀɴɪᴍᴇɴᴇᴡꜱ, ᴀɴɪᴍᴇᴘɪᴄ, ᴀɴɪᴍᴇᴡᴀʟʟ, ᴄʜᴀʀᴀᴄᴛᴇʀ, ꜰᴏxɢɪʀʟ, ʟᴏʟɪ, ᴍᴀɴɢᴀ, ɴᴇᴋᴏ, ᴘᴏᴋᴇᴍᴏɴ, ᴘᴏᴋᴇᴘɪᴄ, ʀᴀɴɪᴍᴇ, ᴡᴀɪꜰᴜ
 
 🔞 *NSFW* 🔞
-_Type *.nsfw* to get the NSFW command list (⚠️Only for 18+)_`
+_Type *.nsfw* to get the NSFW command list *(⚠️Only for 18+)*_`
                 
 
             
