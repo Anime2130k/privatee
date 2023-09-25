@@ -317,7 +317,22 @@ cmd({
         filename: __filename,
     desc: "Sends image of loli in current chat."
 },
-async(Void, citel, text) => {
+async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/994402261750
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     waifud = await axios.get("https://waifu.pics/api/sfw/shinobu");
     var wbutss = [{
         buttonId: `${prefix}loli`,
@@ -490,7 +505,22 @@ cmd({
         filename: __filename,
     desc: "Sends info about asked manga."
 },
-async(Void, citel, text) => {
+async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/994402261750
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     const { Manga } = require("@shineiichijo/marika");
     const manga = new Manga();
     if (!text) return citel.reply(`Which Manga do you want to Search? \n _Please give me a name._`);
@@ -575,9 +605,22 @@ cmd({
         filename: __filename
     },
 
-    async(Void, citel, text) => {
+    async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
 
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
+*〽️Developer:*
+• wa.me/994402261750
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
 const response = await fetch('https://api.unsplash.com/photos/random?client_id=72utkjatCBC-PDcx7-Kcvgod7-QOFAm2fXwEeW8b8cc');
 const data = await response.json();
   const url =data.urls.regular
