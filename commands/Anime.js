@@ -166,8 +166,22 @@ cmd({
         category: "Anime Pics",
         filename: __filename
     },
-async(Void, citel,text) =>
-{
+async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/994402261750
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
         let res=await axios.get("https://raw.githubusercontent.com/mask-sir/api.mask-ser/main/Naruto.json")
         let url =  res.data.result[Math.floor(Math.random() * res.data.result.length)];
         return await Void.sendMessage(citel.chat,{video :{url : url } , caption: Config.caption }, { quoted: citel })
@@ -179,7 +193,22 @@ cmd({
     desc: "Sends a Neko Image in chat",
     filename: __filename
 },
-async(Void, citel, text) => {
+async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/994402261750
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
         let name1 = text.split("|")[0] || ''
         let name2 = text.split("|")[1] || `1`
         let cap = text.split("|")[1] ? '': "Here we go😊!!!!"
@@ -207,8 +236,22 @@ cmd({
     desc: "Sends image of Fox Girl in current chat.",
     filename: __filename
 },
-async(Void, citel, text) => 
-{
+async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/994402261750
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
     let  waifuddfg = await axios.get(`https://nekos.life/api/v2/img/fox_girl`);
     await Void.sendMessage(citel.chat, {image: { url: waifuddfg.data.url } }, { quoted: citel })
 })
@@ -219,7 +262,22 @@ cmd({
         desc: "Sends Anime News in chat",
         filename: __filename
     },
-    async(Void, citel, text) => {
+    async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/994402261750
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
         let qq = [
             "Anime News Today",
             "New Anime",
