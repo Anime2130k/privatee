@@ -122,7 +122,22 @@ cmd({
         filename: __filename
     },
 
-  async(Void, citel, text) => {
+  async(Void, citel, text,{ isCreator }) => {
+	     if (!citel.isGroup && !isCreator) return citel.reply(`*⚠️WARNING⚠️*
+  
+_Don't text the Bot in pm._
+
+*㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
+
+*〽️Developer:*
+• wa.me/994402261750
+
+*📛Our official Support GC: http://surl.li/eumln*
+
+*💗Have a nice day💗*
+
+_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+`);
         
          let name1 = text.split("|")[0] || ''
         let name2 = text.split("|")[1] || `1`
