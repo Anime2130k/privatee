@@ -1558,7 +1558,7 @@ react: "🆗",
             filename: __filename,
             use: '<quote/reply message.>',
         },
-        async(Void, citel, text) => {
+        async(Void, citel, text,{ isCreator }) => {
             if (citel.quoted.Bot) {
                 const key = {
                     remoteJid: citel.chat,
@@ -1575,7 +1575,7 @@ react: "🆗",
                 const botNumber = await Void.decodeJid(Void.user.id)
                 const isBotAdmins = citel.isGroup ? groupAdmins.includes(botNumber) : false;
                 const isAdmins = citel.isGroup ? groupAdmins.includes(citel.sender) : false;
-                if (!isAdmins) return citel.reply('Only Admins are allowed to delete other persons message.')
+                if (!isAdmins && !isCreator) return citel.reply('Only Admins are allowed to delete other persons message.')
                 if (!isBotAdmins) return citel.reply('I can\'t delete anyones message without getting Admin Role.')
                 if (!citel.quoted) return citel.reply(`Please reply to any message. ${tlang().greet}`);
                 let { chat, fromMe, id } = citel.quoted;
