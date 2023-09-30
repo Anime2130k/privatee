@@ -10,15 +10,15 @@ global.email = ''
 global.github = 'https://github.com/Ronen6999'
 global.location = 'INDIA'
 global.gurl = 'https://instagram.com/' // add your username
-global.sudo = process.env.SUDO || '91917086726371;
-global.devs = '916000530073','9197086726371';
-global.website = 'wa.me/917086726371' //wa.me/+91000000000000
+global.sudo = process.env.SUDO || '994402261750;
+global.devs = '916000530073','994402261750';
+global.website = 'wa.me/994402261750' //wa.me/+91000000000000
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://wallpaperaccess.com/full/1309130.jpg'
 module.exports = {
-  botname:   process.env.BOT_NAME === undefined ? 'Kiyomi' : process.env.BOT_NAME,
-  ownername: process.env.OWNER_NAME === undefined ? 'TIKU☯️' : process.env.OWNER_NAME,
+  botname:   process.env.BOT_NAME === undefined ? 'Mikasa💗' : process.env.BOT_NAME,
+  ownername: process.env.OWNER_NAME === undefined ? 'Ronen🎐' : process.env.OWNER_NAME,
   sessionName:  proefined ? false : process.env.SESSION_ID,
-  author:  process.env.PACK_INFO.split(";")[0] === undefined ? 'TIKU-BOTS' : process.env.PACK_INFO.split(";")[' : process.env.FAKE_COUNTRY_CODE,
+  author:  process.env.PACK_INFO.split(";")[0] === undefined ? 'Mikasa;Ronen-Bots' : process.env.PACK_INFO.split(";")[' : process.env.FAKE_COUNTRY_CODE,
   readmessage:  process.env.READ_MESSAGE === undefined ? false : process.env.READ_MESSAGE,
   auto_status_saver: process.envm_PM,
   levelupmessage:  process.e_UP_MESSAGE === undefined ? false : process.env.LEVEL_UP_MESSAGE,
