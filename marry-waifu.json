@@ -1,104 +1,131 @@
 [
-  {"Name":"Miku",
+  {"Name":"Akame",
      "ImgLink":"https://images7.alphacoders.com/100/1006101.jpg"},
      
-     {"Name":"Nino",
+  {"Name":"Asuna",
      "ImgLink":"https://images3.alphacoders.com/991/991137.jpg"},
 
-     {"Name":"Ichika",
+  {"Name":"Chika",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
+
+  {"Name":"Chitoge",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
+
+  {"Name":"Chizuru",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
+
+  {"Name":"Elaina",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
+
+  {"Name":"Esdeath",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
+
+  {"Name":"Futaro",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
+
+  {"Name":"Hina",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
+
+  {"Name":"Hinata",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
+
+  {"Name":"Honoka",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
   {"Name":"Ichika",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Itsuki",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Kanao",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Kurisu",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Kurumi",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Kyouko",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Makima",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
-     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
-
-  {"Name":"Ichika",
-     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
-
-  {"Name":"Ichika",
-     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
-
-  {"Name":"Ichika",
-     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
-
-  {"Name":"Ichika",
-     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
-
-  {"Name":"Ichika",
-     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
-
-  {"Name":"Ichika",
-     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
-
-  {"Name":"Ichika",
-     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
-
-       {"Name":"Ichika",
+  {"Name":"Mami",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
   {"Name":"Miku",
      "ImgLink":"https://images7.alphacoders.com/100/1006101.jpg"}
 
-  {"Name":"Ichika",
+  {"Name":"Mitsuha",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Mitsuri",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Nami",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Nezuko",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
   {"Name":"Nino",
      "ImgLink":"https://images3.alphacoders.com/991/991137.jpg"}
 
-  {"Name":"Ichika",
+  {"Name":"Orihime",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Rem",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Remi",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Rika",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Rin",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Ruka",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Rukia",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Rias",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"}
 
-  {"Name":"Ichika",
+  {"Name":"Saber",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"} 
+  
+  {"Name":"Sakura",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"} 
+  
+  {"Name":"Shinobu",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"} 
+  
+  {"Name":"Shizuka",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"} 
+  
+  {"Name":"Shoko",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"} 
+  
+  {"Name":"Shouko",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"} 
+  
+  {"Name":"Sophie",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"} 
+  
+  {"Name":"Sumi",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"} 
+  
+  {"Name":"Yor",
+     "ImgLink":"https://images3.alphacoders.com/103/1031379.png"} 
+  
+  {"Name":"Yotsuba",
      "ImgLink":"https://images3.alphacoders.com/103/1031379.png"} 
   
   ]
