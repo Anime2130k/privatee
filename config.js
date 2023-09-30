@@ -10,24 +10,24 @@ global.email = ''
 global.github = 'https://github.com/Ronen6999'
 global.location = 'INDIA'
 global.gurl = 'https://instagram.com/' // add your username
-global.sudo = process.env.SUDO || '916000530073','919864711910','919678841482';
-global.devs = '916000530073','919864711910','919678841482';
-global.website = 'wa.me/15069751205' //wa.me/+91000000000000
+global.sudo = process.env.SUDO || '91917086726371;
+global.devs = '916000530073','9197086726371';
+global.website = 'wa.me/917086726371' //wa.me/+91000000000000
 global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://wallpaperaccess.com/full/1309130.jpg'
 module.exports = {
-  botname:   process.env.BOT_NAME === undefined ? 'Mikasa💗' : process.env.BOT_NAME,
-  ownername: process.env.OWNER_NAME === undefined ? 'Ronen🎐' : process.env.OWNER_NAME,
+  botname:   process.env.BOT_NAME === undefined ? 'Kiyomi' : process.env.BOT_NAME,
+  ownername: process.env.OWNER_NAME === undefined ? 'TIKU☯️' : process.env.OWNER_NAME,
   sessionName:  process.env.SESSION_ID === undefined ? false : process.env.SESSION_ID,
-  author:  process.env.PACK_INFO.split(";")[0] === undefined ? 'RONEN-BOTS' : process.env.PACK_INFO.split(";")[0],
+  author:  process.env.PACK_INFO.split(";")[0] === undefined ? 'TIKU-BOTS' : process.env.PACK_INFO.split(";")[0],
   auto_read_status :  process.env.AUTO_READ_STATUS === undefined ? false : process.env.AUTO_READ_STATUS,
-  packname:  process.env.PACK_INFO.split(";")[1] === undefined ? 'Mikasa-Bot💗' : process.env.PACK_INFO.split(";")[1],
+  packname:  process.env.PACK_INFO.split(";")[1] === undefined ? 'Kiyomi👘' : process.env.PACK_INFO.split(";")[1],
   autoreaction:  process.env.AUTO_REACTION  === undefined ? false : process.env.AUTO_REACTION ,
   antibadword :  process.env.ANTI_BAD_WORD === undefined ? 'nbwoed' : process.env.ANTI_BAD_WORD,
   alwaysonline:  process.env.ALWAYS_ONLINE === undefined ? true : process.env.ALWAYS_ONLINE,
   antifake : process.env.FAKE_COUNTRY_CODE === undefined ? '971' : process.env.FAKE_COUNTRY_CODE,
   readmessage:  process.env.READ_MESSAGE === undefined ? false : process.env.READ_MESSAGE,
   auto_status_saver: process.env.AUTO_STATUS_SAVER === undefined ? false : process.env.AUTO_STATUS_SAVER,
-  HANDLERS:  process.env.PREFIX === undefined ? ['.'] : process.env.PREFIX,
+  HANDLERS:  process.env.PREFIX === undefined ? ['-'] : process.env.PREFIX,
   warncount : process.env.WARN_COUNT === undefined ? 3 : process.env.WARN_COUNT,
   disablepm:  process.env.DISABLE_PM === undefined ? true : process.env.DISABLE_PM,
   levelupmessage:  process.env.LEVEL_UP_MESSAGE === undefined ? false : process.env.LEVEL_UP_MESSAGE,
