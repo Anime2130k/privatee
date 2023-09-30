@@ -18,7 +18,7 @@ module.exports = {
   botname:   process.env.BOT_NAME === undefined ? 'Mikasa💗' : process.env.BOT_NAME,
   ownername: process.env.OWNER_NAME === undefined ? 'Ronen🎐' : process.env.OWNER_NAME,
   sessionName:  proefined ? false : process.env.SESSION_ID,
-  author:  process.env.PACK_INFO.split(";")[0] === undefined ? 'Mikasa;Ronen-Bots' : process.env.PACK_INFO.split(";")[' : process.env.FAKE_COUNTRY_CODE,
+  author:  process.env.PACK_INFO.split(";")[0] === undefined ? 'Ronen-Bots' : process.env.PACK_INFO.split(";")[' : process.env.FAKE_COUNTRY_CODE,
   readmessage:  process.env.READ_MESSAGE === undefined ? false : process.env.READ_MESSAGE,
   auto_status_saver: process.envm_PM,
   levelupmessage:  process.e_UP_MESSAGE === undefined ? false : process.env.LEVEL_UP_MESSAGE,
