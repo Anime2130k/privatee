@@ -73,13 +73,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     let zx = text.length;
     if (zx < 8) {
@@ -141,13 +141,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
 //if (!isCreator) return citel.reply(tlang().owner)
 if (Config.OPENAI_API_KEY=='') return citel.reply('You Dont Have OPENAI_API_KEY \nPlease Create OPEN API KEY from Given Link \nhttps://platform.openai.com/account/api-keys');
@@ -195,44 +195,31 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
 	    let getGroups = await Void.groupFetchAllParticipating();
     let groups = Object.entries(getGroups).slice(0).map((entry) => entry[1]);
     let anu = groups.map((v) => v.id);
 	    let total = await sck1.countDocuments()
         let { data } = await axios.get('https://api.github.com/repos/SamPandey001/Secktor-Md')
-        let cap = `Konichiwa! ${citel.pushName}, I'm *Mikasa💗*
-_🧩 Server Uptime:_ *${runtime(process.uptime())}*
-_👤 User Counts :_ *${total}*
-_📛 Group counts:_ *${anu.length}*
-_🎀 Status:_ *⬜Active*
+        let cap = `Konichiwa! ${citel.pushName}, *━━━❰Kiyumi👘❱━━━**
+ 💚 Uptime *${runtime(process.uptime())}*
+ 🌌 User   *${total}*
+ 💬 Group  *${anu.length}*
+ 🧧 Status *⬜Active*
 
-💜 *Our official support group* : https://tinyurl.com/yw5lxtlf
-🔖 *Website* : ronenbots.000.pe
+*━━━❰Kiyumi👘 MODS❱━━━*
+
+@+917086726371
 
 
-*🔰NO. OF BOTS WE OPERATE:* 2️⃣
 
-#1 *Mikasa💗*
-_〽️Status:_ *⬜ACTIVE*
-_No:_ *wa.me/918811935376*
-
-#2 *Ladybug🐞*
-_〽️Status:_ *⬜ACTIVE*
-_No:_ *wa.me/917083409908*
-
-#3 *Elaina✨*
-_〽️Status'_ *⬜ACTIVE*
-_No:_ *wa.me/17077706063*
-
-*⚜️Currently Active in this Group:* _Mikasa💗_`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -272,13 +259,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         const uptime = process.uptime();
         timestampe = speed();
