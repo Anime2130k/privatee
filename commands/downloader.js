@@ -46,13 +46,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     if (!text) return citel.reply('Please give me Sentence to change into audio.');
     let texttts = text;
@@ -92,13 +92,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     let yts = require("secktor-pack");
     if (!text) return citel.reply(`Example : ${prefix}yts ${tlang().title} WhatsApp Bot`);
@@ -138,13 +138,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     let yts = require("secktor-pack");
     let ytdl = require("ytdl-core");
@@ -225,13 +225,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     if (!text) return citel.reply(`Use ${command} Back in Black`);
     let yts = require("secktor-pack");
@@ -279,13 +279,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     if (!text) {
       return reply("What picture are you looking for?") && Void.sendMessage(citel.chat, {
@@ -344,13 +344,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     if (!text) return citel.reply(`Where is the link, Baka!?`);
     if (!isUrl(text.split(" ")[0]) && !text.split(" ")[0].includes("mediafire.com")) return reply(`The link you provided is invalid`);
@@ -399,13 +399,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     let yts = require("secktor-pack");
     let ytdl = require("ytdl-core");
@@ -483,13 +483,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     const getRandom = (ext) => {
       return `${Math.floor(Math.random() * 10000)}${ext}`;
@@ -571,13 +571,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
 
     const getRandom = (ext) => {
@@ -676,13 +676,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `); 
 
     const getRandom = (ext) => {
