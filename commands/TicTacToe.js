@@ -46,13 +46,13 @@ async (Void, citel, text, { isCreator }) => {
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`)
     // The rest of your warning message
     let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
 	if(!users) return citel.reply('Please tag a user.')
@@ -81,13 +81,13 @@ async (Void, citel, text, { isCreator }) => {
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`)
     // The rest of your warning message
     let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
 	if(!users) return citel.reply('Please tag a user.')
@@ -116,13 +116,13 @@ async (Void, citel, text, { isCreator }) => {
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`)
     // The rest of your warning message
     let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
 	if(!users) return citel.reply('Please tag a user.')
@@ -151,13 +151,13 @@ async (Void, citel, text, { isCreator }) => {
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`)
     // The rest of your warning message
     let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
 	if(!users) return citel.reply('Please tag a user.')
@@ -185,13 +185,13 @@ async (Void, citel, text, { isCreator }) => {
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`)
     // The rest of your warning message
     let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
 	if(!users) return citel.reply('Please tag a user.')
@@ -219,13 +219,13 @@ async (Void, citel, text, { isCreator }) => {
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`)
     // The rest of your warning message
     let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
 	if(!users) return citel.reply('Please tag a user.')
@@ -253,13 +253,13 @@ async (Void, citel, text, { isCreator }) => {
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`)
     // The rest of your warning message
     let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
 	if(!users) return citel.reply('Please tag a user.')
@@ -287,13 +287,13 @@ async (Void, citel, text, { isCreator }) => {
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`)
     // The rest of your warning message
     let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
 	if(!users) return citel.reply('Please tag a user.')
@@ -321,13 +321,13 @@ async (Void, citel, text, { isCreator }) => {
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`)
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`)
     // The rest of your warning message
     let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
 	if(!users) return citel.reply('Please tag a user.')
@@ -368,13 +368,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`);
         const groupMetadata = citel.isGroup ? await Void.groupMetadata(citel.chat).catch((e) => {}) : "";
         const participants = citel.isGroup ? await groupMetadata.participants : "";
         const groupAdmins = await getAdmin(Void, citel)
