@@ -3,7 +3,7 @@ const { cmd } = require('../lib');
 cmd({
   pattern: ".",
   alias: ".",
-  desc: "Mikasa is active! Type *.help* to get my command list!",
+  desc: "Kiyumi👘 is active! Type *.help* to get my command list!",
   react: "❌",
   category: "owner",
   filename: __filename
@@ -12,7 +12,6 @@ cmd({
     const { Insta } = require('../lib');
     let ter = `Mikasa is active! Type *.help* to get my command list!`;
     let buttonMessaged = {
-        image: { url: `https://graph.org/file/790d93b83afdacf4b2567.jpg`},
         caption: ter,
     };
 if (!text) return await Void.sendMessage(citel.chat, buttonMessaged, {
@@ -31,12 +30,12 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`);
   }
 });
