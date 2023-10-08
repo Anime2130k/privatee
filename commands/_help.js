@@ -55,83 +55,77 @@ async (Void, citel, text) => {
                 .locale('id')
             const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
             let total = await sck1.countDocuments()
-            let str = `╔══ ≪` + fancytext(Config.botname.split(' ')[0], 58) + `≫ ══╗\n\n`
+            let str = `*━━━❰` + (Config.botname.split(' ')[0], 58) + `❱━━━*\n\n`
             str +=
                 `_🎐 Name:_ *${Config.botname}*
-_👤 User:_ *${citel.pushName} senpai👋* 
-_🎗️ Prefix:_ *[ ${prefix} ]*
-_🎐 Owner:_ *${Config.ownername}*
-_🗣️ Usercount:_ *${total}*
-_☘️ Uptime:_ *${runtime(process.uptime())}*
-_💾 Memory:_ *${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
-_⏳ Time:_ *${time}*
-_🗓️ Date:_ *${date}*
-_〽️ Support:_ *https://tinyurl.com/yw5lxtlf*
-_🔰 Website:_ *ronenbots.000.pe*
-_📑 Guide:_ *https://youtu.be/A3p1mAQnVds?si=8kGNRVZrxlWzPVdc*
+                
+👋 *Hi @${M.sender.split('@')[0]}* 🍃!
 
-*⬇️Here's the list of my commands⬇️*
+🎋 *Support us by following us on instagram:*
+https://instagram.com/_ne_itachi_?igshid=OGQ5ZDc2ODk2ZA==
 
-🌍 *Owner* 🌍
-ᴘʟᴜɢɪɴꜱ, ʀᴇᴍᴏᴠᴇ, ɪɴꜱᴛᴀʟʟ, ᴊᴏɪɴ, ᴜɴʙʟᴏᴄᴋ, ᴜᴊɪᴅ, ʙʟᴏᴄᴋ, ᴀᴅᴅɴᴏᴛᴇ, ᴇᴠᴀʟ, ᴅᴇʟɴᴏᴛᴇ, ᴅᴇʟᴀʟʟɴᴏᴛᴇꜱ, ʙᴀɴ, ᴀʟʟɴᴏᴛᴇꜱ, ʙʀᴏᴀᴅᴄᴀꜱᴛ
+*⟾ 📪Command List📪*
 
-⚜️ *Extra* ⚜️
-ᴘᴀꜱᴛᴇ, ᴘᴀꜱᴛᴇʙɪɴ
+ *━━━❰ Owner ❱━━━*
+➠ᴘʟᴜɢɪɴꜱ, ʀᴇᴍᴏᴠᴇ, ɪɴꜱᴛᴀʟʟ, ᴊᴏɪɴ, ᴜɴʙʟᴏᴄᴋ, ᴜᴊɪᴅ, ʙʟᴏᴄᴋ, ᴀᴅᴅɴᴏᴛᴇ, ᴇᴠᴀʟ, ᴅᴇʟɴᴏᴛᴇ, ᴅᴇʟᴀʟʟɴᴏᴛᴇꜱ, ʙᴀɴ, ᴀʟʟɴᴏᴛᴇꜱ, ʙʀᴏᴀᴅᴄᴀꜱᴛ
 
-🎲 *Game* 🎲
-ᴅᴇʟᴛᴛᴛ, ᴛᴛᴛ, ᴅɪᴄᴇ
+ *━━━❰ Extra ❱━━━*
+➠ᴘᴀꜱᴛᴇ, ᴘᴀꜱᴛᴇʙɪɴ
 
-🗣️ *Check* 🗣️
-ᴀᴡᴇꜱᴏᴍᴇᴄʜᴇᴄᴋ, ᴄᴜᴛᴇᴄʜᴇᴄᴋ, ꜰʀɪᴇɴᴅᴄʜᴇᴄᴋ, ɢᴀʏᴄʜᴇᴄᴋ, ɢʀᴇᴀᴛᴄʜᴇᴄᴋ, ʜᴀɴᴅꜱᴏᴍᴇᴄʜᴇᴄᴋ, ʜᴏʀɴʏᴄʜᴇᴄᴋ, ʟᴇꜱʙɪᴀɴᴄʜᴇᴄᴋ, ᴘʀᴇᴛᴛʏᴄʜᴇᴄᴋ, ᴜɢʟʏᴄʜᴇᴄᴋ
+*━━━❰ Game ❱━━━*
+➠ᴅᴇʟᴛᴛᴛ, ᴛᴛᴛ, ᴅɪᴄᴇ
 
-🎍 *Fun* 🎍
-ꜱʜɪᴘ, ϙᴜᴇꜱᴛɪᴏɴ, ᴛʀᴜᴛʜ, ᴅᴀʀᴇ, ꜰᴀᴄᴛ, ϙᴜᴏᴛᴇꜱ, ᴅᴇꜰɪɴᴇ, ʜᴀᴄᴋ, Mᴏᴏᴅ, ꜱᴜᴍᴍᴏɴ
+*━━━❰ Check ❱━━━*
+➠ᴀᴡᴇꜱᴏᴍᴇᴄʜᴇᴄᴋ, ᴄᴜᴛᴇᴄʜᴇᴄᴋ, ꜰʀɪᴇɴᴅᴄʜᴇᴄᴋ, ɢᴀʏᴄʜᴇᴄᴋ, ɢʀᴇᴀᴛᴄʜᴇᴄᴋ, ʜᴀɴᴅꜱᴏᴍᴇᴄʜᴇᴄᴋ, ʜᴏʀɴʏᴄʜᴇᴄᴋ, ʟᴇꜱʙɪᴀɴᴄʜᴇᴄᴋ, ᴘʀᴇᴛᴛʏᴄʜᴇᴄᴋ, ᴜɢʟʏᴄʜᴇᴄᴋ
 
-🔰 *General* 🔰
-ʜᴇʟᴘ, ᴏᴡɴᴇʀ, ꜰɪʟᴇ, ɪɴꜰᴏ, ꜱᴛᴀᴛᴜꜱ, ʀᴇᴘᴏʀᴛ, ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ, ᴘɪɴɢ, ᴀʟɪᴠᴇ, ɪᴅ, ᴘʀᴏꜰɪʟᴇ, ᴛᴄ, ꜱᴜᴘᴘᴏʀᴛ, ʀᴀɴᴋ
+*━━━❰ Fun ❱━━━*
+➠ꜱʜɪᴘ, ϙᴜᴇꜱᴛɪᴏɴ, ᴛʀᴜᴛʜ, ᴅᴀʀᴇ, ꜰᴀᴄᴛ, ϙᴜᴏᴛᴇꜱ, ᴅᴇꜰɪɴᴇ, ʜᴀᴄᴋ, Mᴏᴏᴅ, ꜱᴜᴍᴍᴏɴ
 
-🧰 *Tools* 🧰
-ʀᴇꜱᴛᴀʀᴛ, ᴛɪᴍᴇ, ɪɴᴛʀᴏ, ᴀɴᴏɴʏᴍꜱɢ, ᴄᴘᴜ
+*━━━❰ General ❱━━━*
+➠ʜᴇʟᴘ, ᴏᴡɴᴇʀ, ꜰɪʟᴇ, ɪɴꜰᴏ, ꜱᴛᴀᴛᴜꜱ, ʀᴇᴘᴏʀᴛ, ʟᴇᴀᴅᴇʀʙᴏᴀʀᴅ, ᴘɪɴɢ, ᴀʟɪᴠᴇ, ɪᴅ, ᴘʀᴏꜰɪʟᴇ, ᴛᴄ, ꜱᴜᴘᴘᴏʀᴛ, ʀᴀɴᴋ
 
-📛 *Misc* 📛
-ᴠᴠ, ꜱᴇᴛᴡᴇʟᴄᴏᴍᴇ, ꜱᴇᴛɢᴏᴏᴅʙʏᴇ, ʀᴇᴀᴅᴍᴏʀᴇ, ᴜᴘᴛɪᴍᴇ, ᴡᴍ, ᴘɪᴄᴋ, ꜰʟɪᴘᴛᴇxᴛ, ᴄʜᴀᴛʙᴏᴛ, ᴇʙɪɴᴀʀʏ, ᴅʙɪɴᴀʀʏ, ʙᴏᴛ, ᴛʀ 
+*━━━❰ Tools ❱━━━*
+➠ʀᴇꜱᴛᴀʀᴛ, ᴛɪᴍᴇ, ɪɴᴛʀᴏ, ᴀɴᴏɴʏᴍꜱɢ, ᴄᴘᴜ
 
-🎀 *Converter* 🎀
-ꜱᴛɪᴄᴋᴇʀ, ᴛᴏɪᴍɢ, ꜰᴀɴᴄʏ, ᴛɪɴʏ, ᴛᴏᴀᴜᴅɪᴏ, ᴍᴘ4ꜰʀᴏᴍᴜʀʟ, ᴜʀʟ
+ *━━━❰ Misc ❱━━━*
+➠ᴠᴠ, ꜱᴇᴛᴡᴇʟᴄᴏᴍᴇ, ꜱᴇᴛɢᴏᴏᴅʙʏᴇ, ʀᴇᴀᴅᴍᴏʀᴇ, ᴜᴘᴛɪᴍᴇ, ᴡᴍ, ᴘɪᴄᴋ, ꜰʟɪᴘᴛᴇxᴛ, ᴄʜᴀᴛʙᴏᴛ, ᴇʙɪɴᴀʀʏ, ᴅʙɪɴᴀʀʏ, ʙᴏᴛ, ᴛʀ 
 
-🧧 *Sticker* 🧧
-ᴄɪʀᴄʟᴇ, ᴄʀᴏᴘ, ʀᴏᴜɴᴅ, ꜱᴛᴇᴀʟ
+*━━━❰ Converter ❱━━━*
+➠ꜱᴛɪᴄᴋᴇʀ, ᴛᴏɪᴍɢ, ꜰᴀɴᴄʏ, ᴛɪɴʏ, ᴛᴏᴀᴜᴅɪᴏ, ᴍᴘ4ꜰʀᴏᴍᴜʀʟ, ᴜʀʟ
 
-⚡ *Downloader* ⚡
-ɪɢᴅʟ, ᴛᴛꜱ, ʏᴛꜱ, ᴠɪᴅᴇᴏ, ᴘʟᴀʏ, ᴘɪɴ, ᴍᴇᴅɪᴀꜰɪʀᴇ, ᴀᴜᴅɪᴏ, ʏᴛᴍᴘ4, ʏᴛᴍᴘ3, ʏᴛᴅᴏᴄ, ᴘʟᴀʏʟɪꜱᴛ, ɪᴍᴀɢᴇ
+*━━━❰ Sticker ❱━━━*
+➠ᴄɪʀᴄʟᴇ, ᴄʀᴏᴘ, ʀᴏᴜɴᴅ, ꜱᴛᴇᴀʟ
 
-📊 *Economy* 📊
-ᴅᴀɪʟʏ, ʀᴇꜱᴇᴛᴡᴀʟʟᴇᴛ, ᴄᴀᴘᴀᴄɪᴛʏ, ᴅᴇᴘᴏꜱɪᴛ, ʟʙ, ᴛʀᴀɴꜱꜰᴇʀ, ᴡᴀʟʟᴇᴛ, ɢɪᴠᴇ, ʙᴀɴᴋ, ʀᴏʙ, ᴡɪᴛʜᴅʀᴀᴡ, ɢᴀᴍʙʟᴇ, ꜱʟᴏᴛ2, ꜱʟᴏᴛ 
+*━━━❰ Downloder ❱━━━*
+➠ɪɢᴅʟ, ᴛᴛꜱ, ʏᴛꜱ, ᴠɪᴅᴇᴏ, ᴘʟᴀʏ, ᴘɪɴ, ᴍᴇᴅɪᴀꜰɪʀᴇ, ᴀᴜᴅɪᴏ, ʏᴛᴍᴘ4, ʏᴛᴍᴘ3, ʏᴛᴅᴏᴄ, ᴘʟᴀʏʟɪꜱᴛ, ɪᴍᴀɢᴇ
 
-👤 *User* 👤
-Fᴜʟʟᴘᴘ
+*━━━❰ Economy ❱━━━*
+➠ᴅᴀɪʟʏ, ʀᴇꜱᴇᴛᴡᴀʟʟᴇᴛ, ᴄᴀᴘᴀᴄɪᴛʏ, ᴅᴇᴘᴏꜱɪᴛ, ʟʙ, ᴛʀᴀɴꜱꜰᴇʀ, ᴡᴀʟʟᴇᴛ, ɢɪᴠᴇ, ʙᴀɴᴋ, ʀᴏʙ, ᴡɪᴛʜᴅʀᴀᴡ, ɢᴀᴍʙʟᴇ, ꜱʟᴏᴛ2, ꜱʟᴏᴛ 
 
-🤖 *AI* 🤖
-ᴄʜᴀᴛ, ᴅᴀʟʟᴇ 
+*━━━❰ User ❱━━━*
+➠Fᴜʟʟᴘᴘ
 
-🍫 *Group* 🍫
-ᴡᴀʀɴ, ᴛᴀɢᴀʟʟ, ʀᴇᴛʀɪᴇᴠᴇ, ʀᴡᴀʀɴ, ᴘᴏʟʟ, ᴘʀᴏᴍᴏᴛᴇ, ᴋɪᴄᴋ, ᴍᴇᴍᴇɢᴇɴ, ɢʀᴏᴜᴘ, ɢʀᴏᴜᴘᴘɪᴄ, ʜɪᴅᴇᴛᴀɢ, ɢᴇᴛᴊɪᴅꜱ, ᴅᴇᴍᴏᴛᴇ, ᴅᴇʟ, cʜᴇᴄᴋᴡᴀʀɴ, ᴀɴᴛɪʟɪɴᴋ, ᴀᴄᴛ, ᴅᴇᴀᴄᴛ, ᴋɪᴋ, ɴᴜᴍ, ꜰᴜʟʟɢᴘᴘ
+*━━━❰ AI ❱━━━*
+➠ᴄʜᴀᴛ, ᴅᴀʟʟᴇ 
 
-🔍 *Search* 🔍
-ɴᴘᴍ, ɪᴍᴅʙ, ᴡᴇᴀᴛʜᴇʀ, ʜᴏʀᴏ, ɢᴏᴏɢʟᴇ, ɪᴍᴀɢᴇ, ᴄᴏᴜᴘʟᴇᴘᴘ, ꜱᴛᴀʟᴋ, ꜰɪɴᴅ, ᴄʀɪᴄ
+*━━━❰ Group ❱━━━*
+➠ᴡᴀʀɴ, ᴛᴀɢᴀʟʟ, ʀᴇᴛʀɪᴇᴠᴇ, ʀᴡᴀʀɴ, ᴘᴏʟʟ, ᴘʀᴏᴍᴏᴛᴇ, ᴋɪᴄᴋ, ᴍᴇᴍᴇɢᴇɴ, ɢʀᴏᴜᴘ, ɢʀᴏᴜᴘᴘɪᴄ, ʜɪᴅᴇᴛᴀɢ, ɢᴇᴛᴊɪᴅꜱ, ᴅᴇᴍᴏᴛᴇ, ᴅᴇʟ, cʜᴇᴄᴋᴡᴀʀɴ, ᴀɴᴛɪʟɪɴᴋ, ᴀᴄᴛ, ᴅᴇᴀᴄᴛ, ᴋɪᴋ, ɴᴜᴍ, ꜰᴜʟʟɢᴘᴘ
 
-⚠️ *Moderation* ⚠️
-ᴀᴍᴜᴛᴇ, ᴀᴜɴᴍᴜᴛᴇ, ᴅᴜɴᴍᴜᴛᴇ, ᴅᴍᴜᴛᴇ
+*━━━❰ Search ❱━━━*
+➠ɴᴘᴍ, ɪᴍᴅʙ, ᴡᴇᴀᴛʜᴇʀ, ʜᴏʀᴏ, ɢᴏᴏɢʟᴇ, ɪᴍᴀɢᴇ, ᴄᴏᴜᴘʟᴇᴘᴘ, ꜱᴛᴀʟᴋ, ꜰɪɴᴅ, ᴄʀɪᴄ
 
-🈷️ *Weeb-Pack* 🈷️
-ᴀɴɪᴍᴇ, ᴀɴɪᴍᴇɴᴇᴡꜱ, ᴀɴɪᴍᴇᴘɪᴄ, ᴀɴɪᴍᴇᴡᴀʟʟ, ᴄʜᴀʀᴀᴄᴛᴇʀ, ꜰᴏxɢɪʀʟ, ʟᴏʟɪ, ᴍᴀɴɢᴀ, ɴᴇᴋᴏ, ᴘᴏᴋᴇᴍᴏɴ, ᴘᴏᴋᴇᴘɪᴄ, ʀᴀɴɪᴍᴇ, ᴡᴀɪꜰᴜ
+*━━━❰ Moderation ❱━━━*
+➠ᴀᴍᴜᴛᴇ, ᴀᴜɴᴍᴜᴛᴇ, ᴅᴜɴᴍᴜᴛᴇ, ᴅᴍᴜᴛᴇ
 
-🔞 *NSFW* 🔞
-_Type *.nsfw* to get the NSFW command list *(⚠️Only for 18+)*_`
+*━━━❰ Weeb-Pack ❱━━━*
+➠ᴀɴɪᴍᴇ, ᴀɴɪᴍᴇɴᴇᴡꜱ, ᴀɴɪᴍᴇᴘɪᴄ, ᴀɴɪᴍᴇᴡᴀʟʟ, ᴄʜᴀʀᴀᴄᴛᴇʀ, ꜰᴏxɢɪʀʟ, ʟᴏʟɪ, ᴍᴀɴɢᴀ, ɴᴇᴋᴏ, ᴘᴏᴋᴇᴍᴏɴ, ᴘᴏᴋᴇᴘɪᴄ, ʀᴀɴɪᴍᴇ, ᴡᴀɪꜰᴜ
+
+*━━━❰ nsfw ❱━━━*
+_Type *.nsfw* to get the NSFW command list `
                 
 
             
-            str += `\n\n\n*🔰 Type:* _<${prefix}report>_ to report the developers about any issue you face in the bot\n\n*🔰 Type:* _<${prefix}help cmd name>_ to know more about a specific command.\n*Eg:* _${prefix}help gpt_\n\n*🔰 Type:* _<${prefix}tc>_ to know our Terms&Conditions\n\n*🎐 RONEN-BOTS* `;
+            str += `\n\n\n*🖨️* *Type -help for command list* `;
             let buttonMessaged = {
                 video: { url: "https://graph.org/file/9b56e94de9d4f55aa6d50.mp4" },
                 caption: str
@@ -147,13 +141,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`);
     }
 });
    
@@ -233,13 +227,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`);
     }
 });
 
@@ -269,13 +263,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`);
   }
 });
 
