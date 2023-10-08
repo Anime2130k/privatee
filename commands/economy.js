@@ -37,13 +37,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`);
 
     let zerogroup = (await sck.findOne({
         id: citel.chat,
@@ -102,13 +102,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
@@ -143,13 +143,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
   let zerogroup = (await sck.findOne({ id: citel.chat })) || (await new sck({ id: citel.chat }).save());
   let mongoschemas = zerogroup.economy || false;
@@ -200,13 +200,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
 	  
         let zerogroup = (await sck.findOne({
@@ -241,13 +241,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     let h = await eco.lb('secktor',10);
     let str = `*Top ${h.length} users with more money in wallet.*\n`
@@ -291,13 +291,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     let zerogroup = (await sck.findOne({
         id: citel.chat,
@@ -347,13 +347,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);  
         let zerogroup = (await sck.findOne({
             id: citel.chat,
@@ -391,13 +391,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750 
+• https://wa.me/+917086726371 
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         if(!isCreator) return
 
@@ -426,13 +426,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
@@ -469,13 +469,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
@@ -543,13 +543,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
@@ -586,13 +586,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
@@ -676,13 +676,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         let zerogroup = (await sck.findOne({
             id: citel.chat,
@@ -806,13 +806,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     let zerogroup = (await sck.findOne({
         id: citel.chat,
