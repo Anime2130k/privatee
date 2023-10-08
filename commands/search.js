@@ -62,13 +62,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
             if (!text) return citel.reply(`_Name a Series or movie ${tlang().greet}._`);
             let fids = await axios.get(`http://www.omdbapi.com/?apikey=742b2d09&t=${text}&plot=full`);
@@ -120,13 +120,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
             if (!text) return citel.reply("Give me location.Baka!!");
             let wdata = await axios.get(
@@ -172,13 +172,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
   const date_now = moment.tz('Asia/Kolkata').format('YYYY-MM-DD');
   if (!text) return citel.reply("Provide me a sign!");
@@ -246,13 +246,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         if (!text) return citel.reply(`give me a query\n*Example : .google Who is Mikasa.*`);
         let google = require('google-it');
@@ -286,13 +286,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
             if (!text) return citel.reply("Provide me a query!")
             if (!text) return reply("Hey bie please tell me for which pic you're looking");
@@ -334,13 +334,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
             let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
             let random = anu[Math.floor(Math.random() * anu.length)]
@@ -365,13 +365,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         var inputnumber = text.split(" ")[0]
         if (!inputnumber.includes('x')) return citel.reply('You did not add x\nExample: iswa 9196285162xx')
