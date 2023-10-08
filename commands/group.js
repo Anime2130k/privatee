@@ -379,7 +379,7 @@ return citel.reply("*_Group Link Revoked SuccesFully_*");
 		const participants = citel.isGroup ? await groupMetadata.participants : "";
     let textt = `_Here is jid address of all users of_\n *- ${groupMetadata.subject}*\n\n`
     for (let mem of participants) {
-            textt += `📍 ${mem.id}\n`;
+            textt += `👘 ${mem.id}\n`;
         }*
      else return citel.reply(citel.chat)
 
@@ -402,7 +402,7 @@ cmd({
         if (!isAdmins && !isCreator) return citel.reply(tlang().admin);
 
         let textt = `
-══✪〘   *Tag All*   〙✪══h
+*━━━❰  *Tag All*  ❱━━━*
 
 ➲ *Message :* ${text ? text : "blank Message"} \n ${Config.caption} \n\n
 ➲ *Author:* ${citel.pushName} 🔖
@@ -607,13 +607,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: https://tinyurl.com/285yd249*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
             if (!citel.quoted) return citel.reply(`*Mention any Image or video Sir.*`);
             let mime = citel.quoted.mtype
@@ -669,18 +669,18 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• wa.me/+917086726371
 
-*📛Our official Support GC: https://tinyurl.com/285yd249*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         citel.reply(`*Check your Pm ${tlang().greet}*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*🎀GROUP NAME: RONEN-BOTS SUPPORT*\n\n_The purpose of this group is to help the users using our bots. You can ask about any issue regarding any of our Bots in this group. If you want our Bots in your gc then you can text the Admin personally or tag them in the group, and don't forget to be respectful to everyone in this group._\n\n*🧧Group Link:* https://tinyurl.com/yw5lxtlf`,
+            caption: `*🎀GROUP NAME: TIKU_BOTS SUPPORT*\n\n_The purpose of this group is to help the users using our bots. You can ask about any issue regarding any of our Bots in this group. If you want our Bots in your gc then you can text the Admin personally or tag them in the group, and don't forget to be respectful to everyone in this group._\n\n*🧧Group Link:* https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2`,
         });
 
     }
@@ -737,7 +737,7 @@ cmd({
 		const participants = citel.isGroup ? await groupMetadata.participants : "";
     let textt = `_Here is jid address of all users of_\n *- ${groupMetadata.subject}*\n\n`
     for (let mem of participants) {
-            textt += `📍 ${mem.id}\n`;
+            textt += `👘 ${mem.id}\n`;
         }
       citel.reply(textt)
 
@@ -761,13 +761,13 @@ cmd({
         if (!isAdmins) return citel.reply(tlang().admin);
 
         let textt = `
-   🎀〘   *Tag All*   〙🎀
+   *━━━❰   *Tag All*  ❱━━━*
 
 ➲ *Message :* ${text ? text : "blank"}\n\n
 ➲ *Author:* ${citel.pushName} 🔖
 `
         for (let mem of participants) {
-            textt += `📍 @${mem.id.split("@")[0]}\n`;
+            textt += `👘 @${mem.id.split("@")[0]}\n`;
         }
         Void.sendMessage(citel.chat, {
             text: textt,
@@ -793,7 +793,7 @@ cmd({
       } Hello dev please fix <command name>`);
             textt = `*|🔖 REPORT SENT 🔖|*`;
             teks1 = `\n\n*📌REPORTED BY* : _@${
-    citel.sender.split("@")[0]}_\n*📝REPORT* : _${text}_\n\n*MIKASA💗*\n*POWERED BY: RONEN-BOTS*`;
+    citel.sender.split("@")[0]}_\n*📝REPORT* : _${text}_\n\n*Kiyumi👘*\n*POWERED BY: RONEN-BOTS*`;
             teks2 = `\n\n*Konichiwa!👋 _@${
     citel.sender.split("@")[0]},_ The report has been sent to my Developer*.\n*⚠️If it is a spam you might get blocked or ban*`;
             for (let i of owner) {
@@ -830,13 +830,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: https://tinyurl.com/285yd249*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     if (!citel.quoted) return citel.reply("Please reply to any message Image or Video!");
     let mime = citel.quoted.mimetype; // Corrected variable name
@@ -914,13 +914,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: https://tinyurl.com/285yd249*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
             var bio = await Void.fetchStatus(citel.sender);
             var bioo = bio.status;
@@ -1029,13 +1029,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: https://tinyurl.com/285yd249*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
             const userq = await Levels.fetch(citel.sender, "RandomXP");
             const lvpoints = userq.level;
@@ -1128,13 +1128,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: https://tinyurl.com/285yd249*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
             const fetchlb = await Levels.fetchLeaderboard("RandomXP", 15);
             let leadtext = `
@@ -1279,13 +1279,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: https://tinyurl.com/285yd249*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
     let mime = citel.quoted ? citel.quoted.mtype : ''
     if (!citel.quoted || !/image/.test(mime)) {
