@@ -14,13 +14,13 @@ async (Void, citel, text, { isCreator }) => {
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*`);
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*`);
     // The rest of your warning message
 
     const fetch = require('node-fetch');
@@ -69,13 +69,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         const { Insta } = require('../lib')
 if(!text) return citel.reply('Need post url.')
@@ -102,13 +102,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         const { iginfo } = require('../lib/scraper.js')
 if(!text) return citel.reply('Need Username.')
@@ -134,13 +134,13 @@ _Don't text the Bot in pm._
 *㊙️If you want to add this bot in your GC(GroupChat) then ask the Developer*
 
 *〽️Developer:*
-• wa.me/994402261750
+• https://wa.me/+917086726371
 
-*📛Our official Support GC: http://surl.li/eumln*
+*📛Our official Support GC: https://chat.whatsapp.com/J66CTiDheI94vkxx6nIyp2*
 
 *💗Have a nice day💗*
 
-_Mikasa💗 Powered by:_ *©️RONEN-BOTS*
+Kiyumi👘 Powered by:_ *©️TIKU_BOTS*
 `);
         const { checkmarried } = require('../lib')
 if(!text) return citel.reply('Need Username.')
