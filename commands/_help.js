@@ -59,7 +59,7 @@ async (Void, citel, text) => {
             str +=
                 `_🎐 Name:_ *${Config.botname}*
                 
-👋 *Hi @${M.sender.split('@')[0]}* 🍃!
+👋 *Hi *${citel.pushName} senpai🍃* 
 
 🎋 *Support us by following us on instagram:*
 https://instagram.com/_ne_itachi_?igshid=OGQ5ZDc2ODk2ZA==
