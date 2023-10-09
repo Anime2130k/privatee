@@ -55,9 +55,9 @@ async (Void, citel, text) => {
                 .locale('id')
             const date = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
             let total = await sck1.countDocuments()
-            let str = `*━━━❰` + (Config.botname.split(' ')[0], 58) + `❱━━━*\n\n`
+            let str = `*━━━❰` + (Config.botname.split(' ')[0], Kiyumi👘) + `❱━━━*\n\n`
             str +=
-                `_🎐 Name:_ *${Config.botname}*
+                
                 
 👋 *Hi *${citel.pushName} senpai🍃* 
 
