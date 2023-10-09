@@ -57,7 +57,7 @@ async (Void, citel, text) => {
             let total = await sck1.countDocuments()
             let str = `*━━━❰` + (Config.botname.split(' ')[0], 58) + `❱━━━*\n\n`
             str +=
-                    *⛩️❯─「Kiyumi👘」─❮⛩️*
+                    `⛩️NAME:_ *${Config.botname}*
                 
 👋 *Hi *${citel.pushName} senpai🍃* 
 
