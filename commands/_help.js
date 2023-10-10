@@ -64,6 +64,9 @@ async (Void, citel, text) => {
 🎋 *Support us by following us on instagram:*
 https://instagram.com/_ne_itachi_?igshid=OGQ5ZDc2ODk2ZA==
 
+⛩️owner +917086726371
+⛩️maintainer +917086810603
+
 *⟾ 📪Command List📪*
 
  *━━━❰ Owner ❱━━━*
